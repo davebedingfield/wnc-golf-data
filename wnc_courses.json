@@ -24,6 +24,28 @@
       "address": "226 Fairway Drive, Asheville, NC 28805"
     },
     {
+      "id": "black-mountain-gc",
+      "name": "Black Mountain Golf Course",
+      "city": "Black Mountain",
+      "county": "Buncombe",
+      "subregion": "asheville-basin",
+      "access": "public",
+      "yards": 6215,
+      "slope": 129,
+      "rating": 69.0,
+      "par": 71,
+      "terrain": "rolling-foothills",
+      "helene": true,
+      "new2026": false,
+      "featured": false,
+      "closed": true,
+      "summary": "Established 1929, with a Donald Ross-designed front nine \u2014 one of only two Ross municipal courses in WNC. Home to the legendary 747-yard par-6 17th hole, once the longest hole in the world. Currently closed following Hurricane Helene damage. Monitor the course website for reopening updates.",
+      "insider_tip": "When it reopens, the par-6 17th is the reason to come \u2014 once the longest hole in the world. Plan your layup zones in advance or it will eat you alive.",
+      "website": "https://www.blackmountaingolf.org/",
+      "phone": "tel:8286692710",
+      "address": "17 Ross Drive, Black Mountain, NC 28711"
+    },
+    {
       "id": "broadmoor-golf-links",
       "name": "Broadmoor Golf Links",
       "city": "Fletcher",
@@ -41,7 +63,7 @@
       "summary": "WNC's only true links-style layout, redesigned by Karl Litten (PGA's 'Fab Four'). Post-Helene redesign reopened May 2026 \u2014 discard old yardage books, the routing has shifted.",
       "insider_tip": "Play the course fresh \u2014 prior yardage books are obsolete after the May 2026 redesign.",
       "website": "https://www.broadmoorgolflinks.com",
-      "phone": "tel:8002385795",
+      "phone": "tel:8286871500",
       "address": "101 French Broad Lane, Fletcher, NC 28732"
     },
     {
@@ -61,8 +83,8 @@
       "featured": false,
       "summary": "Tom Jackson's 1976 design inside the gated High Vista community \u2014 350+ feet of vertical change across 18 holes, among the most dramatic relief of any public course in Buncombe County.",
       "insider_tip": "The par-4 4th (324 yards) is a trap \u2014 the green rejects anything missing right by more than five feet.",
-      "website": "https://www.highvistagolf.com",
-      "phone": "tel:8288911986",
+      "website": "https://www.chestnutmountaingolf.com/",
+      "phone": "tel:8283934531",
       "address": "88 Country Club Road, Mills River, NC 28759"
     },
     {
@@ -84,7 +106,7 @@
       "insider_tip": "Favor the middle of every green on the lake-adjacent back nine holes \u2014 the westerly breeze kills distance.",
       "website": "https://www.lakejunaluska.com/activities/golf_course/",
       "phone": "tel:8284565777",
-      "address": "756 Golf Course Rd, Lake Junaluska, NC 28745"
+      "address": "756 Golf Course Rd, Waynesville, NC 28786"
     },
     {
       "id": "reems-creek",
@@ -110,22 +132,23 @@
     {
       "id": "sherwood-forest",
       "name": "Sherwood Forest Golf Club",
-      "city": "Hendersonville",
-      "county": "Henderson",
+      "city": "Brevard",
+      "county": "Transylvania",
       "subregion": "asheville-basin",
       "access": "public",
-      "yards": null,
+      "yards": 2230,
       "slope": null,
       "rating": null,
-      "par": null,
+      "par": 54,
       "terrain": "rolling-foothills",
       "helene": false,
       "new2026": false,
       "featured": false,
-      "summary": "Affordable, no-frills Henderson County local favorite. Rolling terrain, tree-lined fairways, bentgrass greens. Call ahead \u2014 online info is inconsistently maintained.",
-      "insider_tip": "Always call before visiting \u2014 hours and conditions change seasonally without notice.",
-      "website": "https://www.sherwoodforestgolfclub.com",
-      "address": "200 Sherwood Forest Drive, Hendersonville, NC 28792 (verify)"
+      "summary": "18-hole par-3 course nestled along the Little River in the gated Sherwood Forest community near Brevard. Fairways border native wildflower beds and the river itself \u2014 one of WNC's most scenic casual layouts. Open to the public year-round with no tee time required. Famous for optional llama caddies.",
+      "insider_tip": "Book a llama caddie \u2014 it's not a gimmick, it's a genuine Brevard experience. No tee time needed; just show up.",
+      "website": "https://sherwoodforestgolfcourse.com/",
+      "address": "29 Cardinal Rd, Brevard, NC 28712",
+      "phone": "tel:8288847825"
     },
     {
       "id": "connestee-falls",
@@ -144,9 +167,9 @@
       "featured": false,
       "summary": "George W. Cobb 1972 design \u2014 same architect as Augusta's Par-3 Course. Multiple creek crossings, natural terrain hazards. Outside access limited to non-peak morning slots.",
       "insider_tip": "Book direct through the pro shop \u2014 weekend member times lock up early.",
-      "website": "https://connesteefalls.com",
-      "address": "33 Connestee Trail, Brevard, NC 28712",
-      "phone": "tel:8288859100"
+      "website": "https://connesteefalls.com/golf",
+      "address": "98 Overlook Clubhouse Dr, Brevard, NC 28712",
+      "phone": "tel:8288852005"
     },
     {
       "id": "cummings-cove",
@@ -155,9 +178,9 @@
       "county": "Henderson",
       "subregion": "asheville-basin",
       "access": "semi-private",
-      "yards": 6415,
-      "slope": 129,
-      "rating": 70.1,
+      "yards": 6085,
+      "slope": 133,
+      "rating": 70.4,
       "par": 71,
       "terrain": "severe-mountain",
       "helene": false,
@@ -166,7 +189,7 @@
       "summary": "Bob Cupp design \u2014 'Best Renovation of the Year' 2006 award winner. Par 71, 6,415 yards. Three par-3s on the back nine highlight the layout; one tees from a cliff face. Finishes with back-to-back par 5s like Baltusrol. Outside play welcome \u2014 call ahead for rates.",
       "insider_tip": "Mid-week only for outside access. Back nine plays two full clubs heavier than the yardage book.",
       "website": "https://www.cummingscove.com/golf",
-      "address": "925 Lakeledge Court, Hendersonville, NC 28739",
+      "address": "943 Lakeledge Court, Hendersonville, NC 28739",
       "phone": "tel:8288919412"
     },
     {
@@ -176,19 +199,19 @@
       "county": "Henderson",
       "subregion": "asheville-basin",
       "access": "resort",
-      "yards": 6825,
-      "slope": 139,
-      "rating": 75.0,
-      "par": 73,
+      "yards": 6925,
+      "slope": 138,
+      "rating": 74.1,
+      "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
       "new2026": false,
       "featured": false,
-      "address": "450 Brickyard Rd, Etowah, NC 28729",
+      "address": "470 Brickyard Rd, Etowah, NC 28729",
       "summary": "Edmund Ault's 18-hole championship course opened in 1967 on a 240-acre plateau between Brevard and Hendersonville at 2,200 feet. Lush Bermuda fairways with bentgrass greens up to 9,000 square feet. Full resort amenities on-site: grill, event center, driving range, and membership options.",
       "insider_tip": "Book mid-week for best rates and least crowded conditions. The resort's central location between Asheville, Hendersonville, and Brevard makes it a practical base for exploring multiple WNC courses on a single trip.",
       "website": "https://www.etowahvalley.com",
-      "phone": "tel:8288917141"
+      "phone": "tel:8288917022"
     },
     {
       "id": "maggie-valley-club",
@@ -207,7 +230,7 @@
       "featured": false,
       "summary": "Tucked between Plott Balsam and Great Balsam ranges at 3,400 feet. Every back-nine hole features a mountain ridgeline backdrop. The par-4 10th is 80 feet uphill with a creek at the dogleg.",
       "insider_tip": "Book early AM \u2014 afternoon cloud and wind from the Tennessee border degrades conditions fast.",
-      "website": "https://www.maggievalleyclub.com",
+      "website": "https://www.maggievalleyclub.com/golf/",
       "phone": "tel:8289266013",
       "address": "1819 Country Club Road, Maggie Valley, NC 28751"
     },
@@ -220,7 +243,7 @@
       "access": "resort",
       "yards": 6201,
       "slope": 128,
-      "rating": 69.6,
+      "rating": 70.2,
       "par": 70,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -251,7 +274,7 @@
       "insider_tip": "The back nine stretch of holes 13-17 is where rounds are won and lost. Survive The Spasm and you still have four more demanding holes to navigate.",
       "website": "https://www.springdalegolfnc.com",
       "phone": "tel:8282358451",
-      "address": "200 Golfwatch Road, Canton, NC 28716"
+      "address": "190 Golfwatch Rd, Canton, NC 28716"
     },
     {
       "id": "waynesville-inn",
@@ -270,8 +293,8 @@
       "featured": false,
       "summary": "Donald Ross designed the original 'Carolina 9' here in 1926. Bobby Weed's 2023 renovation fused the former 27 holes into a single cohesive 18, with the Ross front nine preserved and Weed's new back nine threading through a creek canyon. Par 70, slope 139 \u2014 deceptively demanding for a mountain resort. Open to members and overnight guests.",
       "insider_tip": "Request the Carolina/Blue Ridge combo. Back three of the Carolina nine play into a brutal afternoon headwind.",
-      "website": "https://www.thewaynesvilleinn.com",
-      "phone": "tel:8284524000",
+      "website": "https://www.waynesvilleinnandgolf.com",
+      "phone": "tel:8285641567",
       "address": "176 Country Club Drive, Waynesville, NC 28786"
     },
     {
@@ -281,9 +304,9 @@
       "county": "Buncombe",
       "subregion": "asheville-basin",
       "access": "private",
-      "yards": 6606,
-      "slope": 135,
-      "rating": 72.2,
+      "yards": 6676,
+      "slope": 138,
+      "rating": 72.3,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -313,29 +336,8 @@
       "summary": "Tom Fazio 1991 \u2014 Golf Digest #1 year-round course in WNC, currently ranked 27th in NC overall. 350 feet of elevation change through valley corridors; Fazio's routing produces level lies on all but six holes. One of Fazio's personal favorites \u2014 he lived in Hendersonville while designing it.",
       "insider_tip": "Par-3s can swing 40 yards in effective yardage due to dramatic downhill drops. Trust your eyes.",
       "website": "https://www.championhills.com",
-      "phone": "tel:8286977620",
+      "phone": "tel:8286961962",
       "address": "1 Hagen Drive, Hendersonville, NC 28739"
-    },
-    {
-      "id": "cliffs-valley-farms",
-      "name": "The Cliffs at Valley Farms",
-      "city": "Arden",
-      "county": "Buncombe",
-      "subregion": "asheville-basin",
-      "access": "private",
-      "yards": null,
-      "slope": null,
-      "rating": null,
-      "par": null,
-      "terrain": "rolling-foothills",
-      "helene": false,
-      "new2026": false,
-      "featured": false,
-      "summary": "The second Cliffs community course in the Basin \u2014 member-focused companion to Walnut Cove. Single network membership covers all seven Cliffs courses across WNC and the SC Upstate.",
-      "insider_tip": "Contact Cliffs Living directly for seasonal guest access policies.",
-      "website": "https://www.cliffsliving.com",
-      "phone": "tel:8626003490",
-      "address": "5 Cliffsridge Parkway, Arden, NC 28704"
     },
     {
       "id": "cliffs-walnut-cove",
@@ -344,7 +346,7 @@
       "county": "Buncombe",
       "subregion": "asheville-basin",
       "access": "private",
-      "yards": 7278,
+      "yards": 7167,
       "slope": 148,
       "rating": 75.2,
       "par": 71,
@@ -354,9 +356,9 @@
       "featured": false,
       "summary": "The only Jack Nicklaus Signature Design in WNC \u2014 debuted in tournament-ready condition, which is essentially unheard of. One Cliffs membership unlocks all seven network courses.",
       "insider_tip": "Confirm guest access well in advance \u2014 this property restricts outside play more tightly than other Cliffs courses.",
-      "website": "https://www.cliffsliving.com",
-      "phone": "tel:8286655000",
-      "address": "41 Club Village Way, Arden, NC 28704"
+      "website": "https://cliffsliving.com/golf-course/walnut-cove-golf/",
+      "phone": "tel:8286871738",
+      "address": "40 Club Village Way, Arden, NC 28704"
     },
     {
       "id": "country-club-asheville",
@@ -365,9 +367,9 @@
       "county": "Buncombe",
       "subregion": "asheville-basin",
       "access": "private",
-      "yards": 6677,
-      "slope": 133,
-      "rating": 72.3,
+      "yards": 6648,
+      "slope": 134,
+      "rating": 72.5,
       "par": 71,
       "terrain": "severe-mountain",
       "helene": false,
@@ -376,7 +378,7 @@
       "summary": "One of WNC's oldest private clubs, established in the 1890s. Donald Ross 1928 design climbs Sunset Mountain with sequences of uphill second shots into fast downhill greens. Highly active golf and social program \u2014 a true anchor of Asheville's private club scene.",
       "insider_tip": "Club selection from the tee is as important as from the fairway \u2014 this vertical track demands it.",
       "website": "https://www.ccofasheville.com",
-      "phone": "tel:8282527620",
+      "phone": "tel:8282589183",
       "address": "170 Windsor Road, Asheville, NC 28804"
     },
     {
@@ -387,8 +389,8 @@
       "subregion": "asheville-basin",
       "access": "private",
       "yards": 6509,
-      "slope": 130,
-      "rating": 71.2,
+      "slope": 140,
+      "rating": 71.1,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -397,7 +399,7 @@
       "summary": "Joe Lee 1982, in historic Flat Rock ('Little Charleston of the Mountains'). Notable for walkability and forgiving design philosophy \u2014 strategic bunkering rewards course management over power.",
       "insider_tip": "Hosts NC state amateur qualifiers \u2014 plays longer than yardage suggests due to the Flat Rock plateau elevation.",
       "website": "https://www.kenmure.com",
-      "phone": "tel:8286923006",
+      "phone": "tel:8286938506",
       "address": "100 Clubhouse Drive, Flat Rock, NC 28731"
     },
     {
@@ -406,7 +408,7 @@
       "city": "Waynesville",
       "county": "Haywood",
       "subregion": "asheville-basin",
-      "access": "private",
+      "access": "semi-private",
       "yards": 6904,
       "slope": 146,
       "rating": 72.4,
@@ -415,10 +417,10 @@
       "helene": false,
       "new2026": false,
       "featured": false,
-      "summary": "Bob Cupp 1986 (former chief designer for Jack Nicklaus for 14 years), with Jim Holmes. Slope 146, 6,904 yards \u2014 the numbers are real. Private residential club at 4,000 feet elevation in Waynesville with year-round play. Bentgrass tee-to-green. Named Most Challenging Course in WNC by the Asheville Citizen-Times.",
-      "insider_tip": "A yardage book is essential on a first visit. Five sets of tees make it accessible \u2014 most guests play the middle tees (6,551/134).",
-      "website": "https://www.laurelridgeexperience.com",
-      "phone": "tel:8284561234",
+      "summary": "Bob Cupp 1986 (former chief designer for Jack Nicklaus), with Jim Holmes. Slope 146, 6,904 yards at 4,000 feet \u2014 the numbers are real. Bentgrass tee-to-green, named Most Challenging Course in WNC by the Asheville Citizen-Times. Despite the private residential setting, the club explicitly welcomes public play Tuesday\u2013Sunday from 8am and Monday afternoons from noon. Tee times required; call for afternoon rates.",
+      "insider_tip": "Call ext. 171 for outside tee times \u2014 afternoon slots are the sweet spot for value. A yardage book is essential on a first visit; five tee sets make it accessible but the course bites hard from the tips.",
+      "website": "https://www.laurelridgeexperience.com/golf-course",
+      "phone": "tel:8284520545",
       "address": "49 Cupp Lane, Waynesville, NC 28786"
     },
     {
@@ -1727,5 +1729,5 @@
       "phone": "tel:8285262165"
     }
   ],
-  "notes": "June 4 2026 audit v3: Asheville Basin corrections applied from 18Birdies verification. tee_times field removed from all entries. Phone numbers verified or flagged. Broadmoor stats set null pending post-Helene redesign rating."
+  "notes": "June 4 2026 audit v7: Final Asheville Basin corrections \u2014 Connestee Falls stats/address, Etowah Valley phone/stats/address, Cummings Cove scorecard stats/address, Lake Junaluska address/zip, Maggie Valley website updated. Chestnut Mountain address confirmed correct from course's own website (88 Country Club Rd = golf course; 22 Vista Falls Rd = community gate)."
 }
