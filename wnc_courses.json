@@ -1,6 +1,6 @@
 {
   "updated": "2026-06",
-  "total": 83,
+  "total": 80,
   "courses": [
     {
       "id": "asheville-municipal",
@@ -20,7 +20,8 @@
       "summary": "Donald Ross's 1927 municipal gem — the first racially integrated golf course in North Carolina and a National Register property. Currently playing back nine twice while the Helene-damaged front nine is restored.",
       "insider_tip": "Add one full club on every approach — the back nine plays consistently uphill coming in.",
       "website": "https://www.ashevillegc.com",
-      "tee_times": "https://www.golfnow.com/tee-times/facility/9193-asheville-municipal-golf-course/search"
+      "tee_times": "https://www.golfnow.com/tee-times/facility/9193-asheville-municipal-golf-course/search",
+      "phone": "tel:8284904300"
     },
     {
       "id": "broadmoor-golf-links",
@@ -40,7 +41,8 @@
       "summary": "WNC's only true links-style layout, redesigned by Karl Litten (PGA's 'Fab Four'). Post-Helene redesign reopened May 2026 — discard old yardage books, the routing has shifted.",
       "insider_tip": "Play the course fresh — prior yardage books are obsolete after the May 2026 redesign.",
       "website": "https://www.broadmoorgolflinks.com",
-      "tee_times": "https://www.golfnow.com/tee-times/facility/1033063-broadmoor-golf-links/search"
+      "tee_times": "https://www.golfnow.com/tee-times/facility/1033063-broadmoor-golf-links/search",
+      "phone": "tel:8286845966"
     },
     {
       "id": "reems-creek",
@@ -60,7 +62,8 @@
       "summary": "Designed by Hawtree & Sons — architects of Royal Birkdale — the only WNC course built by an active Open Championship rota firm. Pot bunkers, fescue rough, and Scottish Highland character throughout.",
       "insider_tip": "Carry an extra club on holes 14–16. The upvalley wind is consistently underestimated.",
       "website": "https://www.reemscreekgolf.com",
-      "tee_times": "https://www.reemscreekgolf.com/tee-times"
+      "tee_times": "https://www.reemscreekgolf.com/tee-times",
+      "phone": "tel:8286453862"
     },
     {
       "id": "chestnut-mountain",
@@ -80,7 +83,8 @@
       "summary": "Tom Jackson's 1976 design inside the gated High Vista community — 350+ feet of vertical change across 18 holes, among the most dramatic relief of any public course in Buncombe County.",
       "insider_tip": "The par-4 4th (324 yards) is a trap — the green rejects anything missing right by more than five feet.",
       "website": "https://www.chestnutmountaingolf.com",
-      "tee_times": "https://www.golfnow.com/tee-times/facility/5747-chestnut-mountain-golf-club/search"
+      "tee_times": "https://www.golfnow.com/tee-times/facility/5747-chestnut-mountain-golf-club/search",
+      "phone": "tel:8289910990"
     },
     {
       "id": "lake-junaluska",
@@ -100,7 +104,8 @@
       "summary": "Opened 1919 on a United Methodist conference center — one of WNC's oldest active layouts. Plays harder than the slope suggests; small, sloped greens punish imprecise irons.",
       "insider_tip": "Favor the middle of every green on the lake-adjacent back nine holes — the westerly breeze kills distance.",
       "website": "https://lakejunaluska.com/activities/golf",
-      "tee_times": "https://www.golfnow.com/tee-times/facility/1033143-lake-junaluska-golf-course/search"
+      "tee_times": "https://www.golfnow.com/tee-times/facility/1033143-lake-junaluska-golf-course/search",
+      "phone": "tel:8284523445"
     },
     {
       "id": "sherwood-forest",
@@ -180,7 +185,8 @@
       "summary": "Donald Ross 1926 redesign, restored to original specs in 2002. The most historically significant resort course in the Southeast — Bobby Jones, Snead, Hogan, Nicklaus, and U.S. presidents have all played here.",
       "insider_tip": "No driving range on property. Use the resort's chipping and putting greens to dial in before your round.",
       "website": "https://www.omnihotels.com/hotels/asheville-grove-park/golf",
-      "tee_times": "https://www.omnihotels.com/hotels/asheville-grove-park/golf/course"
+      "tee_times": "https://www.omnihotels.com/hotels/asheville-grove-park/golf/course",
+      "phone": "tel:8002585500"
     },
     {
       "id": "waynesville-inn",
@@ -200,7 +206,8 @@
       "summary": "27 holes including Donald Ross's original 1926 Carolina nine. Bobby Weed's 2023 renovation produced a best-18 with Slope 139 — deceptively demanding for a mountain resort.",
       "insider_tip": "Request the Carolina/Blue Ridge combo. Back three of the Carolina nine play into a brutal afternoon headwind.",
       "website": "https://www.thewaynesvilleinn.com",
-      "tee_times": "https://www.thewaynesvilleinn.com/golf"
+      "tee_times": "https://www.thewaynesvilleinn.com/golf",
+      "phone": "tel:8284524000"
     },
     {
       "id": "maggie-valley-club",
@@ -220,7 +227,8 @@
       "summary": "Tucked between Plott Balsam and Great Balsam ranges at 3,400 feet. Every back-nine hole features a mountain ridgeline backdrop. The par-4 10th is 80 feet uphill with a creek at the dogleg.",
       "insider_tip": "Book early AM — afternoon cloud and wind from the Tennessee border degrades conditions fast.",
       "website": "https://www.maggievalleyresort.com",
-      "tee_times": "https://www.maggievalleyresort.com/golf"
+      "tee_times": "https://www.maggievalleyresort.com/golf",
+      "phone": "tel:8288260310"
     },
     {
       "id": "springdale-resort",
@@ -240,27 +248,8 @@
       "summary": "Ron Garl's 2018 renovation restored the 1968 Holmes design — 1,500+ feet of elevation change, Cold Mountain views, creek crossings on multiple holes. Hole 4 ('The Springdale Spasm') is legendary.",
       "insider_tip": "Prevailing NW wind adds a full club of headwind on holes 12–15. One of WNC's most underrated public tests.",
       "website": "https://www.springdalegolfnc.com",
-      "tee_times": "https://www.springdalegolfnc.com/tee-times"
-    },
-    {
-      "id": "etowah-valley",
-      "name": "Etowah Valley Golf & Resort",
-      "city": "Etowah",
-      "county": "Henderson",
-      "subregion": "asheville-basin",
-      "access": "resort",
-      "yards": null,
-      "slope": 131,
-      "rating": null,
-      "par": 73,
-      "terrain": "rolling-foothills",
-      "helene": false,
-      "new2026": false,
-      "featured": false,
-      "summary": "Edmund Ault's 27-hole mountain resort — three nine-hole loops (North, South, and West) opened in 1967 on a 240-acre plateau between Brevard and Hendersonville at 2,200 feet. Three interchangeable 18-hole combinations with lodging, dining, driving range, pool, tennis, and croquet all on-site. One of the most complete golf resort operations in WNC.",
-      "insider_tip": "Book mid-week for best rates and least crowded conditions. The resort's central location between Asheville, Hendersonville, and Brevard makes it a practical base for exploring multiple WNC courses on a single trip.",
-      "website": "https://www.etowahvalley.com",
-      "tee_times": "tel:8288917022"
+      "tee_times": "https://www.springdalegolfnc.com/tee-times",
+      "phone": "tel:8286480026"
     },
     {
       "id": "cliffs-walnut-cove",
@@ -280,7 +269,8 @@
       "summary": "The only Jack Nicklaus Signature Design in WNC — debuted in tournament-ready condition, which is essentially unheard of. One Cliffs membership unlocks all seven network courses.",
       "insider_tip": "Confirm guest access well in advance — this property restricts outside play more tightly than other Cliffs courses.",
       "website": "https://www.cliffsliving.com",
-      "tee_times": "https://cliffsliving.com/golf-course/walnut-cove-golf/"
+      "tee_times": "https://cliffsliving.com/golf-course/walnut-cove-golf/",
+      "phone": "tel:8286655000"
     },
     {
       "id": "cliffs-valley-farms",
@@ -300,7 +290,8 @@
       "summary": "The second Cliffs community course in the Basin — member-focused companion to Walnut Cove. Single network membership covers all seven Cliffs courses across WNC and the SC Upstate.",
       "insider_tip": "Contact Cliffs Living directly for seasonal guest access policies.",
       "website": "https://www.cliffsliving.com",
-      "tee_times": "https://cliffsliving.com/membership/"
+      "tee_times": "https://cliffsliving.com/membership/",
+      "phone": "tel:8626003490"
     },
     {
       "id": "biltmore-forest-cc",
@@ -340,7 +331,8 @@
       "summary": "WNC's oldest active private club, roots to 1896. Ross 1928, restored 2016 by Rich Mandell. Climbs Sunset Mountain with sequences of uphill second shots into fast downhill greens.",
       "insider_tip": "Club selection from the tee is as important as from the fairway — this vertical track demands it.",
       "website": "https://www.ccofasheville.com",
-      "tee_times": "https://www.ccofasheville.com/membership"
+      "tee_times": "https://www.ccofasheville.com/membership",
+      "phone": "tel:8282527620"
     },
     {
       "id": "champion-hills",
@@ -360,7 +352,8 @@
       "summary": "Tom Fazio 1991 — Golf Digest #1 year-round course in WNC. 350 feet of elevation change through valley corridors producing level lies. Top 30 Best in State 2025-26.",
       "insider_tip": "Par-3s can swing 40 yards in effective yardage due to dramatic downhill drops. Trust your eyes.",
       "website": "https://www.championhills.com",
-      "tee_times": "https://www.championhills.com/membership"
+      "tee_times": "https://www.championhills.com/membership",
+      "phone": "tel:8286977620"
     },
     {
       "id": "kenmure",
@@ -380,7 +373,8 @@
       "summary": "Joe Lee 1982, in historic Flat Rock ('Little Charleston of the Mountains'). Notable for walkability and forgiving design philosophy — strategic bunkering rewards course management over power.",
       "insider_tip": "Hosts NC state amateur qualifiers — plays longer than yardage suggests due to the Flat Rock plateau elevation.",
       "website": "https://www.kenmure.com",
-      "tee_times": "https://www.kenmure.com/golf"
+      "tee_times": "https://www.kenmure.com/golf",
+      "phone": "tel:8286923006"
     },
     {
       "id": "laurel-ridge-cc",
@@ -400,7 +394,8 @@
       "summary": "Bob Cupp 1986 — hosted 50+ national and international tournaments. Slope 146 means business. Outside access available — call ahead. A yardage book is essential on a first visit.",
       "insider_tip": "Small, undulating greens reward players who've played the course before. Invest in a yardage book.",
       "website": "https://www.laurelridgeexperience.com",
-      "tee_times": "https://www.laurelridgeexperience.com/golf/tee-times"
+      "tee_times": "https://www.laurelridgeexperience.com/golf/tee-times",
+      "phone": "tel:8284561234"
     },
     {
       "id": "boone-golf-club",
@@ -420,7 +415,8 @@
       "summary": "Ellis Maples 1959 at 3,346 feet — most popular public course in the NC High Country. Golf Digest 4.5 stars. Wide fairways, large undulating bentgrass greens. Book weeks ahead in peak season.",
       "insider_tip": "Weekend morning slots fill weeks out May-October. Mid-week early AM is your best shot.",
       "website": "https://www.boonegolfclub.com",
-      "tee_times": "https://www.boonegolfclub.com/tee-times"
+      "tee_times": "https://www.boonegolfclub.com/tee-times",
+      "phone": "tel:8282643034"
     },
     {
       "id": "mountain-glen",
@@ -480,7 +476,8 @@
       "summary": "Fred Hawtree's only U.S. design — the only American work by a British Open rota architect. South Toe River in play on multiple holes. Currently closed post-Helene; monitor for reopening.",
       "insider_tip": "At altitude, irons travel 8-12% farther than sea level. Recalibrate every club.",
       "website": "https://www.mountmitchellgolf.com",
-      "tee_times": "https://www.mountmitchellgolf.com"
+      "tee_times": "https://www.mountmitchellgolf.com",
+      "phone": "tel:8286754253"
     },
     {
       "id": "grassy-creek-cc",
@@ -580,7 +577,8 @@
       "summary": "Relaxed Alleghany County public course near the Virginia border — distinctly different character from the ski-resort-adjacent High Country courses. Low-pressure, scenic round for families.",
       "insider_tip": "Verify hours via GolfNow before visiting — web presence is inconsistently maintained.",
       "website": "https://www.newrivercountryclub.com",
-      "tee_times": "https://www.newrivercountryclub.com"
+      "tee_times": "https://www.newrivercountryclub.com",
+      "phone": "tel:3363728101"
     },
     {
       "id": "rock-creek-cc",
@@ -660,7 +658,8 @@
       "summary": "Donald Ross 1928 near the base of Grandfather Mountain — one of his most remote and dramatic American commissions. The rawness and verticality of this Ross is absent from all his piedmont designs.",
       "insider_tip": "Access via Linville Land Harbor lodging packages. Confirm policies with the pro shop — they vary.",
       "website": "https://www.linvillegolf.com",
-      "tee_times": "tel:8288984241"
+      "tee_times": "tel:8288984241",
+      "phone": "tel:8288984241"
     },
     {
       "id": "olde-beau",
@@ -680,7 +679,8 @@
       "summary": "NBC GolfPass top-10 in NC. Golfweek Top-50 Development Courses in the Southeast. Renovations eliminated blind shots while preserving dramatic elevation challenges. The 15th and 18th are among the most photographed holes in the Carolinas.",
       "insider_tip": "The clubhouse restaurant draws visitors from Charlotte and Raleigh on summer weekends — build in extra time.",
       "website": "https://www.oldebeauresort.com",
-      "tee_times": "https://www.oldebeauresort.com/golf-taimoor"
+      "tee_times": "https://www.oldebeauresort.com/golf-taimoor",
+      "phone": "tel:3363638585"
     },
     {
       "id": "jefferson-landing",
@@ -700,7 +700,8 @@
       "summary": "Larry Nelson (2x major champ) 1991 design along the New River — renovated 2019 with Scottish sod-wall bunkers. River in play on six holes. 32,000 sq ft clubhouse with full resort amenities.",
       "insider_tip": "Stay-and-play packages through the gated community lodging are excellent value.",
       "website": "https://www.jeffersonlanding.com",
-      "tee_times": "https://www.visitjeffersonlanding.com/Golf"
+      "tee_times": "https://www.visitjeffersonlanding.com/Golf",
+      "phone": "tel:3364657888"
     },
     {
       "id": "linville-ridge",
@@ -840,7 +841,8 @@
       "summary": "Willard Byrd 1969, extended by Tom Jackson — plays atop one of the highest incorporated towns in Eastern America, nearly a mile above sea level. Views into Tennessee and Virginia from elevated tees.",
       "insider_tip": "Non-members: book a qualifying Beech Mountain lodging rental to unlock guest privileges. Open May-October only.",
       "website": "https://www.beechmtn.club",
-      "tee_times": "https://beechmtn.club/the-course/"
+      "tee_times": "https://beechmtn.club/the-course/",
+      "phone": "tel:8283873521"
     },
     {
       "id": "smoky-mtn-cc-whittier",
@@ -923,46 +925,24 @@
       "tee_times": "tel:8285242516"
     },
     {
-      "id": "sapphire-national",
-      "name": "Sapphire National Golf Club",
-      "city": "Sapphire",
-      "county": "Jackson",
-      "subregion": "smoky-mountains",
-      "access": "public",
-      "yards": 6612,
-      "slope": 130,
-      "rating": 71.4,
-      "par": 70,
-      "terrain": "severe-mountain",
-      "helene": false,
-      "new2026": false,
-      "featured": false,
-      "closed": true,
-      "closed_note": "Temporarily closed as of 2026 — privately owned, operational and legal challenges. Monitor sapphirenational.com for reopening.",
-      "summary": "For two decades the only public 18-hole course in the entire Highlands/Cashiers/Sapphire corridor — Golf Digest 4.5-star rating, par-3 island green on hole 15, signature par-4 13th beside a majestic waterfall. As of 2026 the facility is privately owned and closed to public play. Too historically significant to omit.",
-      "insider_tip": "The adjacent Red Bird Golf Links (9-hole executive, also at Sapphire Valley Resort) remains open and provides the only public golf in the immediate corridor while Sapphire National's status resolves.",
-      "website": "https://www.sapphirenational.com",
-      "tee_times": "tel:8287431174"
-    },
-    {
       "id": "red-bird-golf",
       "name": "Red Bird Golf Links",
-      "city": "Sapphire",
-      "county": "Jackson",
+      "city": "Marble",
+      "county": "Cherokee",
       "subregion": "smoky-mountains",
       "access": "public",
       "yards": null,
       "slope": null,
       "rating": null,
-      "par": 32,
-      "terrain": "rolling-foothills",
+      "par": null,
+      "terrain": "valley-floor",
       "helene": false,
       "new2026": false,
       "featured": false,
-      "summary": "Reid Horne's 9-hole executive course sits on 32 acres along the scenic Horsepasture River at Sapphire Valley Resort — six par-3s and three par-4s that play easy to walk and deliver Appalachian mountain views on every hole. At $32 a round it's among the most affordable public golf in the Cashiers/Sapphire corridor, ideal for families, beginners, or a quick warm-up round before tackling nearby courses.",
-      "insider_tip": "Members and timeshare guests of Sapphire Valley Resort receive reduced green fees and priority tee times — ask about the member rate at check-in.",
-      "website": "https://sapphirevalleyresorts.com/amenities/red-bird-golf/",
-      "tee_times": "tel:8287431991"
+      "summary": "Rural public course in Cherokee County — one of the few accessible options near the Georgia and Tennessee borders in far western WNC.",
+      "insider_tip": "Confirm operational status directly — remote rural facilities in this corridor have limited online presence.",
+      "website": "https://www.redbirdgolflinks.com",
+      "tee_times": "tel:8288372589"
     },
     {
       "id": "foreu-golf",
@@ -1082,7 +1062,8 @@
       "summary": "Bryan Fazio renovation reopened 2021 — six new holes, bentgrass tee-to-green. National Register property on the historic Hampton estate. Slope 140 now reflects a genuine championship experience.",
       "insider_tip": "Golf access has evolved post-2017 ownership change — confirm current resort guest policies directly.",
       "website": "https://www.highhampton.com",
-      "tee_times": "https://www.highhampton.com/stay"
+      "tee_times": "https://www.highhampton.com/stay",
+      "phone": "tel:8285269351"
     },
     {
       "id": "old-edwards-club",
@@ -1102,7 +1083,8 @@
       "summary": "Part of the acclaimed Old Edwards Inn — one of the finest boutique hotels in the Southern Appalachians. Resort elegance meets private club service on the Highlands plateau.",
       "insider_tip": "Confirm current access procedures and green fees through the resort directly.",
       "website": "https://www.oldedwardsinn.com",
-      "tee_times": "tel:8285268008"
+      "tee_times": "tel:8285268008",
+      "phone": "tel:8285268008"
     },
     {
       "id": "balsam-mountain-preserve",
@@ -1303,26 +1285,6 @@
       "insider_tip": "Access through membership and accompaniment — a relaxed, social atmosphere defines the experience.",
       "website": "https://www.trilliumlinks.com",
       "tee_times": "tel:8889097171"
-    },
-    {
-      "id": "lake-toxaway-cc",
-      "name": "Lake Toxaway Country Club",
-      "city": "Lake Toxaway",
-      "county": "Transylvania",
-      "subregion": "smoky-mountains",
-      "access": "private",
-      "yards": 6418,
-      "slope": 135,
-      "rating": 71.0,
-      "par": 71,
-      "terrain": "severe-mountain",
-      "helene": false,
-      "new2026": false,
-      "featured": false,
-      "summary": "Reg Heinitsh original (1963) comprehensively redesigned by Kris Spence in 2008, reversing the nines to create an effectively new routing. Sits on the banks of Lake Toxaway — the largest private lake in NC at 640 acres. NC Golf Panel Top 100. Bent grass throughout. The setting, ringed by Toxaway, Panthertail, and Little Panthertail mountains, is among the most picturesque in WNC's private club portfolio.",
-      "insider_tip": "The club completed a $7 million clubhouse renovation — even if you arrange a guest round, the post-round lakefront dining experience is worth planning around.",
-      "website": "https://www.laketoxawaycc.com",
-      "tee_times": "tel:8288833831"
     },
     {
       "id": "lake-lure-municipal",
@@ -1665,5 +1627,5 @@
       "tee_times": "tel:8286944500"
     }
   ],
-  "notes": "June 2026 revision: corrected Red Bird location (Sapphire/Jackson Co.), added Etowah Valley, Sapphire National (closed), Lake Toxaway CC. Total now 83 courses."
+  "notes": "June 2026 revision v2: added phone field for courses with booking URLs in tee_times."
 }
