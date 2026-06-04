@@ -1,6 +1,6 @@
 {
   "updated": "2026-06",
-  "total": 80,
+  "total": 83,
   "courses": [
     {
       "id": "asheville-municipal",
@@ -21,7 +21,8 @@
       "insider_tip": "Add one full club on every approach — the back nine plays consistently uphill coming in.",
       "website": "https://www.ashevillegc.com",
       "tee_times": "https://www.golfnow.com/tee-times/facility/9193-asheville-municipal-golf-course/search",
-      "phone": "tel:8284904300"
+      "phone": "tel:8284904300",
+      "address": "226 Fairway Drive, Asheville, NC 28805"
     },
     {
       "id": "broadmoor-golf-links",
@@ -42,7 +43,8 @@
       "insider_tip": "Play the course fresh — prior yardage books are obsolete after the May 2026 redesign.",
       "website": "https://www.broadmoorgolflinks.com",
       "tee_times": "https://www.golfnow.com/tee-times/facility/1033063-broadmoor-golf-links/search",
-      "phone": "tel:8286845966"
+      "phone": "tel:8286845966",
+      "address": "101 French Broad Lane, Fletcher, NC 28732"
     },
     {
       "id": "reems-creek",
@@ -63,7 +65,8 @@
       "insider_tip": "Carry an extra club on holes 14–16. The upvalley wind is consistently underestimated.",
       "website": "https://www.reemscreekgolf.com",
       "tee_times": "https://www.reemscreekgolf.com/tee-times",
-      "phone": "tel:8286453862"
+      "phone": "tel:8286453862",
+      "address": "36 Pink Fox Cove Road, Weaverville, NC 28787"
     },
     {
       "id": "chestnut-mountain",
@@ -84,7 +87,8 @@
       "insider_tip": "The par-4 4th (324 yards) is a trap — the green rejects anything missing right by more than five feet.",
       "website": "https://www.chestnutmountaingolf.com",
       "tee_times": "https://www.golfnow.com/tee-times/facility/5747-chestnut-mountain-golf-club/search",
-      "phone": "tel:8289910990"
+      "phone": "tel:8289910990",
+      "address": "88 Country Club Road, Mills River, NC 28759"
     },
     {
       "id": "lake-junaluska",
@@ -105,7 +109,8 @@
       "insider_tip": "Favor the middle of every green on the lake-adjacent back nine holes — the westerly breeze kills distance.",
       "website": "https://lakejunaluska.com/activities/golf",
       "tee_times": "https://www.golfnow.com/tee-times/facility/1033143-lake-junaluska-golf-course/search",
-      "phone": "tel:8284523445"
+      "phone": "tel:8284523445",
+      "address": "18 Golf Course Road, Lake Junaluska, NC 28745"
     },
     {
       "id": "sherwood-forest",
@@ -125,7 +130,8 @@
       "summary": "Affordable, no-frills Henderson County local favorite. Rolling terrain, tree-lined fairways, bentgrass greens. Call ahead — online info is inconsistently maintained.",
       "insider_tip": "Always call before visiting — hours and conditions change seasonally without notice.",
       "website": "https://www.sherwoodforestgolfclub.com",
-      "tee_times": "https://www.golfnow.com"
+      "tee_times": "https://www.golfnow.com",
+      "address": "200 Sherwood Forest Drive, Hendersonville, NC 28792 (verify)"
     },
     {
       "id": "connestee-falls",
@@ -145,7 +151,8 @@
       "summary": "George W. Cobb 1972 design — same architect as Augusta's Par-3 Course. Multiple creek crossings, natural terrain hazards. Outside access limited to non-peak morning slots.",
       "insider_tip": "Book direct through the pro shop — weekend member times lock up early.",
       "website": "https://www.connesteeclub.com",
-      "tee_times": "tel:8288859100"
+      "tee_times": "tel:8288859100",
+      "address": "33 Connestee Trail, Brevard, NC 28712"
     },
     {
       "id": "cummings-cove",
@@ -165,7 +172,8 @@
       "summary": "Golf Digest 'Best Renovation of Year' 2006. Robert Cupp design plays 3-4 strokes harder than yardage implies. One par-3 tees from a cliff with a 60-foot drop to the green.",
       "insider_tip": "Mid-week only for outside access. Back nine plays two full clubs heavier than the yardage book.",
       "website": "https://www.cummingscove.com/golf",
-      "tee_times": "tel:8288919412"
+      "tee_times": "tel:8288919412",
+      "address": "925 Lakeledge Court, Hendersonville, NC 28739"
     },
     {
       "id": "omni-grove-park",
@@ -186,7 +194,8 @@
       "insider_tip": "No driving range on property. Use the resort's chipping and putting greens to dial in before your round.",
       "website": "https://www.omnihotels.com/hotels/asheville-grove-park/golf",
       "tee_times": "https://www.omnihotels.com/hotels/asheville-grove-park/golf/course",
-      "phone": "tel:8002585500"
+      "phone": "tel:8002585500",
+      "address": "290 Macon Avenue, Asheville, NC 28804"
     },
     {
       "id": "waynesville-inn",
@@ -207,7 +216,8 @@
       "insider_tip": "Request the Carolina/Blue Ridge combo. Back three of the Carolina nine play into a brutal afternoon headwind.",
       "website": "https://www.thewaynesvilleinn.com",
       "tee_times": "https://www.thewaynesvilleinn.com/golf",
-      "phone": "tel:8284524000"
+      "phone": "tel:8284524000",
+      "address": "176 Country Club Drive, Waynesville, NC 28786"
     },
     {
       "id": "maggie-valley-club",
@@ -228,7 +238,8 @@
       "insider_tip": "Book early AM — afternoon cloud and wind from the Tennessee border degrades conditions fast.",
       "website": "https://www.maggievalleyresort.com",
       "tee_times": "https://www.maggievalleyresort.com/golf",
-      "phone": "tel:8288260310"
+      "phone": "tel:8288260310",
+      "address": "1819 Country Club Road, Maggie Valley, NC 28751"
     },
     {
       "id": "springdale-resort",
@@ -249,7 +260,29 @@
       "insider_tip": "Prevailing NW wind adds a full club of headwind on holes 12–15. One of WNC's most underrated public tests.",
       "website": "https://www.springdalegolfnc.com",
       "tee_times": "https://www.springdalegolfnc.com/tee-times",
-      "phone": "tel:8286480026"
+      "phone": "tel:8286480026",
+      "address": "200 Golfwatch Road, Canton, NC 28716"
+    },
+    {
+      "id": "etowah-valley",
+      "name": "Etowah Valley Golf & Resort",
+      "city": "Etowah",
+      "county": "Henderson",
+      "subregion": "asheville-basin",
+      "access": "resort",
+      "yards": null,
+      "slope": 131,
+      "rating": null,
+      "par": 73,
+      "terrain": "rolling-foothills",
+      "helene": false,
+      "new2026": false,
+      "featured": false,
+      "address": "470 Brickyard Road, Etowah, NC 28729",
+      "summary": "Edmund Ault's 27-hole mountain resort — three nine-hole loops (North, South, and West) opened in 1967 on a 240-acre plateau between Brevard and Hendersonville at 2,200 feet. Three interchangeable 18-hole combinations with lodging, dining, driving range, pool, tennis, and croquet all on-site. One of the most complete golf resort operations in WNC.",
+      "insider_tip": "Book mid-week for best rates and least crowded conditions. The resort's central location between Asheville, Hendersonville, and Brevard makes it a practical base for exploring multiple WNC courses on a single trip.",
+      "website": "https://www.etowahvalley.com",
+      "tee_times": "tel:8288917022"
     },
     {
       "id": "cliffs-walnut-cove",
@@ -270,7 +303,8 @@
       "insider_tip": "Confirm guest access well in advance — this property restricts outside play more tightly than other Cliffs courses.",
       "website": "https://www.cliffsliving.com",
       "tee_times": "https://cliffsliving.com/golf-course/walnut-cove-golf/",
-      "phone": "tel:8286655000"
+      "phone": "tel:8286655000",
+      "address": "41 Club Village Way, Arden, NC 28704"
     },
     {
       "id": "cliffs-valley-farms",
@@ -291,7 +325,8 @@
       "insider_tip": "Contact Cliffs Living directly for seasonal guest access policies.",
       "website": "https://www.cliffsliving.com",
       "tee_times": "https://cliffsliving.com/membership/",
-      "phone": "tel:8626003490"
+      "phone": "tel:8626003490",
+      "address": "5 Cliffsridge Parkway, Arden, NC 28704"
     },
     {
       "id": "biltmore-forest-cc",
@@ -311,7 +346,8 @@
       "summary": "Donald Ross 1922. Platinum Clubs of America (top 3% nationally). $2.5M restoration returned original green contours. Access strictly by invitation — this one you earn through connections.",
       "insider_tip": "Inverted-saucer Ross greens shed everything that doesn't hold the correct quadrant.",
       "website": "https://www.biltmoreforestcc.com",
-      "tee_times": "tel:8282741261"
+      "tee_times": "tel:8282741261",
+      "address": "31 Stuyvesant Road, Asheville, NC 28803"
     },
     {
       "id": "country-club-asheville",
@@ -332,7 +368,8 @@
       "insider_tip": "Club selection from the tee is as important as from the fairway — this vertical track demands it.",
       "website": "https://www.ccofasheville.com",
       "tee_times": "https://www.ccofasheville.com/membership",
-      "phone": "tel:8282527620"
+      "phone": "tel:8282527620",
+      "address": "170 Windsor Road, Asheville, NC 28804"
     },
     {
       "id": "champion-hills",
@@ -353,7 +390,8 @@
       "insider_tip": "Par-3s can swing 40 yards in effective yardage due to dramatic downhill drops. Trust your eyes.",
       "website": "https://www.championhills.com",
       "tee_times": "https://www.championhills.com/membership",
-      "phone": "tel:8286977620"
+      "phone": "tel:8286977620",
+      "address": "1 Hagen Drive, Hendersonville, NC 28739"
     },
     {
       "id": "kenmure",
@@ -374,7 +412,8 @@
       "insider_tip": "Hosts NC state amateur qualifiers — plays longer than yardage suggests due to the Flat Rock plateau elevation.",
       "website": "https://www.kenmure.com",
       "tee_times": "https://www.kenmure.com/golf",
-      "phone": "tel:8286923006"
+      "phone": "tel:8286923006",
+      "address": "100 Clubhouse Drive, Flat Rock, NC 28731"
     },
     {
       "id": "laurel-ridge-cc",
@@ -395,7 +434,8 @@
       "insider_tip": "Small, undulating greens reward players who've played the course before. Invest in a yardage book.",
       "website": "https://www.laurelridgeexperience.com",
       "tee_times": "https://www.laurelridgeexperience.com/golf/tee-times",
-      "phone": "tel:8284561234"
+      "phone": "tel:8284561234",
+      "address": "49 Cupp Lane, Waynesville, NC 28786"
     },
     {
       "id": "boone-golf-club",
@@ -416,7 +456,8 @@
       "insider_tip": "Weekend morning slots fill weeks out May-October. Mid-week early AM is your best shot.",
       "website": "https://www.boonegolfclub.com",
       "tee_times": "https://www.boonegolfclub.com/tee-times",
-      "phone": "tel:8282643034"
+      "phone": "tel:8282643034",
+      "address": "433 Fairway Drive, Boone, NC 28607"
     },
     {
       "id": "mountain-glen",
@@ -436,7 +477,8 @@
       "summary": "George Cobb 1963 — first public 18-hole course built in the NC High Country. Gentle meadow front nine tightens into strategic woodland back nine. Rarely exceeds 85°F even in August.",
       "insider_tip": "July-August tee times here are a premium escape when valley courses are sweltering.",
       "website": "https://www.mountainglengolf.com",
-      "tee_times": "tel:8287335804"
+      "tee_times": "tel:8287335804",
+      "address": "1 Club House Drive, Newland, NC 28657"
     },
     {
       "id": "mountain-aire",
@@ -456,7 +498,8 @@
       "summary": "Ashe County gem since 1952 — 30 min from Boone, deliberately removed from the resort scene. One par-3 produces the sensation of 'hitting off the edge of the world' from an elevated tee.",
       "insider_tip": "Weekday morning rounds offer fastest pace and peak mountain light on the fairways.",
       "website": "https://www.mountainairegolf.com",
-      "tee_times": "tel:3368774716"
+      "tee_times": "tel:3368774716",
+      "address": "1396 Fairway Ridge Drive, West Jefferson, NC 28694"
     },
     {
       "id": "mount-mitchell-gc",
@@ -477,7 +520,8 @@
       "insider_tip": "At altitude, irons travel 8-12% farther than sea level. Recalibrate every club.",
       "website": "https://www.mountmitchellgolf.com",
       "tee_times": "https://www.mountmitchellgolf.com",
-      "phone": "tel:8286754253"
+      "phone": "tel:8286754253",
+      "address": "11484 State Highway 80 South, Burnsville, NC 28714"
     },
     {
       "id": "grassy-creek-cc",
@@ -497,7 +541,8 @@
       "summary": "Off-the-beaten-path Mitchell County course in the South Toe River corridor. Dramatically undulating terrain, genuine Blue Ridge backdrop. Call ahead — locally operated with limited online presence.",
       "insider_tip": "Always call to confirm hours and conditions before making the mountain drive.",
       "website": "https://www.grassycreekcc.com",
-      "tee_times": "tel:8287657436"
+      "tee_times": "tel:8287657436",
+      "address": "2360 Swiss Pine Lake Drive, Spruce Pine, NC 28777"
     },
     {
       "id": "linville-falls-gc",
@@ -517,7 +562,8 @@
       "summary": "Casual Parkway-corridor layout near Linville Falls and the Blue Ridge Parkway. Practical public option for Parkway travelers wanting a round without resort pricing.",
       "insider_tip": "Confirm hours before visiting — irregular outside peak season.",
       "website": "https://www.linvillefallsgolf.com",
-      "tee_times": "https://www.linvillefallsgolf.com"
+      "tee_times": "https://www.linvillefallsgolf.com",
+      "address": "Linville Falls Area, NC (verify exact address)"
     },
     {
       "id": "sugar-mountain",
@@ -537,7 +583,8 @@
       "summary": "The highest publicly accessible golf in the High Country — nearly 5,000 feet elevation. Executive par-64 layout on Sugar Mountain resort. Open April-October. Best value play in the region.",
       "insider_tip": "Local residents of Avery, Ashe, Watauga, Mitchell counties get a heavily discounted annual pass.",
       "website": "https://www.seesugar.com/golf",
-      "tee_times": "tel:8288986464"
+      "tee_times": "tel:8288986464",
+      "address": "1054 Sugar Mountain Drive, Banner Elk, NC 28604"
     },
     {
       "id": "stone-mountain-gc",
@@ -557,7 +604,8 @@
       "summary": "Adjacent to Stone Mountain State Park — the stone dome face is visible from multiple holes, giving this affordable layout an otherworldly visual backdrop that no landscaping budget could buy.",
       "insider_tip": "Pair with a hike in Stone Mountain State Park for an ideal WNC day trip.",
       "website": "https://www.pga.com/play/nc/traphill/stone-mountain-golf-club/1102488",
-      "tee_times": "tel:3369574422"
+      "tee_times": "tel:3369574422",
+      "address": "155 View Point Drive, Traphill, NC 28685"
     },
     {
       "id": "new-river-cc",
@@ -578,7 +626,8 @@
       "insider_tip": "Verify hours via GolfNow before visiting — web presence is inconsistently maintained.",
       "website": "https://www.newrivercountryclub.com",
       "tee_times": "https://www.newrivercountryclub.com",
-      "phone": "tel:3363728101"
+      "phone": "tel:3363728101",
+      "address": "Alleghany County area, Sparta, NC 28675 (confirm address)"
     },
     {
       "id": "rock-creek-cc",
@@ -598,7 +647,8 @@
       "summary": "Semi-private Wilkes County club in the foothills transition zone between High Country and the Piedmont. Member-priority with outside tee times at reasonable rates.",
       "insider_tip": "Call the pro shop directly for current outside access policies.",
       "website": "https://www.pga.com/play/nc/",
-      "tee_times": "tel:3366679111"
+      "tee_times": "tel:3366679111",
+      "address": "825 Little Mountain Church Road, North Wilkesboro, NC 28659"
     },
     {
       "id": "country-side-gc",
@@ -618,7 +668,8 @@
       "summary": "Yadkin Valley corridor semi-private in the Elkin/Wilkes foothills. A community staple east of the High Country proper serving the foothills golf market.",
       "insider_tip": "Call ahead for current tee time availability for non-members.",
       "website": "https://www.pga.com/play/nc/",
-      "tee_times": "tel:3369358281"
+      "tee_times": "tel:3369358281",
+      "address": "6403 Austin Little Mountain Road, Elkin, NC 28621"
     },
     {
       "id": "forest-pines",
@@ -638,7 +689,8 @@
       "summary": "Second Elkin-area semi-private option — tree-lined Yadkin Valley layout for the foothills market where public options are limited.",
       "insider_tip": "Call ahead for current hours and green fees.",
       "website": "https://www.pga.com/play/nc/",
-      "tee_times": "tel:3369382391"
+      "tee_times": "tel:3369382391",
+      "address": "1266 Grange Road, Elkin, NC 28621"
     },
     {
       "id": "linville-golf-club",
@@ -659,7 +711,8 @@
       "insider_tip": "Access via Linville Land Harbor lodging packages. Confirm policies with the pro shop — they vary.",
       "website": "https://www.linvillegolf.com",
       "tee_times": "tel:8288984241",
-      "phone": "tel:8288984241"
+      "phone": "tel:8288984241",
+      "address": "4765 Linville Land Harbor Drive, Linville, NC 28646"
     },
     {
       "id": "olde-beau",
@@ -680,7 +733,8 @@
       "insider_tip": "The clubhouse restaurant draws visitors from Charlotte and Raleigh on summer weekends — build in extra time.",
       "website": "https://www.oldebeauresort.com",
       "tee_times": "https://www.oldebeauresort.com/golf-taimoor",
-      "phone": "tel:3363638585"
+      "phone": "tel:3363638585",
+      "address": "729 Olde Beau Boulevard, Roaring Gap, NC 28668"
     },
     {
       "id": "jefferson-landing",
@@ -701,7 +755,8 @@
       "insider_tip": "Stay-and-play packages through the gated community lodging are excellent value.",
       "website": "https://www.jeffersonlanding.com",
       "tee_times": "https://www.visitjeffersonlanding.com/Golf",
-      "phone": "tel:3364657888"
+      "phone": "tel:3364657888",
+      "address": "148 East Landing Drive, Jefferson, NC 28640"
     },
     {
       "id": "linville-ridge",
@@ -721,7 +776,8 @@
       "summary": "Private residential club atop Linville Ridge at 4,500 feet — among the highest private courses in the Southeast. Summer temps rarely reach the low 70s. Altitude adds 12-15% to iron distance.",
       "insider_tip": "Recalibrate every club — altitude bonus is real and consistent at this elevation.",
       "website": "https://www.linvilleridge.com",
-      "tee_times": "tel:8288987887"
+      "tee_times": "tel:8288987887",
+      "address": "Linville Ridge Road, Linville, NC 28646 (confirm via club)"
     },
     {
       "id": "elk-river-club",
@@ -741,7 +797,8 @@
       "summary": "First Jack Nicklaus Signature Course in North Carolina (1984). Welcoming river-valley front nine flips to a back nine with water hazards on 8 of 9 holes. Fly-in community with private airstrip.",
       "insider_tip": "Birdie on the front; survive the back. The split personality is by Nicklaus's deliberate design.",
       "website": "https://www.elkriverclubnc.com",
-      "tee_times": "tel:8288989773"
+      "tee_times": "tel:8288989773",
+      "address": "1000 Clubhouse Drive, Banner Elk, NC 28604"
     },
     {
       "id": "hound-ears",
@@ -761,7 +818,8 @@
       "summary": "George Cobb 1964 — the High Country's original private golf community. Family-oriented, unpretentious, casual. NC Golf Panel #8 Western region 2021. Local knowledge is a genuine advantage.",
       "insider_tip": "Elevation-adjusted distances and predictable valley wind channels reward course familiarity.",
       "website": "https://www.houndears.com",
-      "tee_times": "tel:8289632123"
+      "tee_times": "tel:8289632123",
+      "address": "328 Shulls Mill Road, Boone, NC 28607"
     },
     {
       "id": "blowing-rock-cc",
@@ -781,7 +839,8 @@
       "summary": "Storied private club in WNC's most charming summer village. Blue Ridge escarpment views from multiple holes. Tight-knit seasonal member culture — access is about connections, not booking.",
       "insider_tip": "Guest access is personal introduction only — the Blowing Rock social scene is the gateway.",
       "website": "https://www.blowingrockcc.com",
-      "tee_times": "tel:8282953513"
+      "tee_times": "tel:8282953513",
+      "address": "200 Country Club Drive, Blowing Rock, NC 28605"
     },
     {
       "id": "grandfather-golf-cc",
@@ -801,7 +860,8 @@
       "summary": "#1 private course in WNC, #2 in NC overall (2026 NC Golf Panel). Ellis Maples 1968, refined by Dan Maples and Bobby Weed. Arnold Palmer called it 'unequalled in North Carolina' for setting. Slope 148.",
       "insider_tip": "Two courses on property — use the executive Mountain Springs to warm up before the championship layout.",
       "website": "https://www.grandfatherclubnc.com",
-      "tee_times": "tel:8288984388"
+      "tee_times": "tel:8288984388",
+      "address": "2120 US Highway 105 South, Linville, NC 28646"
     },
     {
       "id": "mountain-air-cc",
@@ -821,7 +881,8 @@
       "summary": "One of the Eastern US's only true fly-in golf communities — private airstrip at 5,000+ feet. Members literally fly in to play and fly home. Summer temps rarely exceed 75°F.",
       "insider_tip": "Altitude is so significant here that weather patterns can shift in minutes. Be ready for anything.",
       "website": "https://www.mountainaircc.com",
-      "tee_times": "tel:8286821233"
+      "tee_times": "tel:8286821233",
+      "address": "Mountain Air Drive, Burnsville, NC 28714 (fly-in community — confirm via club)"
     },
     {
       "id": "beech-mountain-club",
@@ -842,7 +903,8 @@
       "insider_tip": "Non-members: book a qualifying Beech Mountain lodging rental to unlock guest privileges. Open May-October only.",
       "website": "https://www.beechmtn.club",
       "tee_times": "https://beechmtn.club/the-course/",
-      "phone": "tel:8283873521"
+      "phone": "tel:8283873521",
+      "address": "103 Lakeledge Road, Beech Mountain, NC 28604"
     },
     {
       "id": "smoky-mtn-cc-whittier",
@@ -862,7 +924,8 @@
       "summary": "Literally climbs from valley floor to mountaintop — mid-round vistas of Great Smoky Mountains National Park. Genuine cardiovascular challenge for walkers. Best public-access mountain golf value in the Smokies.",
       "insider_tip": "Factor elevation drop AND wind channel into every club selection. Both matter on every hole.",
       "website": "https://www.smccgolf.com",
-      "tee_times": "tel:8284972582"
+      "tee_times": "tel:8284972582",
+      "address": "5984 Slope Street, Whittier, NC 28789"
     },
     {
       "id": "smoky-mtn-gc-waynesville",
@@ -882,7 +945,8 @@
       "summary": "Haywood County public option complementing the Waynesville Inn resort — more casual, accessible, and affordable. Confirm current status before visiting.",
       "insider_tip": "Call ahead — operational status and hours are inconsistently maintained online.",
       "website": "https://www.smokymountaingolfclub.net",
-      "tee_times": "https://www.golfnow.com"
+      "tee_times": "https://www.golfnow.com",
+      "address": "Waynesville, NC 28786 (verify exact address)"
     },
     {
       "id": "chatuge-shores",
@@ -902,7 +966,8 @@
       "summary": "Lake Chatuge peninsula layout since 1971 — lake visible from multiple fairways with Blue Ridge backdrop. Flat to gently rolling. Check recent reviews for green conditions before booking.",
       "insider_tip": "Read recent course reviews carefully — green maintenance has been variable in recent years.",
       "website": "https://www.chatugeshoresgolf.com",
-      "tee_times": "tel:8283898940"
+      "tee_times": "tel:8283898940",
+      "address": "260 Golf Course Road, Hayesville, NC 28904"
     },
     {
       "id": "franklin-golf-course",
@@ -922,7 +987,31 @@
       "summary": "Macon County's primary public golf option. Municipal-style layout in a pleasant mountain setting — prioritizes accessibility and affordability over championship challenge.",
       "insider_tip": "Ideal for families and casual golfers visiting the Franklin gem mining corridor.",
       "website": "https://www.franklinnc.com",
-      "tee_times": "tel:8285242516"
+      "tee_times": "tel:8285242516",
+      "address": "Franklin, NC 28734 (confirm exact address)"
+    },
+    {
+      "id": "sapphire-national",
+      "name": "Sapphire National Golf Club",
+      "city": "Sapphire",
+      "county": "Jackson",
+      "subregion": "smoky-mountains",
+      "access": "public",
+      "yards": 6612,
+      "slope": 130,
+      "rating": 71.4,
+      "par": 70,
+      "terrain": "severe-mountain",
+      "helene": false,
+      "new2026": false,
+      "featured": false,
+      "closed": true,
+      "closed_note": "Temporarily closed as of 2026 — privately owned, operational and legal challenges.",
+      "address": "50 Slicers Avenue, Sapphire, NC 28774",
+      "summary": "For two decades the only public 18-hole course in the entire Highlands/Cashiers/Sapphire corridor — Golf Digest 4.5-star rating, par-3 island green on hole 15, signature par-4 13th beside a majestic waterfall. As of 2026 the facility is privately owned and closed to public play. Too historically significant to omit.",
+      "insider_tip": "The adjacent Red Bird Golf Links (9-hole executive, also at Sapphire Valley Resort) remains open and provides the only public golf in the immediate corridor while Sapphire National's status resolves.",
+      "website": "https://www.sapphirenational.com",
+      "tee_times": "tel:8287431174"
     },
     {
       "id": "red-bird-golf",
@@ -942,7 +1031,8 @@
       "summary": "Rural public course in Cherokee County — one of the few accessible options near the Georgia and Tennessee borders in far western WNC.",
       "insider_tip": "Confirm operational status directly — remote rural facilities in this corridor have limited online presence.",
       "website": "https://www.redbirdgolflinks.com",
-      "tee_times": "tel:8288372589"
+      "tee_times": "tel:8288372589",
+      "address": "Marble, Cherokee County, NC (verify exact address)"
     },
     {
       "id": "foreu-golf",
@@ -962,7 +1052,8 @@
       "summary": "Modern public facility in Transylvania County — Brevard's 'Land of Waterfalls' market. Accessible, fun experience for all levels near Pisgah National Forest.",
       "insider_tip": "Check the website for current format and any technology-enhanced practice features.",
       "website": "https://www.foreuatpisgah.com",
-      "tee_times": "tel:8288774999"
+      "tee_times": "tel:8288774999",
+      "address": "700 Old Hendersonville Highway, Brevard, NC 28712"
     },
     {
       "id": "mountain-harbour",
@@ -982,7 +1073,8 @@
       "summary": "Semi-private on Lake Chatuge in Clay County — lakefront golf with a relaxed community atmosphere. Outside tee times available during off-peak hours.",
       "insider_tip": "Call the pro shop for current outside visitor access and available windows.",
       "website": "https://www.mountainharbour.com",
-      "tee_times": "tel:8283899500"
+      "tee_times": "tel:8283899500",
+      "address": "1370 Chatuge Lake Drive, Hayesville, NC 28904"
     },
     {
       "id": "mill-creek-cc",
@@ -1002,7 +1094,8 @@
       "summary": "Semi-private Franklin corridor option for golfers seeking a membership-oriented experience. Outside play available — confirm with the pro shop before booking.",
       "insider_tip": "Call ahead for access policies and current conditions.",
       "website": "https://www.millcreekcc.net",
-      "tee_times": "tel:8284947888"
+      "tee_times": "tel:8284947888",
+      "address": "Franklin, Macon County, NC (verify exact address)"
     },
     {
       "id": "sequoyah-national",
@@ -1022,7 +1115,8 @@
       "summary": "Robert Trent Jones II 2009 on Eastern Band Cherokee land — the most awarded public-access mountain course in WNC. Golfweek Top-50 casino courses. Tee shots drop hundreds of feet. Smoky Mountain NP backdrop on every hole.",
       "insider_tip": "Pair with a Harrah's Cherokee Casino Resort stay 10 min away for the ultimate WNC golf-and-gaming getaway.",
       "website": "https://www.sequoyahnational.com",
-      "tee_times": "tel:8284973000"
+      "tee_times": "tel:8284973000",
+      "address": "79 Cahons Road, Whittier, NC 28789"
     },
     {
       "id": "bear-lake-reserve",
@@ -1042,7 +1136,8 @@
       "summary": "Private resort community in the Tuckasegee corridor offering lakefront golf as part of a broader lake-and-mountain lifestyle package.",
       "insider_tip": "Contact directly for resort guest access rates and tee time availability.",
       "website": "https://www.bearlakereserve.com",
-      "tee_times": "tel:8282939525"
+      "tee_times": "tel:8282939525",
+      "address": "Tuckasegee / Jackson County, NC (confirm access via club)"
     },
     {
       "id": "high-hampton",
@@ -1063,7 +1158,8 @@
       "insider_tip": "Golf access has evolved post-2017 ownership change — confirm current resort guest policies directly.",
       "website": "https://www.highhampton.com",
       "tee_times": "https://www.highhampton.com/stay",
-      "phone": "tel:8285269351"
+      "phone": "tel:8285269351",
+      "address": "265 High Hampton Drive, Cashiers, NC 28717"
     },
     {
       "id": "old-edwards-club",
@@ -1084,7 +1180,8 @@
       "insider_tip": "Confirm current access procedures and green fees through the resort directly.",
       "website": "https://www.oldedwardsinn.com",
       "tee_times": "tel:8285268008",
-      "phone": "tel:8285268008"
+      "phone": "tel:8285268008",
+      "address": "445 Main Street, Highlands, NC 28741"
     },
     {
       "id": "balsam-mountain-preserve",
@@ -1104,7 +1201,8 @@
       "summary": "Arnold Palmer called it 'different from any course I have ever designed.' Golf Digest Best in State. Elevations to 5,400 feet — the highest Palmer ever worked on in the Eastern US. Slope 149.",
       "insider_tip": "When Palmer said 'bring your camera,' he was not being modest. Every forced carry has a view.",
       "website": "https://www.balsammountainpreserve.com",
-      "tee_times": "tel:8286311000"
+      "tee_times": "tel:8286311000",
+      "address": "81 Preserve Road, Sylva, NC 28779"
     },
     {
       "id": "wade-hampton",
@@ -1124,7 +1222,8 @@
       "summary": "Tom Fazio 1987 — Golf Digest Top 100 in the US, top-3 private in NC. Built without a single stick of dynamite, routed entirely through natural valley corridors. Evokes the great inland links of Scotland.",
       "insider_tip": "Guest access requires personal member introduction of standing. This one takes a real connection.",
       "website": "https://www.wadehampton.com",
-      "tee_times": "tel:8287435465"
+      "tee_times": "tel:8287435465",
+      "address": "Highway 107 South, Cashiers, NC 28717"
     },
     {
       "id": "mountaintop-golf",
@@ -1144,7 +1243,8 @@
       "summary": "Tom Fazio — $1M per hole, blasted from solid rock. Six holes cross a gorge cut by Hurricane Creek. Opening tee drops 100 feet. Golf Digest: 'proof that no property is too rugged for Tom Fazio.'",
       "insider_tip": "The par-5 16th is widely cited as one of Fazio's greatest individual holes anywhere in his portfolio.",
       "website": "https://www.mountaintopgolfclub.com",
-      "tee_times": "tel:8287434758"
+      "tee_times": "tel:8287434758",
+      "address": "1638 High Mountain Drive, Cashiers, NC 28717"
     },
     {
       "id": "cullasaja-club",
@@ -1164,7 +1264,8 @@
       "summary": "Arnold Palmer 1989 on the Highlands plateau. $3M recent renovation. 350 family members return each summer to what the club calls 'simply the perfect life.' Active golf culture, not just an amenity.",
       "insider_tip": "The club explicitly acknowledges it 'may not be for everyone.' Casual elegance is the operating ethos.",
       "website": "https://www.cullasajaclub.org",
-      "tee_times": "tel:8285269057"
+      "tee_times": "tel:8285269057",
+      "address": "1371 Cullasaja Club Drive, Highlands, NC 28741"
     },
     {
       "id": "highlands-cc",
@@ -1184,7 +1285,8 @@
       "summary": "The oldest private club in Highlands (1928) — social heart of the summer colony for nearly a century. Ron Pritchard design emphasizes position and short-game skill over power.",
       "insider_tip": "Member privacy is paramount here. Proper introduction is the only path in.",
       "website": "https://www.highlandscc.net",
-      "tee_times": "tel:8285262181"
+      "tee_times": "tel:8285262181",
+      "address": "981 Dillard Road, Highlands, NC 28741"
     },
     {
       "id": "highlands-falls-cc",
@@ -1204,7 +1306,8 @@
       "summary": "George Cobb 1962, updated by Joe Lee in the 1980s — the most accessible of the Highlands private courses in terms of slope difficulty. Mountain views on multiple holes.",
       "insider_tip": "Access through member accompaniment — a welcoming option for first-time Highlands visitors.",
       "website": "https://www.highlandsfallscc.com",
-      "tee_times": "tel:8285264118"
+      "tee_times": "tel:8285264118",
+      "address": "1 Club Drive, Highlands, NC 28741"
     },
     {
       "id": "wildcat-cliffs-cc",
@@ -1224,7 +1327,8 @@
       "summary": "George Cobb 1961 with sweeping views of the Blue Ridge and Whiteside Mountain corridor. The community is named for the dramatic granite cliffs visible from upper course holes.",
       "insider_tip": "Some of the most sought-after private real estate in the Highlands market surrounds this course.",
       "website": "https://www.wildcatcliffscc.com",
-      "tee_times": "tel:8285262165"
+      "tee_times": "tel:8285262165",
+      "address": "770 Country Club Drive, Highlands, NC 28741"
     },
     {
       "id": "sapphire-valley-cc",
@@ -1244,7 +1348,8 @@
       "summary": "Golf centerpiece of one of the most established private residential communities in the Cashiers/Sapphire corridor. Plays through terrain above Lake Sapphire on the high Cashiers plateau.",
       "insider_tip": "Contact the club for current member access policies.",
       "website": "https://www.sapphirevalley.com",
-      "tee_times": "tel:8287433441"
+      "tee_times": "tel:8287433441",
+      "address": "Cashiers, NC 28717 (confirm address via club)"
     },
     {
       "id": "burlingame-cc",
@@ -1264,7 +1369,8 @@
       "summary": "Private lakefront country club in the Sapphire Valley of Transylvania County — mountain golf with direct lake access in one of the most beautiful private communities in the Cashiers corridor.",
       "insider_tip": "Golf is a central but not exclusive amenity — the full community lifestyle is the draw.",
       "website": "https://www.burlingameccwnc.com",
-      "tee_times": "tel:8289669161"
+      "tee_times": "tel:8289669161",
+      "address": "US Highway 64, Sapphire, NC 28774"
     },
     {
       "id": "trillium-links",
@@ -1284,7 +1390,29 @@
       "summary": "Morris Hatalsky 1998 within the Trillium residential community — community-focused social golf complemented by boating on the adjacent lake. Understated alternative to nearby headline courses.",
       "insider_tip": "Access through membership and accompaniment — a relaxed, social atmosphere defines the experience.",
       "website": "https://www.trilliumlinks.com",
-      "tee_times": "tel:8889097171"
+      "tee_times": "tel:8889097171",
+      "address": "245 Links Drive, Cashiers, NC 28717"
+    },
+    {
+      "id": "lake-toxaway-cc",
+      "name": "Lake Toxaway Country Club",
+      "city": "Lake Toxaway",
+      "county": "Transylvania",
+      "subregion": "smoky-mountains",
+      "access": "private",
+      "yards": 6418,
+      "slope": 135,
+      "rating": 71.0,
+      "par": 71,
+      "terrain": "severe-mountain",
+      "helene": false,
+      "new2026": false,
+      "featured": false,
+      "address": "4366 West Club Boulevard, Lake Toxaway, NC 28747",
+      "summary": "Reg Heinitsh original (1963) comprehensively redesigned by Kris Spence in 2008, reversing the nines to create an effectively new routing. Sits on the banks of Lake Toxaway — the largest private lake in NC at 640 acres. NC Golf Panel Top 100. Bent grass throughout.",
+      "insider_tip": "The club completed a $7 million clubhouse renovation — even if you arrange a guest round, the post-round lakefront dining experience is worth planning around.",
+      "website": "https://www.laketoxawaycc.com",
+      "tee_times": "tel:8288833831"
     },
     {
       "id": "lake-lure-municipal",
@@ -1304,7 +1432,8 @@
       "summary": "Donald Ross 1927, 9-hole municipal — Chimney Rock ridgeline views, nearly a century of intact routing. The Great Depression prevented the planned second nine from ever being built.",
       "insider_tip": "Excellent pre- or post-round option when visiting Lake Lure's water recreation offerings.",
       "website": "https://www.townoflakelure.com",
-      "tee_times": "tel:8286254472"
+      "tee_times": "tel:8286254472",
+      "address": "658 Memorial Highway, Lake Lure, NC 28746"
     },
     {
       "id": "silver-creek-gc",
@@ -1324,7 +1453,8 @@
       "summary": "Value-oriented Burke County public course in the foothills transition zone between the Blue Ridge and the NC Piedmont. Open, rolling character.",
       "insider_tip": "Confirm current conditions and hours directly with the pro shop before visiting.",
       "website": "https://www.silvercreekgolf.com",
-      "tee_times": "tel:8285845534"
+      "tee_times": "tel:8285845534",
+      "address": "Morganton, Burke County, NC (confirm exact address)"
     },
     {
       "id": "meadowbrook-gc",
@@ -1344,7 +1474,8 @@
       "summary": "Accessible, affordable public golf in Rutherford County's broad valley terrain. Open pastoral character — comfortable for beginners and recreational golfers.",
       "insider_tip": "Verify current green fees directly with the pro shop.",
       "website": "https://www.meadowbrookgolfnc.com",
-      "tee_times": "tel:8288632690"
+      "tee_times": "tel:8288632690",
+      "address": "1211 Meadowbrook Road, Rutherfordton, NC 28139"
     },
     {
       "id": "quaker-meadows",
@@ -1364,7 +1495,8 @@
       "summary": "Historically significant Burke County grounds — site of a Cherokee settlement and the Overmountain Men muster in the Revolution. Golf layered onto land with more backstory than almost any course in WNC.",
       "insider_tip": "The most historically rich grounds of any public course in WNC. Look up the Overmountain Men before you play.",
       "website": "https://www.quakermeadowsgolf.com",
-      "tee_times": "tel:8284372007"
+      "tee_times": "tel:8284372007",
+      "address": "Morganton, Burke County, NC (confirm exact address)"
     },
     {
       "id": "lenoir-golf-course",
@@ -1384,7 +1516,8 @@
       "summary": "Caldwell County's primary municipal public option in the easternmost WNC foothills. Accessible public golf at municipal pricing.",
       "insider_tip": "Confirm current hours and conditions through the city parks and recreation department.",
       "website": "https://www.lenoirnc.gov",
-      "tee_times": "tel:8287572200"
+      "tee_times": "tel:8287572200",
+      "address": "Lenoir, Caldwell County, NC (confirm via city)"
     },
     {
       "id": "forest-city-municipal",
@@ -1404,7 +1537,8 @@
       "summary": "9-hole Rutherford County municipal — entry-level pricing, easy-walking flat terrain in the Broad River Valley. Solid casual afternoon option near Chimney Rock and Lake Lure.",
       "insider_tip": "Good warmup round before tackling the more demanding Rumbling Bald or Cleghorn.",
       "website": "https://www.forestcitync.gov",
-      "tee_times": "tel:8282485222"
+      "tee_times": "tel:8282485222",
+      "address": "211 Clay Street, Forest City, NC 28043"
     },
     {
       "id": "dogwood-valley",
@@ -1424,7 +1558,8 @@
       "summary": "Well-regarded Caroleen/Forest City local public track — consistently positive regional reviews for condition and value. Tree-lined foothills corridor, a step up from the municipal layouts.",
       "insider_tip": "One of the better-maintained budget public options in Rutherford County.",
       "website": "https://www.dogwoodvalleygolf.com",
-      "tee_times": "tel:8286576214"
+      "tee_times": "tel:8286576214",
+      "address": "328 Dogwood Valley Road, Forest City, NC 28043"
     },
     {
       "id": "rutherfordton-gc",
@@ -1444,7 +1579,8 @@
       "summary": "Community public course in the Rutherford County seat. Casual, local atmosphere in rolling foothills terrain.",
       "insider_tip": "Verify current operational status before visiting — online info is inconsistently maintained.",
       "website": "https://www.rutherfordtongolfclub.com",
-      "tee_times": "tel:8282869117"
+      "tee_times": "tel:8282869117",
+      "address": "191 Twitty Ford Street, Rutherfordton, NC 28139"
     },
     {
       "id": "orchard-trace",
@@ -1464,7 +1600,8 @@
       "summary": "WNC's most distinctive par-3 course on former apple orchard land — each hole named for an apple variety. The ONLY fully lighted course in WNC, open until 1:30 AM seven days a week.",
       "insider_tip": "Perfect for twilight rounds after dinner in downtown Hendersonville — the evening rates are a steal.",
       "website": "https://www.pga.com/play/nc/hendersonville/orchard-trace-golf-club/27618415",
-      "tee_times": "tel:8286851006"
+      "tee_times": "tel:8286851006",
+      "address": "924 Sugarloaf Road, Hendersonville, NC 28792"
     },
     {
       "id": "cleghorn-golf",
@@ -1484,7 +1621,8 @@
       "summary": "George Cobb 1972 (Augusta Par-3 Course, Quail Hollow architect) — Golf Digest 'Best Places to Play.' The 1837 manor house is visible from the fairways. Adjacent to Tryon International Equestrian Center.",
       "insider_tip": "Course record 61 by Dave Long Jr. — conditions are maintained to a high standard for a public-access track.",
       "website": "https://www.cleghorngolf.com",
-      "tee_times": "tel:8282869117"
+      "tee_times": "tel:8282869117",
+      "address": "183 Golf Circle, Rutherfordton, NC 28139"
     },
     {
       "id": "rumbling-bald-apple-valley",
@@ -1504,7 +1642,8 @@
       "summary": "Dan Maples 1986 — Golf Digest praised it as one of the most beautiful mountain courses in the region. 75% of shots are level or downhill (nearly impossible on a mountain layout). Bald Mountain rock face looms above the final holes.",
       "insider_tip": "Aggressive play is consistently rewarded here. The layout is literally designed for it.",
       "website": "https://www.rumblingbald.com",
-      "tee_times": "tel:8286943072"
+      "tee_times": "tel:8286943072",
+      "address": "112 Mountains Boulevard, Lake Lure, NC 28746"
     },
     {
       "id": "rumbling-bald-mountain",
@@ -1524,7 +1663,8 @@
       "summary": "W.B. Lewis 1973 — tight corridors pressing against the granite cliffs of Bald Mountain. The par-3 12th plays directly against an exposed cliff face. Best 36-hole foothills combo paired with Apple Valley.",
       "insider_tip": "Play both Rumbling Bald courses in a single day for the most varied foothills golf experience in WNC.",
       "website": "https://www.rumblingbald.com",
-      "tee_times": "tel:8286943072"
+      "tee_times": "tel:8286943072",
+      "address": "112 Mountains Boulevard, Lake Lure, NC 28746"
     },
     {
       "id": "red-fox-cc",
@@ -1544,7 +1684,8 @@
       "summary": "Ellis Maples 1968 hidden gem — 7,104 yards, rating 74.5, slope 136. Championship-caliber layout available as semi-private at modest rates. In the heart of Tryon's equestrian corridor.",
       "insider_tip": "One of WNC's best-kept secrets for value. Plays like a private club, priced like a public course.",
       "website": "https://www.redfoxcountryclub.com",
-      "tee_times": "tel:8288948251"
+      "tee_times": "tel:8288948251",
+      "address": "106 Club Road, Tryon, NC 28782"
     },
     {
       "id": "silver-creek-plantation",
@@ -1564,7 +1705,8 @@
       "summary": "Private gated residential community in Burke County with golf as a central amenity, serving the Morganton private club market.",
       "insider_tip": "Contact the membership office for access policies and specifications.",
       "website": "https://www.silvercreekplantation.com",
-      "tee_times": "tel:8284374181"
+      "tee_times": "tel:8284374181",
+      "address": "Morganton, Burke County, NC (confirm via club)"
     },
     {
       "id": "mimosa-hills",
@@ -1584,7 +1726,8 @@
       "summary": "Donald Ross 1929 restored by Kris Spence — NC Golf Panel #10 Western region 2026. U.S. Open Sectional Qualifying host. Holes routed to maximize Blue Ridge Mountain panoramas.",
       "insider_tip": "Invitation-only access from an existing member. Among the most important private memberships in the eastern WNC foothills.",
       "website": "https://www.mimosahills.org",
-      "tee_times": "tel:8284371246"
+      "tee_times": "tel:8284371246",
+      "address": "611 Golf Course Road, Morganton, NC 28655"
     },
     {
       "id": "tryon-cc",
@@ -1604,7 +1747,8 @@
       "summary": "Oldest golf course in Polk County — laid out 1914, attributed to Donald Ross. The 1922 Rustic Revival log clubhouse is a National Register property. A course for golf history enthusiasts.",
       "insider_tip": "The entire 90-acre grounds are a remarkably intact example of early-20th-century mountain golf culture.",
       "website": "https://www.tryoncountryclub.com",
-      "tee_times": "tel:8288595161"
+      "tee_times": "tel:8288595161",
+      "address": "393 Country Club Road, Tryon, NC 28782"
     },
     {
       "id": "brights-creek",
@@ -1624,7 +1768,8 @@
       "summary": "Tom Fazio 2006 — one of his personal favorites. Golf Digest top-37 in the nation. 4,700-acre private estate at the thermal belt foot of the Blue Ridge. Civil War-era cemeteries preserved within the course boundaries.",
       "insider_tip": "Discovery weekend packages available for serious membership prospects — the only non-member path in.",
       "website": "https://www.brightscreekclub.com",
-      "tee_times": "tel:8286944500"
+      "tee_times": "tel:8286944500",
+      "address": "2222 Palmer Road, Mill Spring, NC 28756"
     }
   ],
   "notes": "June 2026 revision v2: added phone field for courses with booking URLs in tee_times."
