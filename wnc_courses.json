@@ -512,9 +512,9 @@
       "county": "Burke",
       "subregion": "foothills",
       "access": "public",
-      "yards": 6708,
-      "slope": 130,
-      "rating": 73.5,
+      "yards": 6666,
+      "slope": null,
+      "rating": null,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -523,7 +523,7 @@
       "insider_tip": "Confirm current conditions and hours directly with the pro shop before visiting.",
       "website": "https://screekgolf.com/",
       "address": "Morganton, Burke County, NC (confirm exact address)",
-      "phone": "tel:8285845534",
+      "phone": "tel:8285846911",
       "closed": false
     },
     {
@@ -1720,7 +1720,7 @@
       "address": "67 Cherokee Trail, Sapphire, NC 28774"
     }
   ],
-  "notes": "June 5 2026 audit v37: Reverted Grove Park Inn yards (6600→6201) and rating (71.5→70.2) — owner verified from current course card.",
+  "notes": "June 5 2026 audit v38: Silver Creek — yardage corrected to 6666 (calculated from official hole-by-hole Silos tees on screekgolf.com). Slope/rating nulled — not published. Phone updated from website.",
   "subregions": [
     {
       "slug": "asheville-basin",
