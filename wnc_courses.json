@@ -17,7 +17,7 @@
       "helene": true,
       "featured": false,
       "summary": "Donald Ross's 1927 municipal gem — the first racially integrated golf course in North Carolina and a National Register property. Front nine was catastrophically damaged by Hurricane Helene (Sept 2024) and remains under restoration; back nine is open and in improving condition. Playing back nine twice for an 18-hole round. Full restoration targeted for the course's centennial in 2027.",
-      "insider_tip": "Back nine was completely destroyed by Helene — front nine only currently open for play. Restoration timeline for the back nine is ongoing; check wncgolfinsider.com for updates.",
+      "insider_tip": "Front nine was completely destroyed by Helene — back nine only currently open for play. Restoration timeline for the front nine is ongoing; check wncgolfinsider.com for updates.",
       "website": "https://www.ashevillegc.com",
       "phone": "tel:8282981867",
       "address": "226 Fairway Drive, Asheville, NC 28805",
@@ -1720,7 +1720,7 @@
       "closed": false
     }
   ],
-  "notes": "June 5 2026 audit v30: Removed Asheville Crowne Plaza Golf Course.",
+  "notes": "June 5 2026 audit v31: Asheville Muni — corrected insider tip: front nine destroyed, back nine open.",
   "subregions": [
     {
       "slug": "asheville-basin",
