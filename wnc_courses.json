@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-04",
-  "total": 83,
+  "total": 82,
   "courses": [
     {
       "id": "asheville-municipal",
@@ -1636,27 +1636,6 @@
       "closed": false
     },
     {
-      "id": "asheville-crowne-plaza-gc",
-      "name": "Asheville Crowne Plaza Golf Course",
-      "city": "Asheville",
-      "county": "Buncombe",
-      "subregion": "asheville-basin",
-      "access": "resort",
-      "yards": null,
-      "slope": null,
-      "rating": null,
-      "par": 34,
-      "terrain": "rolling-foothills",
-      "helene": false,
-      "featured": false,
-      "summary": "9-hole, par-34 resort course on the grounds of the Asheville Crowne Plaza hotel. Walkable or cart-accessible, with a practice range on site. PGA instruction available through the Gwen Miller Golf Academy. Kids 11 and under play free — a solid family-friendly option in the city.",
-      "insider_tip": "Call (828) 253-5874 for rates and frost delay updates in cooler months. Last tee time for 18 holes (double loop) is 2:00 PM; last 9 at 4:00 PM. Groups of 5 or more require a tee time.",
-      "website": "https://ashevillecp.com/activities/golf/",
-      "phone": "tel:8282535874",
-      "address": "1 Resort Drive, Asheville, NC 28806",
-      "closed": false
-    },
-    {
       "id": "cherokee-hills-gc",
       "name": "Cherokee Hills Golf & Country Club",
       "city": "Murphy",
@@ -1741,7 +1720,7 @@
       "closed": false
     }
   ],
-  "notes": "June 5 2026 audit v29: Sapphire National set to closed=false, closed_note removed.",
+  "notes": "June 5 2026 audit v30: Removed Asheville Crowne Plaza Golf Course.",
   "subregions": [
     {
       "slug": "asheville-basin",
