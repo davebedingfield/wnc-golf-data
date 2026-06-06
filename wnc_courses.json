@@ -1,5 +1,7 @@
 {
   "updated": "2026-06-06",
+  "version": "v48",
+  "embed_version": "v4.0",
   "total": 82,
   "courses": [
     {
@@ -519,8 +521,8 @@
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": false,
-      "summary": "Value-oriented Burke County public course in the foothills transition zone between the Blue Ridge and the NC Piedmont. Open, rolling character.",
-      "insider_tip": "Confirm current conditions and hours directly with the pro shop before visiting.",
+      "summary": "Tom Jackson-designed public championship course in Burke County \u2014 6,781 yards with a 73.8 rating and slope of 141. Those are private-club numbers on a public-access green fee, making Silver Creek one of the most underrated and legitimately demanding tracks in the entire Foothills region. Open, rolling foothills terrain with significant bunkering and elevation change throughout.",
+      "insider_tip": "Don't let the public price tag fool you \u2014 a 141 slope puts this course in the same tier as Rock Barn Jones and Balsam Mountain Preserve. Come with your A-game.",
       "website": "https://screekgolf.com/",
       "address": "4241 Plantation Drive, Morganton, NC 28655",
       "phone": "tel:8285846911",
@@ -845,7 +847,7 @@
       "city": "North Wilkesboro",
       "county": "Wilkes",
       "subregion": "foothills",
-      "access": "semi-private",
+      "access": "public",
       "yards": 6285,
       "slope": 117,
       "rating": 70.0,
@@ -853,8 +855,8 @@
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": false,
-      "summary": "Semi-private Wilkes County club in the foothills transition zone between High Country and the Piedmont. Member-priority with outside tee times at reasonable rates.",
-      "insider_tip": "Call the pro shop directly for current outside access policies.",
+      "summary": "Ultra-affordable, no-frills Wilkes County community course built for beginners, intermediates, and budget-conscious players who just want to get out and play. No country club pretension \u2014 the local working crowd shows up without a tee time and nobody bats an eye. Rolling hills, pond hazards, and tree-lined fairways keep things interesting without overwhelming. The signature 11th is a picturesque par 3 requiring a precise carry directly over a lake; tucked beside the creek in deep shade, the green stays notoriously tricky even after a solid tee shot. The 18th is a classic risk-reward closer: a heavily sloped green guarded tight by a lateral pond.",
+      "insider_tip": "Some of the cheapest green fees in all of North Carolina \u2014 an unbeatable value for beginners, high-handicappers, and anyone who wants a relaxed round without the formality. Show up, pay, play.",
       "address": "825 Little Mountain Church Road, North Wilkesboro, NC 28659",
       "phone": "tel:3366962146",
       "closed": false
@@ -1720,7 +1722,7 @@
       "address": "67 Cherokee Trail, Sapphire, NC 28774"
     }
   ],
-  "notes": "June 6 2026 audit v46: Silver Creek GC \u2014 yards corrected 6666\u21926781 (championship/rating tees per screekgolf.com/course-guide); rating filled 73.8, slope filled 141; address corrected to 4241 Plantation Drive, Morganton NC 28655. June 6 2026 audit v45: Dogwood Valley GC \u2014 yardage filled (3106); phone confirmed (828) 382-0095; slope/rating null (unrated). June 6 2026 audit v44: Dogwood Valley GC \u2014 par filled (36), summary and insider_tip rewritten from firsthand review (alwaystimefor9.com); built 1962 (not 1969), no architect (Donald Ross attribution is false), community-built by 25 local men, owner Jeff Walker, dog Moonshine; phone flagged as unverified \u2014 pending correct number. June 6 2026 audit v43: Bear Lake Reserve confirmed via official scorecard PDF (bearlakereserve.s3.us-east-2.amazonaws.com): 1945yds/par29/30.0/117 (blue tees, men); yardage corrected 1932\u21921945; slope corrected 118\u2192117 per USGA rating database (supersedes printed scorecard); slope/rating filled (officially USGA-rated); address corrected to 1540 Grandview Drive, Tuckasegee NC 28783; phone corrected to 828-293-5005. June 6 2026 audit v42: Red Bird Golf Links confirmed: 1265yds/par30; par corrected 33\u219230; slope/rating null (unrated). June 6 2026 audit v41: Marion Lake Club 6105/par70/70.4/126. Waynesville Inn 6515/par71/71.5/139; par corrected 72\u219271. Mill Creek CC 6153/par72/68.6/130; address + phone corrected. Lake Toxaway CC 6197/par71/70.8/137. Wildcat Cliffs CC 6481/par72/71.9/139 (official scorecard). June 6 2026 audit v40: Broadmoor Golf Links 6707/par71/71.0/129 \u2014 phone + USGA database. June 6 2026 audit v39: Mountain Aire slope 122\u2192130, rating 69.8\u219270.8 (official scorecard PDF). Mountain Air CC 6425/par71/70.9/129. High Meadows GCC 6698/par72/72.1/130. Burlingame CC 6601/par72/72.6/142. Franklin GC 2933/par36/69.8/115; address corrected. Rock Creek CC 6285/par70/70.0/117. Old Edwards Club 6606/par71/71.9/148. Sherwood Forest/Forest Pines confirmed null (unrated by design). June 5 2026 audit v38: Silver Creek yardage corrected to 6666; slope/rating nulled.",
+  "notes": "June 6 2026 audit v48: Rock Creek CC \u2014 summary and insider_tip rewritten to capture community/no-frills character, signature 11th par 3 over lake, risk-reward 18th; access corrected semi-private\u2192public (consistent with all source data). June 6 2026 audit v48: Rock Creek CC \u2014 summary and insider_tip rewritten; captures no-frills public character, ultra-affordable pricing, signature par-3 11th over lake, risk-reward 18th with lateral pond. June 6 2026 audit v47: Silver Creek GC \u2014 summary and insider_tip rewritten to highlight 73.8/141 rating/slope as exceptional for a public foothills course. June 6 2026 audit v46: Silver Creek GC \u2014 yards corrected 6666\u21926781 (championship/rating tees per screekgolf.com/course-guide); rating filled 73.8, slope filled 141; address corrected to 4241 Plantation Drive, Morganton NC 28655. June 6 2026 audit v45: Dogwood Valley GC \u2014 yardage filled (3106); phone confirmed (828) 382-0095; slope/rating null (unrated). June 6 2026 audit v44: Dogwood Valley GC \u2014 par filled (36), summary and insider_tip rewritten from firsthand review (alwaystimefor9.com); built 1962 (not 1969), no architect (Donald Ross attribution is false), community-built by 25 local men, owner Jeff Walker, dog Moonshine; phone flagged as unverified \u2014 pending correct number. June 6 2026 audit v43: Bear Lake Reserve confirmed via official scorecard PDF (bearlakereserve.s3.us-east-2.amazonaws.com): 1945yds/par29/30.0/117 (blue tees, men); yardage corrected 1932\u21921945; slope corrected 118\u2192117 per USGA rating database (supersedes printed scorecard); slope/rating filled (officially USGA-rated); address corrected to 1540 Grandview Drive, Tuckasegee NC 28783; phone corrected to 828-293-5005. June 6 2026 audit v42: Red Bird Golf Links confirmed: 1265yds/par30; par corrected 33\u219230; slope/rating null (unrated). June 6 2026 audit v41: Marion Lake Club 6105/par70/70.4/126. Waynesville Inn 6515/par71/71.5/139; par corrected 72\u219271. Mill Creek CC 6153/par72/68.6/130; address + phone corrected. Lake Toxaway CC 6197/par71/70.8/137. Wildcat Cliffs CC 6481/par72/71.9/139 (official scorecard). June 6 2026 audit v40: Broadmoor Golf Links 6707/par71/71.0/129 \u2014 phone + USGA database. June 6 2026 audit v39: Mountain Aire slope 122\u2192130, rating 69.8\u219270.8 (official scorecard PDF). Mountain Air CC 6425/par71/70.9/129. High Meadows GCC 6698/par72/72.1/130. Burlingame CC 6601/par72/72.6/142. Franklin GC 2933/par36/69.8/115; address corrected. Rock Creek CC 6285/par70/70.0/117. Old Edwards Club 6606/par71/71.9/148. Sherwood Forest/Forest Pines confirmed null (unrated by design). June 5 2026 audit v38: Silver Creek yardage corrected to 6666; slope/rating nulled.",
   "subregions": [
     {
       "slug": "asheville-basin",
