@@ -1,8 +1,8 @@
 {
   "updated": "2026-06-08",
-  "version": "v89",
+  "version": "v94",
   "embed_version": "v4.0",
-  "total": 82,
+  "total": 83,
   "courses": [
     {
       "id": "asheville-municipal",
@@ -12,8 +12,8 @@
       "subregion": "asheville-basin",
       "access": "public",
       "yards": 6356,
-      "slope": 121,
-      "rating": 69.9,
+      "slope": 126,
+      "rating": 71.0,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": true,
@@ -23,7 +23,10 @@
       "website": "https://www.ashevillegc.com",
       "phone": "tel:8282981867",
       "address": "226 Fairway Drive, Asheville, NC 28805",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 304,
+      "nine_hole_course": false,
+      "usga_rating_note": "Current USGA rating reflects temporary Helene configuration — back 9 played twice. Full 18-hole rating will be re-issued upon front nine restoration (targeted 2027)."
     },
     {
       "id": "black-mountain-gc",
@@ -44,7 +47,10 @@
       "website": "https://www.blackmountaingolf.org/",
       "phone": "tel:8286692710",
       "address": "17 Ross Drive, Black Mountain, NC 28711",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 414,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "broadmoor-golf-links",
@@ -65,7 +71,10 @@
       "website": "https://www.broadmoorgolflinks.com",
       "phone": "tel:8286871500",
       "address": "101 French Broad Lane, Fletcher, NC 28732",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 80,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "chestnut-mountain",
@@ -86,7 +95,10 @@
       "website": "https://www.chestnutmountaingolf.com/",
       "phone": "tel:8283934531",
       "address": "88 Country Club Road, Mills River, NC 28759",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 302,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "lake-junaluska",
@@ -96,8 +108,8 @@
       "subregion": "smoky-corridor",
       "access": "public",
       "yards": 5744,
-      "slope": 113,
-      "rating": 70.0,
+      "slope": 110,
+      "rating": 63.6,
       "par": 68,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -107,7 +119,10 @@
       "website": "https://www.lakejunaluska.com/activities/golf_course/",
       "phone": "tel:8284565777",
       "address": "756 Golf Course Rd, Waynesville, NC 28786",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 158,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "reems-creek",
@@ -117,9 +132,9 @@
       "subregion": "asheville-basin",
       "access": "public",
       "yards": 6492,
-      "slope": 133,
-      "rating": 71.9,
-      "par": 71,
+      "slope": 135,
+      "rating": 69.9,
+      "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": true,
@@ -128,7 +143,10 @@
       "website": "https://www.reemscreekgolf.com",
       "phone": "tel:8286454393",
       "address": "36 Pink Fox Cove Road, Weaverville, NC 28787",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 73,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "sherwood-forest",
@@ -149,7 +167,10 @@
       "website": "https://sherwoodforestgolfcourse.com/",
       "address": "29 Cardinal Rd, Brevard, NC 28712",
       "phone": "tel:8288847825",
-      "closed": false
+      "closed": false,
+      "usga_course_id": null,
+      "nine_hole_course": true,
+      "usga_rating_note": null
     },
     {
       "id": "connestee-falls",
@@ -170,7 +191,10 @@
       "website": "https://connesteefalls.com/golf",
       "address": "98 Overlook Clubhouse Dr, Brevard, NC 28712",
       "phone": "tel:8288852005",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 14010,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "cummings-cove",
@@ -191,7 +215,10 @@
       "website": "https://www.cummingscove.com/golf",
       "address": "943 Lakeledge Court, Hendersonville, NC 28739",
       "phone": "tel:8288919412",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 332,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "etowah-valley",
@@ -212,7 +239,10 @@
       "insider_tip": "Book mid-week for best rates and the most relaxed pace. The valley floor setting and central location between Asheville, Hendersonville, and Brevard make Etowah a natural hub for a multi-course WNC trip.",
       "website": "https://www.etowahvalley.com",
       "phone": "tel:8288917022",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 240,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "maggie-valley-club",
@@ -233,7 +263,10 @@
       "website": "https://www.maggievalleyclub.com/golf/",
       "phone": "tel:8289266013",
       "address": "1819 Country Club Road, Maggie Valley, NC 28751",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 289,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "omni-grove-park",
@@ -254,7 +287,10 @@
       "website": "https://www.groveparkinn.com",
       "phone": "tel:8283983858",
       "address": "290 Macon Avenue, Asheville, NC 28804",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 94,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "springdale-resort",
@@ -264,8 +300,8 @@
       "subregion": "smoky-corridor",
       "access": "resort",
       "yards": 6812,
-      "slope": 130,
-      "rating": 72.5,
+      "slope": 135,
+      "rating": 73.8,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -275,7 +311,10 @@
       "website": "https://www.springdalegolfnc.com",
       "phone": "tel:8282358451",
       "address": "190 Golfwatch Rd, Canton, NC 28716",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 215,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "waynesville-inn",
@@ -296,7 +335,10 @@
       "website": "https://www.waynesvilleinnandgolf.com",
       "phone": "tel:8285641567",
       "address": "176 Country Club Drive, Waynesville, NC 28786",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 33213,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "biltmore-forest-cc",
@@ -306,9 +348,9 @@
       "subregion": "asheville-basin",
       "access": "private",
       "yards": 6726,
-      "slope": 138,
-      "rating": 72.3,
-      "par": 72,
+      "slope": 139,
+      "rating": 72.8,
+      "par": 70,
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": false,
@@ -317,7 +359,10 @@
       "website": "https://www.biltmoreforestcc.com",
       "address": "31 Stuyvesant Road, Asheville, NC 28803",
       "phone": "tel:8282741261",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 288,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "champion-hills",
@@ -327,8 +372,8 @@
       "subregion": "hendersonville-plateau",
       "access": "private",
       "yards": 6719,
-      "slope": 136,
-      "rating": 71.3,
+      "slope": 144,
+      "rating": 71.7,
       "par": 71,
       "terrain": "severe-mountain",
       "helene": false,
@@ -338,7 +383,10 @@
       "website": "https://www.championhills.com",
       "phone": "tel:8286961962",
       "address": "1 Hagen Drive, Hendersonville, NC 28739",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 305,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "cliffs-walnut-cove",
@@ -359,7 +407,10 @@
       "website": "https://cliffsliving.com/golf-course/walnut-cove-golf/",
       "phone": "tel:8286871738",
       "address": "40 Club Village Way, Arden, NC 28704",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 75,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "country-club-asheville",
@@ -369,7 +420,7 @@
       "subregion": "asheville-basin",
       "access": "private",
       "yards": 6639,
-      "slope": 137,
+      "slope": 134,
       "rating": 72.5,
       "par": 71,
       "terrain": "severe-mountain",
@@ -380,7 +431,10 @@
       "website": "https://www.ccofasheville.com",
       "phone": "tel:8282589183",
       "address": "170 Windsor Road, Asheville, NC 28804",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 105,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "kenmure",
@@ -390,8 +444,8 @@
       "subregion": "hendersonville-plateau",
       "access": "private",
       "yards": 6509,
-      "slope": 130,
-      "rating": 71.2,
+      "slope": 143,
+      "rating": 71.4,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -401,7 +455,10 @@
       "website": "https://www.kenmure.com",
       "phone": "tel:8286938506",
       "address": "100 Clubhouse Drive, Flat Rock, NC 28731",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 187,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "laurel-ridge-cc",
@@ -411,8 +468,8 @@
       "subregion": "smoky-corridor",
       "access": "semi-private",
       "yards": 6904,
-      "slope": 146,
-      "rating": 74.2,
+      "slope": 141,
+      "rating": 72.1,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -422,7 +479,10 @@
       "website": "https://www.laurelridgeexperience.com/golf-course",
       "phone": "tel:8284520545",
       "address": "49 Cupp Lane, Waynesville, NC 28786",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 127,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "dogwood-valley",
@@ -443,7 +503,10 @@
       "address": "328 Dogwood Valley Road, Forest City, NC 28043",
       "phone": "tel:8283820095",
       "closed": false,
-      "website": null
+      "website": null,
+      "usga_course_id": null,
+      "nine_hole_course": true,
+      "usga_rating_note": null
     },
     {
       "id": "forest-city-municipal",
@@ -464,7 +527,10 @@
       "website": "https://www.townofforestcity.com/parks-recreation/municipal-golf-course",
       "address": "211 Clay Street, Forest City, NC 28043",
       "phone": "tel:8282485222",
-      "closed": false
+      "closed": false,
+      "usga_course_id": null,
+      "nine_hole_course": true,
+      "usga_rating_note": null
     },
     {
       "id": "lenoir-golf-course",
@@ -485,7 +551,10 @@
       "website": "https://lenoirgolfcourse.com/",
       "address": "701 Norwood Street SW, Lenoir, NC 28645",
       "phone": "tel:8287572200",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 391,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "meadowbrook-gc",
@@ -506,7 +575,10 @@
       "website": "https://meadowbrookgolfclub.com/",
       "address": "1211 Meadowbrook Road, Rutherfordton, NC 28139",
       "phone": "tel:8288632690",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 153,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "silver-creek-gc",
@@ -527,7 +599,10 @@
       "website": "https://screekgolf.com/",
       "address": "4241 Plantation Drive, Morganton, NC 28655",
       "phone": "tel:8285846911",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 297,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "cleghorn-golf",
@@ -538,8 +613,8 @@
       "access": "resort",
       "yards": 6903,
       "slope": 134,
-      "rating": 74.6,
-      "par": 72,
+      "rating": 73.8,
+      "par": 71,
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": false,
@@ -548,7 +623,10 @@
       "website": "https://www.cleghorngolf.com",
       "address": "183 Golf Circle, Rutherfordton, NC 28139",
       "phone": "tel:8282869117",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 364,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "rumbling-bald-apple-valley",
@@ -558,7 +636,7 @@
       "subregion": "hendersonville-plateau",
       "access": "resort",
       "yards": 6756,
-      "slope": 138,
+      "slope": 143,
       "rating": 72.5,
       "par": 72,
       "terrain": "severe-mountain",
@@ -569,7 +647,10 @@
       "website": "https://www.rumblingbald.com",
       "address": "112 Mountains Boulevard, Lake Lure, NC 28746",
       "phone": "tel:8286943072",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 49,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "rumbling-bald-mountain",
@@ -579,8 +660,8 @@
       "subregion": "hendersonville-plateau",
       "access": "resort",
       "yards": 6575,
-      "slope": 137,
-      "rating": 72.8,
+      "slope": 135,
+      "rating": 71.2,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -590,7 +671,10 @@
       "website": "https://www.rumblingbald.com",
       "address": "112 Mountains Boulevard, Lake Lure, NC 28746",
       "phone": "tel:8286943072",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 50,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "brights-creek",
@@ -599,9 +683,9 @@
       "county": "Polk",
       "subregion": "hendersonville-plateau",
       "access": "private",
-      "yards": 7435,
-      "slope": 137,
-      "rating": 75.2,
+      "yards": null,
+      "slope": 146,
+      "rating": 76.0,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -611,7 +695,10 @@
       "website": "https://brightscreekclub.com/golf/",
       "address": "2222 Palmer Road, Mill Spring, NC 28756",
       "phone": "tel:8286944500",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 33,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mimosa-hills",
@@ -632,7 +719,10 @@
       "website": "https://www.mimosahills.org",
       "address": "611 Golf Course Road, Morganton, NC 28655",
       "phone": "tel:8284371246",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 190,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "tryon-cc",
@@ -642,8 +732,8 @@
       "subregion": "hendersonville-plateau",
       "access": "private",
       "yards": 3125,
-      "slope": 120,
-      "rating": 34.8,
+      "slope": 127,
+      "rating": 71.1,
       "par": 36,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -653,7 +743,10 @@
       "website": "https://www.tryoncountryclub.com",
       "address": "393 Country Club Road, Tryon, NC 28782",
       "phone": "tel:8288595161",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 136,
+      "nine_hole_course": true,
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 36, 3,125 yards."
     },
     {
       "id": "boone-golf-club",
@@ -663,8 +756,8 @@
       "subregion": "high-country",
       "access": "public",
       "yards": 6680,
-      "slope": 120,
-      "rating": 70.1,
+      "slope": 127,
+      "rating": 71.4,
       "par": 71,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -674,7 +767,10 @@
       "website": "https://www.boonegolfclub.com",
       "phone": "tel:8282643034",
       "address": "433 Fairway Drive, Boone, NC 28607",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 418,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "grassy-creek-cc",
@@ -695,7 +791,10 @@
       "website": "https://grassycreek.com",
       "address": "2360 Swiss Pine Lake Drive, Spruce Pine, NC 28777",
       "phone": "tel:8287657436",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 315,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mount-mitchell-gc",
@@ -717,7 +816,10 @@
       "phone": "tel:8286754253",
       "address": "11484 State Highway 80 South, Burnsville, NC 28714",
       "closed": true,
-      "closed_note": "As of 2026 the course land is listed for sale following catastrophic Helene damage. Future as a golf course is uncertain. Do not visit without confirming status directly."
+      "closed_note": "As of 2026 the course land is listed for sale following catastrophic Helene damage. Future as a golf course is uncertain. Do not visit without confirming status directly.",
+      "usga_course_id": null,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mountain-aire",
@@ -738,7 +840,10 @@
       "website": "https://www.mountainaire.com",
       "address": "1396 Fairway Ridge Drive, West Jefferson, NC 28694",
       "phone": "tel:3368774716",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 409,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mountain-glen",
@@ -748,8 +853,8 @@
       "subregion": "high-country",
       "access": "public",
       "yards": 6723,
-      "slope": 129,
-      "rating": 70.0,
+      "slope": 138,
+      "rating": 71.3,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -759,7 +864,10 @@
       "website": "https://www.mountainglengolfclub.com",
       "address": "1 Club House Drive, Newland, NC 28657",
       "phone": "tel:8287335804",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 175,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "new-river-cc",
@@ -769,8 +877,8 @@
       "subregion": "high-country",
       "access": "public",
       "yards": 6011,
-      "slope": 116,
-      "rating": 70.1,
+      "slope": 120,
+      "rating": 68.2,
       "par": 71,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -779,7 +887,10 @@
       "insider_tip": "Don’t let the yardage card lull you. The rolling terrain plays longer than the numbers suggest. Down-to-earth atmosphere, friendly locals, and an honest value make this a sleeper pick in the northern High Country.",
       "phone": "tel:3363724869",
       "address": "611 Golf Course Road, Sparta, NC 28675",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 247,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "stone-mountain-gc",
@@ -800,7 +911,10 @@
       "address": "155 View Point Drive, Traphill, NC 28685",
       "phone": "tel:3369574422",
       "closed": false,
-      "website": null
+      "website": null,
+      "usga_course_id": null,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "sugar-mountain",
@@ -821,7 +935,10 @@
       "website": "https://www.seesugar.com/golf",
       "address": "1054 Sugar Mountain Drive, Banner Elk, NC 28604",
       "phone": "tel:8288986464",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 20835,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "forest-pines",
@@ -842,7 +959,10 @@
       "address": "1266 Grange Road, Elkin, NC 28621",
       "phone": "tel:3369289780",
       "closed": false,
-      "website": "https://golfnorthcarolina.com/courses/forest-pines-golf-course/"
+      "website": "https://golfnorthcarolina.com/courses/forest-pines-golf-course/",
+      "usga_course_id": null,
+      "nine_hole_course": true,
+      "usga_rating_note": null
     },
     {
       "id": "rock-creek-cc",
@@ -852,9 +972,9 @@
       "subregion": "foothills",
       "access": "public",
       "yards": 6285,
-      "slope": 117,
-      "rating": 70.0,
-      "par": 70,
+      "slope": 118,
+      "rating": 66.3,
+      "par": 68,
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": false,
@@ -862,7 +982,10 @@
       "insider_tip": "Some of the cheapest green fees in all of North Carolina. An unbeatable value for beginners, high-handicappers, and anyone who wants a relaxed round without the formality. Show up, pay, play.",
       "address": "825 Little Mountain Church Road, North Wilkesboro, NC 28659",
       "phone": "tel:3366962146",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 27162,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "jefferson-landing",
@@ -883,7 +1006,10 @@
       "website": "https://www.visitjeffersonlanding.com/Golf",
       "phone": "tel:3364657888",
       "address": "148 East Landing Drive, Jefferson, NC 28640",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 296,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "linville-golf-club",
@@ -893,8 +1019,8 @@
       "subregion": "high-country",
       "access": "resort",
       "yards": 6780,
-      "slope": 135,
-      "rating": 73.3,
+      "slope": 140,
+      "rating": 73.7,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -904,7 +1030,10 @@
       "website": "https://www.linvillegolfclub.com",
       "phone": "tel:8007426717",
       "address": "175 Linville Avenue, Linville, NC 28646",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 360,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "olde-beau",
@@ -925,7 +1054,10 @@
       "website": "https://www.oldebeauresort.com",
       "phone": "tel:3363638585",
       "address": "729 Olde Beau Boulevard, Roaring Gap, NC 28668",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 316,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "beech-mountain-club",
@@ -936,7 +1068,7 @@
       "access": "private",
       "yards": 6079,
       "slope": 136,
-      "rating": 69.4,
+      "rating": 70.4,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -946,7 +1078,10 @@
       "website": "https://www.beechmtn.club",
       "phone": "tel:8283873521",
       "address": "103 Lakeledge Road, Beech Mountain, NC 28604",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 143,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "blowing-rock-cc",
@@ -967,7 +1102,10 @@
       "website": "https://www.blowingrockcountryclub.com/",
       "address": "200 Country Club Drive, Blowing Rock, NC 28605",
       "phone": "tel:8282953513",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 455,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "elk-river-club",
@@ -977,8 +1115,8 @@
       "subregion": "high-country",
       "access": "private",
       "yards": 6755,
-      "slope": 141,
-      "rating": 72.8,
+      "slope": 144,
+      "rating": 74.2,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -988,7 +1126,10 @@
       "website": "https://www.elkriverclubnc.com",
       "address": "1000 Clubhouse Drive, Banner Elk, NC 28604",
       "phone": "tel:8288989773",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 154,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "grandfather-golf-cc",
@@ -998,8 +1139,8 @@
       "subregion": "high-country",
       "access": "private",
       "yards": 7010,
-      "slope": 136,
-      "rating": 74.7,
+      "slope": 145,
+      "rating": 73.6,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -1009,7 +1150,34 @@
       "website": "https://www.grandfatherclubnc.com",
       "address": "2120 US Highway 105 South, Linville, NC 28646",
       "phone": "tel:8288984388",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 221,
+      "nine_hole_course": false,
+      "usga_rating_note": null
+    },
+    {
+      "id": "grandfather-mountain-springs",
+      "name": "Grandfather Golf & Country Club — Mountain Springs Course",
+      "city": "Linville",
+      "county": "Avery",
+      "subregion": "high-country",
+      "access": "private",
+      "yards": null,
+      "slope": 98,
+      "rating": 58.1,
+      "par": 59,
+      "terrain": "mountain",
+      "helene": false,
+      "featured": false,
+      "usga_course_id": 34175,
+      "summary": "The shorter companion course to the main Grandfather layout — a par-59 executive-style layout within the same private club property at the base of Grandfather Mountain. Access through Grandfather G&CC membership.",
+      "insider_tip": "A more relaxed alternative to the demanding main course. Worth noting separately for members and guests navigating the full Grandfather property.",
+      "website": "https://www.grandfatherclub.com/",
+      "address": "Linville, NC 28646",
+      "phone": "tel:8007426717",
+      "closed": false,
+      "nine_hole_course": true,
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 59."
     },
     {
       "id": "hound-ears",
@@ -1019,8 +1187,8 @@
       "subregion": "high-country",
       "access": "private",
       "yards": 6327,
-      "slope": 122,
-      "rating": 69.4,
+      "slope": 134,
+      "rating": 70.6,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -1030,7 +1198,10 @@
       "website": "https://www.houndears.com",
       "address": "328 Shulls Mill Road, Boone, NC 28607",
       "phone": "tel:8289632123",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 361,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "linville-ridge",
@@ -1040,8 +1211,8 @@
       "subregion": "high-country",
       "access": "private",
       "yards": 6746,
-      "slope": 129,
-      "rating": 72.2,
+      "slope": 142,
+      "rating": 74.2,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -1051,7 +1222,10 @@
       "website": "https://www.linvilleridge.com/golf-pages/golf",
       "address": "2245 NC-105, Linville, NC 28646",
       "phone": "tel:8287424150",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 71,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mountain-air-cc",
@@ -1061,9 +1235,9 @@
       "subregion": "high-country",
       "access": "private",
       "yards": 6425,
-      "slope": 129,
-      "rating": 70.9,
-      "par": 71,
+      "slope": 137,
+      "rating": 69.4,
+      "par": 70,
       "terrain": "severe-mountain",
       "helene": false,
       "featured": false,
@@ -1072,7 +1246,10 @@
       "website": "https://www.mountainaircc.com",
       "address": "65 Mountain Air Dr., Burnsville, NC 28714",
       "phone": "tel:8286825600",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 340,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "chatuge-shores",
@@ -1093,7 +1270,10 @@
       "address": "260 Golf Course Road, Hayesville, NC 28904",
       "phone": "tel:8283898940",
       "closed": false,
-      "website": null
+      "website": null,
+      "usga_course_id": 366,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "franklin-golf-course",
@@ -1114,7 +1294,10 @@
       "website": "https://www.franklingolfcourse.com/",
       "address": "255 First Fairway Drive, Franklin, NC 28734",
       "phone": "tel:8285242516",
-      "closed": false
+      "closed": false,
+      "usga_course_id": null,
+      "nine_hole_course": true,
+      "usga_rating_note": "Rating and slope reflect 18-hole equivalents (9 holes played twice) per VisitNC. Actual layout is 9 holes, par 36, 2,933 yards."
     },
     {
       "id": "sapphire-national",
@@ -1135,7 +1318,10 @@
       "summary": "For two decades the only public 18-hole course in the entire Highlands/Cashiers/Sapphire corridor, Sapphire National earned a Golf Digest 4.5-star rating and featured a par-3 island green on hole 15 and a signature par-4 13th beside a majestic waterfall. As of 2026 the facility is privately owned and closed to public play. Too historically significant to omit.",
       "insider_tip": "The adjacent Red Bird Golf Links, a 9-hole executive course also at Sapphire Valley Resort, remains open and provides the only public golf in the immediate corridor while Sapphire National’s status resolves.",
       "website": "https://www.sapphirenational.com",
-      "phone": "tel:8287431174"
+      "phone": "tel:8287431174",
+      "usga_course_id": null,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "smoky-mtn-cc-whittier",
@@ -1145,8 +1331,8 @@
       "subregion": "smoky-corridor",
       "access": "public",
       "yards": 6150,
-      "slope": 123,
-      "rating": 67.2,
+      "slope": null,
+      "rating": null,
       "par": 71,
       "terrain": "severe-mountain",
       "helene": false,
@@ -1156,7 +1342,10 @@
       "website": "https://www.smccgolf.com",
       "address": "5984 Slope Street, Whittier, NC 28789",
       "phone": "tel:8284972582",
-      "closed": false
+      "closed": false,
+      "usga_course_id": null,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mill-creek-cc",
@@ -1177,7 +1366,10 @@
       "website": "https://www.thegolfclubatmillcreek.com/",
       "address": "341 Country Club Dr., Franklin, NC 28734",
       "phone": "tel:8285244653",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 307,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mountain-harbour",
@@ -1198,7 +1390,10 @@
       "website": "https://mountainharbourlivingandgolf.com/mountain-harbour-golf-2/",
       "address": "1370 Chatuge Lake Drive, Hayesville, NC 28904",
       "phone": "tel:8283899500",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 150,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "bear-lake-reserve",
@@ -1219,7 +1414,10 @@
       "website": "https://bearlakereserve.com/lodging/golf/",
       "address": "1540 Grandview Drive, Tuckasegee, NC 28783",
       "phone": "tel:8282935005",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 128,
+      "nine_hole_course": true,
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 29, 1,945 yards."
     },
     {
       "id": "high-hampton",
@@ -1240,7 +1438,10 @@
       "website": "https://www.highhampton.com/golf",
       "phone": "tel:8285269351",
       "address": "265 High Hampton Drive, Cashiers, NC 28717",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 306,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "old-edwards-club",
@@ -1261,7 +1462,10 @@
       "website": "https://www.oldedwardsclub.com",
       "phone": "tel:8285261783",
       "address": "688 Highlands Cove Drive, Cashiers, NC 28717",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 42,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "sequoyah-national",
@@ -1282,7 +1486,10 @@
       "website": "https://www.sequoyahnational.com",
       "address": "79 Cahons Road, Whittier, NC 28789",
       "phone": "tel:8284973000",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 53,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "balsam-mountain-preserve",
@@ -1292,8 +1499,8 @@
       "subregion": "high-plateau",
       "access": "private",
       "yards": 6824,
-      "slope": 147,
-      "rating": 73.0,
+      "slope": 152,
+      "rating": 73.8,
       "par": 70,
       "terrain": "severe-mountain",
       "helene": false,
@@ -1303,7 +1510,10 @@
       "website": "https://www.balsammountainpreserve.com",
       "address": "81 Preserve Road, Sylva, NC 28779",
       "phone": "tel:8286311000",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 131,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "burlingame-cc",
@@ -1312,10 +1522,10 @@
       "county": "Transylvania",
       "subregion": "high-plateau",
       "access": "private",
-      "yards": 6601,
-      "slope": 142,
+      "yards": 3301,
+      "slope": 147,
       "rating": 72.6,
-      "par": 72,
+      "par": 36,
       "terrain": "valley-floor",
       "helene": false,
       "featured": false,
@@ -1324,7 +1534,10 @@
       "website": "https://burlingameccwnc.com/golf/",
       "address": "US Highway 64, Sapphire, NC 28774",
       "phone": "tel:8289669161",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 211,
+      "nine_hole_course": true,
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 36, 3,301 yards."
     },
     {
       "id": "sapphire-valley-cc",
@@ -1334,8 +1547,8 @@
       "subregion": "high-plateau",
       "access": "private",
       "yards": 6841,
-      "slope": 128,
-      "rating": 72.5,
+      "slope": 135,
+      "rating": 73.5,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -1345,7 +1558,10 @@
       "website": "https://www.sapphirevalley.com",
       "address": "120 Handicap Drive, Sapphire, NC 28774",
       "phone": "tel:8287433441",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 216,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "cullasaja-club",
@@ -1355,8 +1571,8 @@
       "subregion": "high-plateau",
       "access": "private",
       "yards": 6651,
-      "slope": 128,
-      "rating": 72.1,
+      "slope": 145,
+      "rating": 73.6,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -1366,7 +1582,10 @@
       "website": "https://www.cullasajaclub.org",
       "address": "1371 Cullasaja Club Drive, Highlands, NC 28741",
       "phone": "tel:8285269057",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 415,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "highlands-cc",
@@ -1376,7 +1595,7 @@
       "subregion": "high-plateau",
       "access": "private",
       "yards": 6255,
-      "slope": 130,
+      "slope": 138,
       "rating": 71.2,
       "par": 70,
       "terrain": "rolling-foothills",
@@ -1387,7 +1606,10 @@
       "website": "https://www.highlandscountryclub.com/golf",
       "address": "981 Dillard Road, Highlands, NC 28741",
       "phone": "tel:8285262181",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 81,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "highlands-falls-cc",
@@ -1408,7 +1630,10 @@
       "website": "https://www.clubhfcc.com/",
       "address": "1 Club Drive, Highlands, NC 28741",
       "phone": "tel:8285264118",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 186,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "lake-toxaway-cc",
@@ -1429,7 +1654,10 @@
       "insider_tip": "The club completed a major clubhouse renovation. Even if you arrange a guest round, the post-round lakefront dining experience is worth planning around.",
       "website": "https://www.laketoxawaycc.com",
       "phone": "tel:8288833831",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 134,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "mountaintop-golf",
@@ -1450,7 +1678,10 @@
       "website": "https://www.mountaintopgolfclub.com",
       "address": "1638 High Mountain Drive, Cashiers, NC 28717",
       "phone": "tel:8287434707",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 23618,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "trillium-links",
@@ -1460,9 +1691,9 @@
       "subregion": "high-plateau",
       "access": "private",
       "yards": 6505,
-      "slope": 134,
-      "rating": 72.4,
-      "par": 71,
+      "slope": 145,
+      "rating": 71.5,
+      "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": false,
@@ -1471,7 +1702,10 @@
       "website": "https://trilliumnc.com/golf/",
       "address": "245 Links Drive, Cashiers, NC 28717",
       "phone": "tel:8889097171",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 188,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "wade-hampton",
@@ -1481,8 +1715,8 @@
       "subregion": "high-plateau",
       "access": "private",
       "yards": 7154,
-      "slope": 136,
-      "rating": 74.4,
+      "slope": 147,
+      "rating": 76.2,
       "par": 72,
       "terrain": "severe-mountain",
       "helene": false,
@@ -1492,7 +1726,10 @@
       "website": "https://www.wadehamptongc.com/golf",
       "address": "Highway 107 South, Cashiers, NC 28717",
       "phone": "tel:8287435465",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 163,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "wildcat-cliffs-cc",
@@ -1513,7 +1750,10 @@
       "website": "https://www.wildcatcliffscountryclub.com/golf",
       "address": "770 Country Club Drive, Highlands, NC 28741",
       "phone": "tel:8285262165",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 61,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "marion-lake-club",
@@ -1534,7 +1774,10 @@
       "website": "https://marionlakeclub.com/",
       "phone": "tel:8286526232",
       "address": "2030 NC HWY 126, Nebo, NC 28761",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 191,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "diamond-creek",
@@ -1555,7 +1798,10 @@
       "website": "https://www.friedkin.com/diamond-creek/",
       "phone": "tel:8288981800",
       "address": "25 Rock Rose, Banner Elk, NC 28604",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 258,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "high-meadows-cc",
@@ -1576,7 +1822,10 @@
       "website": "https://www.highmeadowscountryclub.com/",
       "phone": "tel:3363632445",
       "address": "1288 Country Club Road, Roaring Gap, NC 28668",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 311,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "linville-land-harbor",
@@ -1597,7 +1846,10 @@
       "website": "https://linvillelandharborgolf.com/",
       "phone": "tel:8287338325",
       "address": "Linville Land Harbor, Linville, NC 28646",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 243,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "wolf-laurel-cc",
@@ -1607,9 +1859,9 @@
       "subregion": "asheville-basin",
       "access": "semi-private",
       "yards": 6214,
-      "slope": 132,
-      "rating": 70.2,
-      "par": 72,
+      "slope": 131,
+      "rating": 69.7,
+      "par": 71,
       "terrain": "severe-mountain",
       "helene": false,
       "featured": false,
@@ -1618,7 +1870,10 @@
       "website": "https://www.wolflaurelcountryclub.com/",
       "phone": "tel:8286809772",
       "address": "2607 Wolf Laurel Rd, Mars Hill, NC 28754",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 149,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "cherokee-hills-gc",
@@ -1639,7 +1894,10 @@
       "website": "https://golfnorthcarolina.com/courses/cherokee-hills-golf-country-club/",
       "phone": "tel:8288375853",
       "address": "216 Club House Dr, Murphy, NC 28906",
-      "closed": false
+      "closed": false,
+      "usga_course_id": null,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "rock-barn-jackson",
@@ -1660,7 +1918,10 @@
       "website": "https://www.rockbarn.com/Golf/Jackson_Course",
       "phone": "tel:8284591125",
       "address": "3791 Clubhouse Drive, Conover, NC 28613",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 32,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "rock-barn-jones",
@@ -1681,7 +1942,10 @@
       "website": "https://www.rockbarn.com/Golf/Jones_Course",
       "phone": "tel:8284591125",
       "address": "3791 Clubhouse Drive, Conover, NC 28613",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 9415,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "catawba-country-club",
@@ -1691,8 +1955,8 @@
       "subregion": "foothills",
       "access": "private",
       "yards": 6696,
-      "slope": 132,
-      "rating": 71.7,
+      "slope": 129,
+      "rating": 72.8,
       "par": 72,
       "terrain": "rolling-foothills",
       "helene": false,
@@ -1702,7 +1966,10 @@
       "website": "https://www.catawbacc.org",
       "phone": "tel:8282943727",
       "address": "1154 Country Club Rd, Newton, NC 28658",
-      "closed": false
+      "closed": false,
+      "usga_course_id": 456,
+      "nine_hole_course": false,
+      "usga_rating_note": null
     },
     {
       "id": "red-bird-golf-sapphire",
@@ -1723,10 +1990,13 @@
       "insider_tip": "Don’t let the executive format fool you. This course presents a genuine challenge for any handicap. Play it in the fall and watch for the popular ‘Big Cup Challenge’ tournament with 8-inch holes. The last riding tee time is 4:00 PM daily.",
       "website": "https://sapphirevalleyresorts.com/amenities/red-bird-golf/",
       "phone": "tel:8287432288",
-      "address": "67 Cherokee Trail, Sapphire, NC 28774"
+      "address": "67 Cherokee Trail, Sapphire, NC 28774",
+      "usga_course_id": null,
+      "nine_hole_course": true,
+      "usga_rating_note": null
     }
   ],
-  "notes": "June 8 2026 audit v89: Balsam Mountain Preserve — added downhill par-3 member knowledge to summary. June 8 2026 audit v88: Balsam Mountain — removed website URL and rental sets reference from tip; reworded access inquiry line. June 8 2026 audit v87: Balsam Mountain Preserve — tip rewritten to reduce procedural/instructional tone; Day on the Greens detail preserved in natural insider voice. Red Bird Golf Links — access wording audit flag closed; member priority language in summary is accurate and no change needed. Phase 1 data integrity audit complete. June 8 2026 audit v86: Forest City Municipal GC — yards corrected 1800→3199, par confirmed 36, rating filled 35.2, slope filled 130 (source: Golf.com coursefinder); address corrected to 211 Clay Street. Mountaintop Golf & Lake Club — yards corrected 7100→7099, rating filled 74.1, slope filled 148 (source: 18Birdies scorecard, championship Axe tees); address confirmed 1638 High Mountain Drive Cashiers NC 28717; phone confirmed 828-743-4707. June 7 2026 audit v85: Removed all booking platform references. Rock Barn Jackson — removed 'Book online through TeeItUp' from tip. Black Mountain GC — removed 'or book online' from tip. June 7 2026 audit v84: Elk River Club — removed 'restored and reimagined course reopened in May 2026' sentence from summary. June 7 2026 audit v83: Elk River Club — stats confirmed verified post-renovation; removed approximate stats caveat from tip. June 7 2026 audit v82: Asheville Municipal — removed Best of NC 2026 award from summary. June 7 2026 audit v81: Helene/closure freshness pass. Asheville Municipal — disc golf detail removed (confirmed no longer in place); added 2026 Best of NC Regional Golf Course award; front nine restoration status updated. Black Mountain GC — front nine reopen timeline updated to 2027 per June 2026 GolfPass reviews and town documents. Elk River Club — helene flag cleared (fully reopened May 2026 after comprehensive Nicklaus Design master plan renovation); summary updated to reflect post-Helene rebuild; tip updated to flag pre-Helene stats as approximate. Mount Mitchell — \"listed for sale\" language softened to \"uncertain status\" (no confirmed sale found in any source as of June 2026). June 7 2026 audit v80: Chatuge Shores — website removed entirely (no SSL certificate, security warning on all browsers). June 7 2026 audit v79: Stone Mountain GC — website removed (golfstonemountain.com is a dead domain). Chatuge Shores — website corrected to http (no SSL certificate; chatugeshoresgolf.com throws security warning on https). June 7 2026 audit v78: Phone verification pass on four low-risk courses. All four phones confirmed correct via multi-source search. Stone Mountain GC — website added: golfstonemountain.com (confirmed active). Chatuge Shores — website added: chatugeshoresgolf.com (confirmed active). New River CC and Rock Creek CC — phones and addresses confirmed correct; no websites exist. June 7 2026 audit v77: Three medium-risk address resolutions. CC of Sapphire Valley — address confirmed: 120 Handicap Drive, Sapphire, NC 28774. Linville Ridge — address confirmed: 2245 NC-105, Linville, NC 28646; phone confirmed: (828) 742-4150; website confirmed: linvilleridge.com/golf-pages/golf. Lenoir Golf Club — address confirmed: 701 Norwood Street SW, Lenoir, NC 28645. June 7 2026 audit v76: Forest Pines GC — address confirmed 1266 Grange Road Elkin NC 28621 (phone verified); phone confirmed (336) 928-9780; website updated to golfnorthcarolina.com listing; slope/rating confirmed null (officially unrated per USGA, confirmed via phone). Dogwood Valley — no website confirmed via phone call. June 6 2026 audit v75: Subregion corrections — Marion Lake Club (McDowell County) asheville-basin→foothills; High Meadows G&CC (Alleghany County) high-country→foothills; Dogwood Valley GC (Rutherford County) hendersonville-plateau→foothills. All three corrected per WNC geographic matrix (23-county subregion definitions). Foothills subregion now 12 courses. June 6 2026 audit v74: Rock Barn corrections from official site (rockbarn.com). Jackson Course: access corrected semi-private→public; phone corrected to 828-459-1125 (matches official site); summary and tip rewritten with smart quotes and official course description; push cart policy noted. Jones Course: yards corrected 7125→7169, rating corrected 74.7→75.2 (championship tees per official site); phone corrected to 828-459-1125. Both entries confirmed Tier 1 from rockbarn.com/Golf/Jackson_Course and rockbarn.com/Golf/Jones_Course. June 6 2026 audit v73: Biltmore Forest tip — simplified dress code line to 'Dress the part — this is Biltmore Forest, after all.' June 6 2026 audit v72: Six course updates. Biltmore Forest: expanded summary with Ross design philosophy; tip updated with parking lot dress code line. Walnut Cove: removed false \"only Nicklaus in WNC\" claim; added valley basin/farmland context, European village detail, Biltmore Championship PGA TOUR event Sept 17-20 2026; tip updated with holes 8-12 warning, practice park, beer garden. Reems Creek: full rewrite with funky/blind/elevation character, Scottish Highlands vibe, no discount apps detail; tip updated with GPS/2nd hole/backward grain/fescue/clubhouse food. Elk River: full rewrite with jetport, 1200-foot altitude change, deliberate front/back contrast; tip updated with Three Bears closing stretch, capped membership, pace of play. Jefferson Landing: full rewrite with Kris Spence renovation, sod-wall bunkers/St. Andrews, valley layout, creek defense, lodging access; tip updated with 19th Hole Grille, sod-wall warning. Kenmure: tip replaced; removed unverified qualifier/elevation claims; replaced with design philosophy and walkability. June 6 2026 audit v71: Sherwood Forest — summary trimmed; removed creaky screen door, gazebo, groups of 5-6, four-generations detail; streamlined 'people come back for decades' line. June 6 2026 audit v70: Seven course updates. Maggie Valley: Valley Nine/Mountain Nine two-biome framing, back nine rises into tree line. Springdale: local industry workers go-to detail added; Spasm clarified as back nine feature without specific elevation figure. Mount Mitchell: trout-filled South Toe River strategy on back nine added; closure language preserved. Linville GC: year corrected 1928→1924 (confirmed via linvillegolfclub.com/web/pages/our-history); Grandma’s Creek on 14 holes added; Eseeola Lodge access sharpened; phone updated to (800) 742-6717; address corrected to 175 Linville Avenue. Hound Ears: 15th hole par-3 waterfall drop detail added; lodge access path added. Linville Land Harbor: overshadowed-by-neighbor framing added; short-but-tight characterization. Wolf Laurel: cabin rental access path added; thin-air ball-flight detail added to summary. June 6 2026 audit v69: Correct IDs used for final dash cleanup. June 6 2026 audit v68: Final dash cleanup pass. All prose em dashes removed. June 6 2026 audit v67: Cleaned remaining em dashes from prose in Maggie Valley, Rumbling Bald Apple Valley, Boone GC, Beech Mountain, Mountain Air CC, High Hampton, Mountaintop, Diamond Creek, Rock Barn Jackson. June 6 2026 audit v66: Full editorial pass across all 82 courses. Converted all straight quotes to smart/curly quotes. Eliminated dash-heavy constructions throughout; rewrote summaries and tips into proper prose sentences. June 6 2026 audit v65: Sherwood Forest — insider tip updated with handler/kids lead rope detail and two-bags-on-wooden-frame context from Walnut Ridge Llamas press article. June 6 2026 audit v64: Sherwood Forest — removed specific llama names (article-specific, potentially outdated); replaced with 'Fairway Friends Llama Farm' reference (confirmed current from course website) and 'trained, named' framing. June 6 2026 audit v63: Sherwood Forest — llama names softened to 'with names like'; removed origin story from tip; kept Route 276 photo detail; llamas as celebrities framing. June 6 2026 audit v62: Sherwood Forest — summary and tip expanded with llama caddie detail (llama names, Route 276 pull-over, four-generation foursomes, creaky screen door clubhouse, gazebo by 5th tee, all-day rate) from Our State Magazine article by Tim Crothers. June 6 2026 audit v61: Black Mountain GC and High Hampton — removed residual generic call-ahead language from tips. June 6 2026 audit v60: Rewrote summaries and tips for 7 courses — Black Mountain GC (Helene-aware Hole 17 tip), Cummings Cove (front/back driver strategy, steep greens), Laurel Ridge (No. 12 tee box detail, iron strategy), Mount Mitchell (flat valley surprise, Helene closure context preserved), Mountain Aire (Hole 3 vertical drop, Philip Shepherd context), High Hampton (lunch bell, Fred & Ted donkeys, Range House porch), Rock Barn Jones (largest putting green in Carolinas). Generic call-ahead language removed throughout. June 6 2026 audit v59: Highlands CC — architect corrected from Ron Pritchard (erroneous aggregator data) to Donald Ross (confirmed via highlandscountryclub.com/about); Bobby Jones founding story expanded from official club history; address and phone updated from official site. June 6 2026 audit v58: Rewrote summaries and tips for 10 courses — Country Club of Sapphire Valley, Wildcat Cliffs CC, Highlands CC, Highlands Falls CC, Burlingame CC, Trillium Links, Forest City Municipal, Chestnut Mountain, Etowah Valley, Connestee Falls. Based on verified source research. June 6 2026 audit v57: Grove Park — moved driving range note from tip to end of summary with revised wording; tip trimmed to pure course knowledge. June 6 2026 audit v56: Grove Park — reworded '18 par 4s' sentiment to qualitative description without the literal phrase. June 6 2026 audit v55: Omni Grove Park Inn Course — summary updated with '18 par 4s' member characterization; insider tip expanded with member knowledge: 6th hole difficulty, greens break away from hotel (except 1 and 18). Source: member firsthand. June 6 2026 audit v54: New River CC — access confirmed public; address confirmed 611 Golf Course Road, Sparta NC 28675; phone confirmed 336-372-4869; website removed (none); summary updated to remove semi-private reference. June 6 2026 audit v53: Lenoir Golf Club — summary and tip rewritten (stub). June 6 2026 audit v52: Rewrote summaries and tips for 8 thin-stub courses — Lenoir GC, Meadowbrook GC, New River CC, Grassy Creek CC, Chatuge Shores, Bear Lake Reserve, Mill Creek CC, Mountain Harbour. Stat references stripped per new convention. June 6 2026 audit v51: Grandfather Golf & CC — removed slope stat from summary. June 6 2026 audit v50: Removed stat repetition from summaries/tips across 13 courses — Broadmoor, Cummings Cove, Waynesville Inn, Laurel Ridge, Silver Creek, Sugar Mountain, Forest Pines, High Hampton, Balsam Mountain, Marion Lake, Cherokee Hills, Rock Barn Jones. Par/yardage/rating/slope references stripped from prose; replaced with qualitative language. June 6 2026 audit v49: Rock Creek CC — removed 18th hole sentence from summary. June 6 2026 audit v48: Rock Creek CC — summary and insider_tip rewritten to capture community/no-frills character, signature 11th par 3 over lake, risk-reward 18th; access corrected semi-private→public (consistent with all source data). June 6 2026 audit v48: Rock Creek CC — summary and insider_tip rewritten; captures no-frills public character, ultra-affordable pricing, signature par-3 11th over lake, risk-reward 18th with lateral pond. June 6 2026 audit v47: Silver Creek GC — summary and insider_tip rewritten to highlight 73.8/141 rating/slope as exceptional for a public foothills course. June 6 2026 audit v46: Silver Creek GC — yards corrected 6666→6781 (championship/rating tees per screekgolf.com/course-guide); rating filled 73.8, slope filled 141; address corrected to 4241 Plantation Drive, Morganton NC 28655. June 6 2026 audit v45: Dogwood Valley GC — yardage filled (3106); phone confirmed (828) 382-0095; slope/rating null (unrated). June 6 2026 audit v44: Dogwood Valley GC — par filled (36), summary and insider_tip rewritten from firsthand review (alwaystimefor9.com); built 1962 (not 1969), no architect (Donald Ross attribution is false), community-built by 25 local men, owner Jeff Walker, dog Moonshine; phone flagged as unverified — pending correct number. June 6 2026 audit v43: Bear Lake Reserve confirmed via official scorecard PDF (bearlakereserve.s3.us-east-2.amazonaws.com): 1945yds/par29/30.0/117 (blue tees, men); yardage corrected 1932→1945; slope corrected 118→117 per USGA rating database (supersedes printed scorecard); slope/rating filled (officially USGA-rated); address corrected to 1540 Grandview Drive, Tuckasegee NC 28783; phone corrected to 828-293-5005. June 6 2026 audit v42: Red Bird Golf Links confirmed: 1265yds/par30; par corrected 33→30; slope/rating null (unrated). June 6 2026 audit v41: Marion Lake Club 6105/par70/70.4/126. Waynesville Inn 6515/par71/71.5/139; par corrected 72→71. Mill Creek CC 6153/par72/68.6/130; address + phone corrected. Lake Toxaway CC 6197/par71/70.8/137. Wildcat Cliffs CC 6481/par72/71.9/139 (official scorecard). June 6 2026 audit v40: Broadmoor Golf Links 6707/par71/71.0/129 — phone + USGA database. June 6 2026 audit v39: Mountain Aire slope 122→130, rating 69.8→70.8 (official scorecard PDF). Mountain Air CC 6425/par71/70.9/129. High Meadows GCC 6698/par72/72.1/130. Burlingame CC 6601/par72/72.6/142. Franklin GC 2933/par36/69.8/115; address corrected. Rock Creek CC 6285/par70/70.0/117. Old Edwards Club 6606/par71/71.9/148. Sherwood Forest/Forest Pines confirmed null (unrated by design). June 5 2026 audit v38: Silver Creek yardage corrected to 6666; slope/rating nulled.",
+  "notes": "June 8 2026 audit v94: Franklin Golf Course — added usga_rating_note clarifying rating/slope are 18-hole equivalents. June 8 2026 audit v93: Added nine_hole_course boolean to all 83 courses. Added usga_rating_note field to all courses (null where not applicable). Tryon CC: par reverted 72→36, yards kept at 3125 (9-hole actual); usga_rating_note explains 18-hole USGA equivalents. Burlingame CC: par reverted 72→36, yards corrected to 3301 (half of 6601); usga_rating_note explains 18-hole USGA equivalents. Bear Lake Reserve and Grandfather Mountain Springs: usga_rating_note added explaining 9x2 USGA rating. Asheville Municipal: usga_rating_note added explaining temporary Helene back-9-twice configuration. June 8 2026 audit v92: Mass USGA stat correction pass — 35+ fields updated across 24 courses using confirmed USGA ncrdb.usga.org data. Key corrections: Reems Creek par 71→72; Wolf Laurel par 72→71; Biltmore Forest par 72→70; Cleghorn par 72→71; Mountain Air CC par 71→70; Trillium Links par 71→72; Rock Creek CC par 70→68; Tryon CC updated to 18-hole stats. Major slope corrections: Champion Hills 136→144, Kenmure 130→143, Linville Ridge 129→142, Cullasaja 128→145, Trillium 134→145, Hound Ears 122→134, Wade Hampton 136→147, Grandfather 136→145. All changes sourced from USGA championship tee data. June 8 2026 audit v91: Smoky Mountain CC — slope and rating nulled (confirmed unrated by USGA); yards 6150 and par 71 confirmed from official printed scorecard. June 8 2026 audit v90: Added usga_course_id field to all 83 courses (null where not rated or not found). Added Grandfather G&CC Mountain Springs Course (new entry; par59/58.1/98; USGA CourseID 34175). Bright's Creek updated: par72/76.0/146 (USGA CourseID 33). Mill Creek CC confirmed: par72/68.6/130 (USGA CourseID 307 — matches JSON). Bear Lake Reserve USGA CourseID 128 noted (USGA rates 18-hole par58; we keep par29 for actual 9-hole). Smoky Mountain CC, Cherokee Hills, Mount Mitchell, Franklin GC, Sapphire National, Stone Mountain, Red Bird, Dogwood, Forest Pines confirmed as not rated or not in USGA DB. June 8 2026 audit v89: Balsam Mountain Preserve — added downhill par-3 member knowledge to summary. June 8 2026 audit v88: Balsam Mountain — removed website URL and rental sets reference from tip; reworded access inquiry line. June 8 2026 audit v87: Balsam Mountain Preserve — tip rewritten to reduce procedural/instructional tone; Day on the Greens detail preserved in natural insider voice. Red Bird Golf Links — access wording audit flag closed; member priority language in summary is accurate and no change needed. Phase 1 data integrity audit complete. June 8 2026 audit v86: Forest City Municipal GC — yards corrected 1800→3199, par confirmed 36, rating filled 35.2, slope filled 130 (source: Golf.com coursefinder); address corrected to 211 Clay Street. Mountaintop Golf & Lake Club — yards corrected 7100→7099, rating filled 74.1, slope filled 148 (source: 18Birdies scorecard, championship Axe tees); address confirmed 1638 High Mountain Drive Cashiers NC 28717; phone confirmed 828-743-4707. June 7 2026 audit v85: Removed all booking platform references. Rock Barn Jackson — removed 'Book online through TeeItUp' from tip. Black Mountain GC — removed 'or book online' from tip. June 7 2026 audit v84: Elk River Club — removed 'restored and reimagined course reopened in May 2026' sentence from summary. June 7 2026 audit v83: Elk River Club — stats confirmed verified post-renovation; removed approximate stats caveat from tip. June 7 2026 audit v82: Asheville Municipal — removed Best of NC 2026 award from summary. June 7 2026 audit v81: Helene/closure freshness pass. Asheville Municipal — disc golf detail removed (confirmed no longer in place); added 2026 Best of NC Regional Golf Course award; front nine restoration status updated. Black Mountain GC — front nine reopen timeline updated to 2027 per June 2026 GolfPass reviews and town documents. Elk River Club — helene flag cleared (fully reopened May 2026 after comprehensive Nicklaus Design master plan renovation); summary updated to reflect post-Helene rebuild; tip updated to flag pre-Helene stats as approximate. Mount Mitchell — \"listed for sale\" language softened to \"uncertain status\" (no confirmed sale found in any source as of June 2026). June 7 2026 audit v80: Chatuge Shores — website removed entirely (no SSL certificate, security warning on all browsers). June 7 2026 audit v79: Stone Mountain GC — website removed (golfstonemountain.com is a dead domain). Chatuge Shores — website corrected to http (no SSL certificate; chatugeshoresgolf.com throws security warning on https). June 7 2026 audit v78: Phone verification pass on four low-risk courses. All four phones confirmed correct via multi-source search. Stone Mountain GC — website added: golfstonemountain.com (confirmed active). Chatuge Shores — website added: chatugeshoresgolf.com (confirmed active). New River CC and Rock Creek CC — phones and addresses confirmed correct; no websites exist. June 7 2026 audit v77: Three medium-risk address resolutions. CC of Sapphire Valley — address confirmed: 120 Handicap Drive, Sapphire, NC 28774. Linville Ridge — address confirmed: 2245 NC-105, Linville, NC 28646; phone confirmed: (828) 742-4150; website confirmed: linvilleridge.com/golf-pages/golf. Lenoir Golf Club — address confirmed: 701 Norwood Street SW, Lenoir, NC 28645. June 7 2026 audit v76: Forest Pines GC — address confirmed 1266 Grange Road Elkin NC 28621 (phone verified); phone confirmed (336) 928-9780; website updated to golfnorthcarolina.com listing; slope/rating confirmed null (officially unrated per USGA, confirmed via phone). Dogwood Valley — no website confirmed via phone call. June 6 2026 audit v75: Subregion corrections — Marion Lake Club (McDowell County) asheville-basin→foothills; High Meadows G&CC (Alleghany County) high-country→foothills; Dogwood Valley GC (Rutherford County) hendersonville-plateau→foothills. All three corrected per WNC geographic matrix (23-county subregion definitions). Foothills subregion now 12 courses. June 6 2026 audit v74: Rock Barn corrections from official site (rockbarn.com). Jackson Course: access corrected semi-private→public; phone corrected to 828-459-1125 (matches official site); summary and tip rewritten with smart quotes and official course description; push cart policy noted. Jones Course: yards corrected 7125→7169, rating corrected 74.7→75.2 (championship tees per official site); phone corrected to 828-459-1125. Both entries confirmed Tier 1 from rockbarn.com/Golf/Jackson_Course and rockbarn.com/Golf/Jones_Course. June 6 2026 audit v73: Biltmore Forest tip — simplified dress code line to 'Dress the part — this is Biltmore Forest, after all.' June 6 2026 audit v72: Six course updates. Biltmore Forest: expanded summary with Ross design philosophy; tip updated with parking lot dress code line. Walnut Cove: removed false \"only Nicklaus in WNC\" claim; added valley basin/farmland context, European village detail, Biltmore Championship PGA TOUR event Sept 17-20 2026; tip updated with holes 8-12 warning, practice park, beer garden. Reems Creek: full rewrite with funky/blind/elevation character, Scottish Highlands vibe, no discount apps detail; tip updated with GPS/2nd hole/backward grain/fescue/clubhouse food. Elk River: full rewrite with jetport, 1200-foot altitude change, deliberate front/back contrast; tip updated with Three Bears closing stretch, capped membership, pace of play. Jefferson Landing: full rewrite with Kris Spence renovation, sod-wall bunkers/St. Andrews, valley layout, creek defense, lodging access; tip updated with 19th Hole Grille, sod-wall warning. Kenmure: tip replaced; removed unverified qualifier/elevation claims; replaced with design philosophy and walkability. June 6 2026 audit v71: Sherwood Forest — summary trimmed; removed creaky screen door, gazebo, groups of 5-6, four-generations detail; streamlined 'people come back for decades' line. June 6 2026 audit v70: Seven course updates. Maggie Valley: Valley Nine/Mountain Nine two-biome framing, back nine rises into tree line. Springdale: local industry workers go-to detail added; Spasm clarified as back nine feature without specific elevation figure. Mount Mitchell: trout-filled South Toe River strategy on back nine added; closure language preserved. Linville GC: year corrected 1928→1924 (confirmed via linvillegolfclub.com/web/pages/our-history); Grandma’s Creek on 14 holes added; Eseeola Lodge access sharpened; phone updated to (800) 742-6717; address corrected to 175 Linville Avenue. Hound Ears: 15th hole par-3 waterfall drop detail added; lodge access path added. Linville Land Harbor: overshadowed-by-neighbor framing added; short-but-tight characterization. Wolf Laurel: cabin rental access path added; thin-air ball-flight detail added to summary. June 6 2026 audit v69: Correct IDs used for final dash cleanup. June 6 2026 audit v68: Final dash cleanup pass. All prose em dashes removed. June 6 2026 audit v67: Cleaned remaining em dashes from prose in Maggie Valley, Rumbling Bald Apple Valley, Boone GC, Beech Mountain, Mountain Air CC, High Hampton, Mountaintop, Diamond Creek, Rock Barn Jackson. June 6 2026 audit v66: Full editorial pass across all 82 courses. Converted all straight quotes to smart/curly quotes. Eliminated dash-heavy constructions throughout; rewrote summaries and tips into proper prose sentences. June 6 2026 audit v65: Sherwood Forest — insider tip updated with handler/kids lead rope detail and two-bags-on-wooden-frame context from Walnut Ridge Llamas press article. June 6 2026 audit v64: Sherwood Forest — removed specific llama names (article-specific, potentially outdated); replaced with 'Fairway Friends Llama Farm' reference (confirmed current from course website) and 'trained, named' framing. June 6 2026 audit v63: Sherwood Forest — llama names softened to 'with names like'; removed origin story from tip; kept Route 276 photo detail; llamas as celebrities framing. June 6 2026 audit v62: Sherwood Forest — summary and tip expanded with llama caddie detail (llama names, Route 276 pull-over, four-generation foursomes, creaky screen door clubhouse, gazebo by 5th tee, all-day rate) from Our State Magazine article by Tim Crothers. June 6 2026 audit v61: Black Mountain GC and High Hampton — removed residual generic call-ahead language from tips. June 6 2026 audit v60: Rewrote summaries and tips for 7 courses — Black Mountain GC (Helene-aware Hole 17 tip), Cummings Cove (front/back driver strategy, steep greens), Laurel Ridge (No. 12 tee box detail, iron strategy), Mount Mitchell (flat valley surprise, Helene closure context preserved), Mountain Aire (Hole 3 vertical drop, Philip Shepherd context), High Hampton (lunch bell, Fred & Ted donkeys, Range House porch), Rock Barn Jones (largest putting green in Carolinas). Generic call-ahead language removed throughout. June 6 2026 audit v59: Highlands CC — architect corrected from Ron Pritchard (erroneous aggregator data) to Donald Ross (confirmed via highlandscountryclub.com/about); Bobby Jones founding story expanded from official club history; address and phone updated from official site. June 6 2026 audit v58: Rewrote summaries and tips for 10 courses — Country Club of Sapphire Valley, Wildcat Cliffs CC, Highlands CC, Highlands Falls CC, Burlingame CC, Trillium Links, Forest City Municipal, Chestnut Mountain, Etowah Valley, Connestee Falls. Based on verified source research. June 6 2026 audit v57: Grove Park — moved driving range note from tip to end of summary with revised wording; tip trimmed to pure course knowledge. June 6 2026 audit v56: Grove Park — reworded '18 par 4s' sentiment to qualitative description without the literal phrase. June 6 2026 audit v55: Omni Grove Park Inn Course — summary updated with '18 par 4s' member characterization; insider tip expanded with member knowledge: 6th hole difficulty, greens break away from hotel (except 1 and 18). Source: member firsthand. June 6 2026 audit v54: New River CC — access confirmed public; address confirmed 611 Golf Course Road, Sparta NC 28675; phone confirmed 336-372-4869; website removed (none); summary updated to remove semi-private reference. June 6 2026 audit v53: Lenoir Golf Club — summary and tip rewritten (stub). June 6 2026 audit v52: Rewrote summaries and tips for 8 thin-stub courses — Lenoir GC, Meadowbrook GC, New River CC, Grassy Creek CC, Chatuge Shores, Bear Lake Reserve, Mill Creek CC, Mountain Harbour. Stat references stripped per new convention. June 6 2026 audit v51: Grandfather Golf & CC — removed slope stat from summary. June 6 2026 audit v50: Removed stat repetition from summaries/tips across 13 courses — Broadmoor, Cummings Cove, Waynesville Inn, Laurel Ridge, Silver Creek, Sugar Mountain, Forest Pines, High Hampton, Balsam Mountain, Marion Lake, Cherokee Hills, Rock Barn Jones. Par/yardage/rating/slope references stripped from prose; replaced with qualitative language. June 6 2026 audit v49: Rock Creek CC — removed 18th hole sentence from summary. June 6 2026 audit v48: Rock Creek CC — summary and insider_tip rewritten to capture community/no-frills character, signature 11th par 3 over lake, risk-reward 18th; access corrected semi-private→public (consistent with all source data). June 6 2026 audit v48: Rock Creek CC — summary and insider_tip rewritten; captures no-frills public character, ultra-affordable pricing, signature par-3 11th over lake, risk-reward 18th with lateral pond. June 6 2026 audit v47: Silver Creek GC — summary and insider_tip rewritten to highlight 73.8/141 rating/slope as exceptional for a public foothills course. June 6 2026 audit v46: Silver Creek GC — yards corrected 6666→6781 (championship/rating tees per screekgolf.com/course-guide); rating filled 73.8, slope filled 141; address corrected to 4241 Plantation Drive, Morganton NC 28655. June 6 2026 audit v45: Dogwood Valley GC — yardage filled (3106); phone confirmed (828) 382-0095; slope/rating null (unrated). June 6 2026 audit v44: Dogwood Valley GC — par filled (36), summary and insider_tip rewritten from firsthand review (alwaystimefor9.com); built 1962 (not 1969), no architect (Donald Ross attribution is false), community-built by 25 local men, owner Jeff Walker, dog Moonshine; phone flagged as unverified — pending correct number. June 6 2026 audit v43: Bear Lake Reserve confirmed via official scorecard PDF (bearlakereserve.s3.us-east-2.amazonaws.com): 1945yds/par29/30.0/117 (blue tees, men); yardage corrected 1932→1945; slope corrected 118→117 per USGA rating database (supersedes printed scorecard); slope/rating filled (officially USGA-rated); address corrected to 1540 Grandview Drive, Tuckasegee NC 28783; phone corrected to 828-293-5005. June 6 2026 audit v42: Red Bird Golf Links confirmed: 1265yds/par30; par corrected 33→30; slope/rating null (unrated). June 6 2026 audit v41: Marion Lake Club 6105/par70/70.4/126. Waynesville Inn 6515/par71/71.5/139; par corrected 72→71. Mill Creek CC 6153/par72/68.6/130; address + phone corrected. Lake Toxaway CC 6197/par71/70.8/137. Wildcat Cliffs CC 6481/par72/71.9/139 (official scorecard). June 6 2026 audit v40: Broadmoor Golf Links 6707/par71/71.0/129 — phone + USGA database. June 6 2026 audit v39: Mountain Aire slope 122→130, rating 69.8→70.8 (official scorecard PDF). Mountain Air CC 6425/par71/70.9/129. High Meadows GCC 6698/par72/72.1/130. Burlingame CC 6601/par72/72.6/142. Franklin GC 2933/par36/69.8/115; address corrected. Rock Creek CC 6285/par70/70.0/117. Old Edwards Club 6606/par71/71.9/148. Sherwood Forest/Forest Pines confirmed null (unrated by design). June 5 2026 audit v38: Silver Creek yardage corrected to 6666; slope/rating nulled.",
   "subregions": [
     {
       "slug": "asheville-basin",
