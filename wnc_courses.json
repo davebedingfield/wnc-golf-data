@@ -746,7 +746,7 @@
       "closed": false,
       "usga_course_id": 136,
       "nine_hole_course": true,
-      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 36, 3,125 yards."
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice)."
     },
     {
       "id": "boone-golf-club",
@@ -1177,7 +1177,7 @@
       "phone": "tel:8288984531",
       "closed": false,
       "nine_hole_course": true,
-      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 59."
+      "usga_rating_note": null
     },
     {
       "id": "hound-ears",
@@ -1297,7 +1297,7 @@
       "closed": false,
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice). Actual layout is 9 holes, par 36, 2,933 yards."
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice)."
     },
     {
       "id": "sapphire-national",
