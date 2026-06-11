@@ -26,7 +26,9 @@
       "closed": false,
       "usga_course_id": 304,
       "nine_hole_course": false,
-      "usga_rating_note": "Current USGA rating reflects temporary Helene configuration — back 9 played twice. Full 18-hole rating will be re-issued upon front nine restoration (targeted 2027)."
+      "usga_rating_note": "Current USGA rating reflects temporary Helene configuration — back 9 played twice. Full 18-hole rating will be re-issued upon front nine restoration (targeted 2027).",
+      "lat": 35.5741,
+      "lng": -82.5022
     },
     {
       "id": "black-mountain-gc",
@@ -50,7 +52,9 @@
       "closed": false,
       "usga_course_id": 414,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.6145,
+      "lng": -82.3243
     },
     {
       "id": "broadmoor-golf-links",
@@ -74,7 +78,9 @@
       "closed": false,
       "usga_course_id": 80,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4289,
+      "lng": -82.5035
     },
     {
       "id": "chestnut-mountain",
@@ -98,7 +104,9 @@
       "closed": false,
       "usga_course_id": 302,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4412,
+      "lng": -82.5578
     },
     {
       "id": "lake-junaluska",
@@ -122,7 +130,9 @@
       "closed": false,
       "usga_course_id": 158,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5298,
+      "lng": -82.9612
     },
     {
       "id": "reems-creek",
@@ -146,7 +156,9 @@
       "closed": false,
       "usga_course_id": 73,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.6876,
+      "lng": -82.5604
     },
     {
       "id": "sherwood-forest",
@@ -170,7 +182,9 @@
       "closed": false,
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 35.2134,
+      "lng": -82.7456
     },
     {
       "id": "connestee-falls",
@@ -194,7 +208,9 @@
       "closed": false,
       "usga_course_id": 14010,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1978,
+      "lng": -82.7389
     },
     {
       "id": "cummings-cove",
@@ -218,7 +234,9 @@
       "closed": false,
       "usga_course_id": 332,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.3156,
+      "lng": -82.4789
     },
     {
       "id": "etowah-valley",
@@ -242,7 +260,9 @@
       "closed": false,
       "usga_course_id": 240,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.3298,
+      "lng": -82.6023
     },
     {
       "id": "maggie-valley-club",
@@ -266,7 +286,9 @@
       "closed": false,
       "usga_course_id": 289,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5187,
+      "lng": -83.0834
     },
     {
       "id": "omni-grove-park",
@@ -290,7 +312,9 @@
       "closed": false,
       "usga_course_id": 94,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5951,
+      "lng": -82.5374
     },
     {
       "id": "springdale-resort",
@@ -314,7 +338,9 @@
       "closed": false,
       "usga_course_id": 215,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5501,
+      "lng": -82.9938
     },
     {
       "id": "waynesville-inn",
@@ -338,7 +364,9 @@
       "closed": false,
       "usga_course_id": 33213,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5024,
+      "lng": -82.9682
     },
     {
       "id": "biltmore-forest-cc",
@@ -362,7 +390,9 @@
       "closed": false,
       "usga_course_id": 288,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5388,
+      "lng": -82.5147
     },
     {
       "id": "champion-hills",
@@ -386,7 +416,9 @@
       "closed": false,
       "usga_course_id": 305,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.3089,
+      "lng": -82.4234
     },
     {
       "id": "cliffs-walnut-cove",
@@ -410,7 +442,9 @@
       "closed": false,
       "usga_course_id": 75,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4656,
+      "lng": -82.5891
     },
     {
       "id": "country-club-asheville",
@@ -434,7 +468,9 @@
       "closed": false,
       "usga_course_id": 105,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.5932,
+      "lng": -82.5598
     },
     {
       "id": "kenmure",
@@ -458,7 +494,9 @@
       "closed": false,
       "usga_course_id": 187,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.2734,
+      "lng": -82.4456
     },
     {
       "id": "laurel-ridge-cc",
@@ -474,7 +512,7 @@
       "terrain": "severe-mountain",
       "helene": false,
       "featured": false,
-      "summary": "Bob Cupp's 1986 design, created alongside Jim Holmes and built with bentgrass tee-to-green at 4,000 feet, is widely considered one of the most challenging mountain courses in WNC. Named Most Challenging Course in WNC by the Asheville Citizen-Times. While formerly entirely private, the club now welcomes limited public tee times — book well in advance.",
+      "summary": "Bob Cupp's 1986 design, created alongside Jim Holmes and built with bentgrass tee-to-green at 4,000 feet, is widely considered one of the most challenging mountain courses in WNC — a distinction backed by the Asheville Citizen-Times. While formerly entirely private, the club now welcomes limited public tee times — book well in advance.",
       "insider_tip": "Afternoon slots are the sweet spot for value. The 12th is a jaw-dropping par 4: a 300-foot vertical drop from the elevated tee box down to the fairway, 416 yards from the tips. Precise iron placements are how locals navigate the blind shots and score well.",
       "website": "https://www.laurelridgeexperience.com/golf-course",
       "phone": "tel:8284520545",
@@ -482,7 +520,9 @@
       "closed": false,
       "usga_course_id": 127,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4989,
+      "lng": -82.9756
     },
     {
       "id": "dogwood-valley",
@@ -506,7 +546,9 @@
       "website": null,
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 35.3267,
+      "lng": -81.8645
     },
     {
       "id": "forest-city-municipal",
@@ -530,7 +572,9 @@
       "closed": false,
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "Rating and slope reflect the 9-hole layout only. This course is not currently rated by the USGA for 18 holes."
+      "usga_rating_note": "Rating and slope reflect the 9-hole layout only. This course is not currently rated by the USGA for 18 holes.",
+      "lat": 35.3398,
+      "lng": -81.8712
     },
     {
       "id": "lenoir-golf-course",
@@ -554,7 +598,9 @@
       "closed": false,
       "usga_course_id": 391,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.9089,
+      "lng": -81.5345
     },
     {
       "id": "meadowbrook-gc",
@@ -578,7 +624,9 @@
       "closed": false,
       "usga_course_id": 153,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.3723,
+      "lng": -81.9756
     },
     {
       "id": "silver-creek-gc",
@@ -602,7 +650,9 @@
       "closed": false,
       "usga_course_id": 297,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.7134,
+      "lng": -81.6823
     },
     {
       "id": "cleghorn-golf",
@@ -626,7 +676,9 @@
       "closed": false,
       "usga_course_id": 364,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.3578,
+      "lng": -81.9634
     },
     {
       "id": "rumbling-bald-apple-valley",
@@ -650,7 +702,9 @@
       "closed": false,
       "usga_course_id": 49,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4312,
+      "lng": -82.0089
     },
     {
       "id": "rumbling-bald-mountain",
@@ -674,7 +728,9 @@
       "closed": false,
       "usga_course_id": 50,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4312,
+      "lng": -82.0089
     },
     {
       "id": "brights-creek",
@@ -698,7 +754,9 @@
       "closed": false,
       "usga_course_id": 33,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.2156,
+      "lng": -82.1234
     },
     {
       "id": "mimosa-hills",
@@ -722,7 +780,9 @@
       "closed": false,
       "usga_course_id": 190,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.7423,
+      "lng": -81.6934
     },
     {
       "id": "tryon-cc",
@@ -746,7 +806,9 @@
       "closed": false,
       "usga_course_id": 136,
       "nine_hole_course": true,
-      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice)."
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice).",
+      "lat": 35.2067,
+      "lng": -82.2345
     },
     {
       "id": "boone-golf-club",
@@ -770,7 +832,9 @@
       "closed": false,
       "usga_course_id": 418,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.2134,
+      "lng": -81.6789
     },
     {
       "id": "grassy-creek-cc",
@@ -794,7 +858,9 @@
       "closed": false,
       "usga_course_id": 315,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.9234,
+      "lng": -82.0645
     },
     {
       "id": "mount-mitchell-gc",
@@ -819,7 +885,9 @@
       "closed_note": "As of 2026 the course land is listed for sale following catastrophic Helene damage. Future as a golf course is uncertain. Do not visit without confirming status directly.",
       "usga_course_id": null,
       "nine_hole_course": false,
-      "usga_rating_note": "This course does not currently hold an official USGA rating. The course is closed pending resolution of post-Helene damage."
+      "usga_rating_note": "This course does not currently hold an official USGA rating. The course is closed pending resolution of post-Helene damage.",
+      "lat": 35.7845,
+      "lng": -82.2134
     },
     {
       "id": "mountain-aire",
@@ -843,7 +911,9 @@
       "closed": false,
       "usga_course_id": 409,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.3978,
+      "lng": -81.4823
     },
     {
       "id": "mountain-glen",
@@ -867,7 +937,9 @@
       "closed": false,
       "usga_course_id": 175,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.0845,
+      "lng": -81.9234
     },
     {
       "id": "new-river-cc",
@@ -890,7 +962,9 @@
       "closed": false,
       "usga_course_id": 247,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.5023,
+      "lng": -81.1189
     },
     {
       "id": "stone-mountain-gc",
@@ -914,7 +988,9 @@
       "website": null,
       "usga_course_id": null,
       "nine_hole_course": false,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 36.3712,
+      "lng": -81.0934
     },
     {
       "id": "sugar-mountain",
@@ -938,7 +1014,9 @@
       "closed": false,
       "usga_course_id": 20835,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1378,
+      "lng": -81.8634
     },
     {
       "id": "forest-pines",
@@ -962,7 +1040,9 @@
       "website": "https://golfnorthcarolina.com/courses/forest-pines-golf-course/",
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 36.2489,
+      "lng": -80.8512
     },
     {
       "id": "rock-creek-cc",
@@ -985,7 +1065,9 @@
       "closed": false,
       "usga_course_id": 27162,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1845,
+      "lng": -81.1334
     },
     {
       "id": "jefferson-landing",
@@ -1009,7 +1091,9 @@
       "closed": false,
       "usga_course_id": 296,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.4189,
+      "lng": -81.4712
     },
     {
       "id": "linville-golf-club",
@@ -1033,7 +1117,9 @@
       "closed": false,
       "usga_course_id": 360,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.0923,
+      "lng": -81.8656
     },
     {
       "id": "olde-beau",
@@ -1057,7 +1143,9 @@
       "closed": false,
       "usga_course_id": 316,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.4056,
+      "lng": -80.9823
     },
     {
       "id": "beech-mountain-club",
@@ -1081,7 +1169,9 @@
       "closed": false,
       "usga_course_id": 143,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1878,
+      "lng": -81.8923
     },
     {
       "id": "blowing-rock-cc",
@@ -1105,7 +1195,9 @@
       "closed": false,
       "usga_course_id": 455,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1334,
+      "lng": -81.6823
     },
     {
       "id": "elk-river-club",
@@ -1129,7 +1221,9 @@
       "closed": false,
       "usga_course_id": 154,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1234,
+      "lng": -81.8734
     },
     {
       "id": "grandfather-golf-cc",
@@ -1153,7 +1247,9 @@
       "closed": false,
       "usga_course_id": 221,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.0756,
+      "lng": -81.8534
     },
     {
       "id": "grandfather-mountain-springs",
@@ -1177,7 +1273,9 @@
       "phone": "tel:8288984531",
       "closed": false,
       "nine_hole_course": true,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.0756,
+      "lng": -81.8534
     },
     {
       "id": "hound-ears",
@@ -1201,7 +1299,9 @@
       "closed": false,
       "usga_course_id": 361,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1645,
+      "lng": -81.7356
     },
     {
       "id": "linville-ridge",
@@ -1225,7 +1325,9 @@
       "closed": false,
       "usga_course_id": 71,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.0923,
+      "lng": -81.8712
     },
     {
       "id": "mountain-air-cc",
@@ -1249,7 +1351,9 @@
       "closed": false,
       "usga_course_id": 340,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.8634,
+      "lng": -82.3023
     },
     {
       "id": "chatuge-shores",
@@ -1273,7 +1377,9 @@
       "website": null,
       "usga_course_id": 366,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0312,
+      "lng": -83.8134
     },
     {
       "id": "franklin-golf-course",
@@ -1297,7 +1403,9 @@
       "closed": false,
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice)."
+      "usga_rating_note": "Rating and slope are USGA 18-hole equivalents (9 holes played twice).",
+      "lat": 35.1823,
+      "lng": -83.3712
     },
     {
       "id": "sapphire-national",
@@ -1321,7 +1429,9 @@
       "phone": "tel:8287431174",
       "usga_course_id": null,
       "nine_hole_course": false,
-      "usga_rating_note": "This course does not currently hold an official USGA rating. The facility is currently closed to public play."
+      "usga_rating_note": "This course does not currently hold an official USGA rating. The facility is currently closed to public play.",
+      "lat": 35.0934,
+      "lng": -83.0389
     },
     {
       "id": "smoky-mtn-cc-whittier",
@@ -1345,7 +1455,9 @@
       "closed": false,
       "usga_course_id": null,
       "nine_hole_course": false,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 35.4378,
+      "lng": -83.2134
     },
     {
       "id": "mill-creek-cc",
@@ -1369,7 +1481,9 @@
       "closed": false,
       "usga_course_id": 307,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1678,
+      "lng": -83.3534
     },
     {
       "id": "mountain-harbour",
@@ -1393,7 +1507,9 @@
       "closed": false,
       "usga_course_id": 150,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0423,
+      "lng": -83.8156
     },
     {
       "id": "bear-lake-reserve",
@@ -1417,7 +1533,9 @@
       "closed": false,
       "usga_course_id": 128,
       "nine_hole_course": true,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.2834,
+      "lng": -83.0823
     },
     {
       "id": "high-hampton",
@@ -1441,7 +1559,9 @@
       "closed": false,
       "usga_course_id": 306,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1123,
+      "lng": -83.1045
     },
     {
       "id": "old-edwards-club",
@@ -1465,7 +1585,9 @@
       "closed": false,
       "usga_course_id": 42,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1089,
+      "lng": -83.1023
     },
     {
       "id": "sequoyah-national",
@@ -1489,7 +1611,9 @@
       "closed": false,
       "usga_course_id": 53,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4531,
+      "lng": -83.1978
     },
     {
       "id": "balsam-mountain-preserve",
@@ -1513,7 +1637,9 @@
       "closed": false,
       "usga_course_id": 131,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.4012,
+      "lng": -83.1023
     },
     {
       "id": "burlingame-cc",
@@ -1538,7 +1664,9 @@
       "usga_course_id": 211,
       "nine_hole_course": true,
       "usga_rating_note": null,
-      "holes": 18
+      "holes": 18,
+      "lat": 35.0712,
+      "lng": -82.9823
     },
     {
       "id": "sapphire-valley-cc",
@@ -1562,7 +1690,9 @@
       "closed": false,
       "usga_course_id": 216,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0978,
+      "lng": -83.0534
     },
     {
       "id": "cullasaja-club",
@@ -1586,7 +1716,9 @@
       "closed": false,
       "usga_course_id": 415,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0534,
+      "lng": -83.1934
     },
     {
       "id": "highlands-cc",
@@ -1610,7 +1742,9 @@
       "closed": false,
       "usga_course_id": 81,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0523,
+      "lng": -83.1978
     },
     {
       "id": "highlands-falls-cc",
@@ -1634,7 +1768,9 @@
       "closed": false,
       "usga_course_id": 186,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0489,
+      "lng": -83.2023
     },
     {
       "id": "lake-toxaway-cc",
@@ -1658,7 +1794,9 @@
       "closed": false,
       "usga_course_id": 134,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1134,
+      "lng": -82.9389
     },
     {
       "id": "mountaintop-golf",
@@ -1682,7 +1820,9 @@
       "closed": false,
       "usga_course_id": 23618,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1023,
+      "lng": -83.0934
     },
     {
       "id": "trillium-links",
@@ -1706,7 +1846,9 @@
       "closed": false,
       "usga_course_id": 188,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1056,
+      "lng": -83.1012
     },
     {
       "id": "wade-hampton",
@@ -1730,7 +1872,9 @@
       "closed": false,
       "usga_course_id": 163,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.1145,
+      "lng": -83.1089
     },
     {
       "id": "wildcat-cliffs-cc",
@@ -1754,7 +1898,9 @@
       "closed": false,
       "usga_course_id": 61,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.0512,
+      "lng": -83.1845
     },
     {
       "id": "marion-lake-club",
@@ -1778,7 +1924,9 @@
       "closed": false,
       "usga_course_id": 191,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.7056,
+      "lng": -81.9234
     },
     {
       "id": "diamond-creek",
@@ -1802,7 +1950,9 @@
       "closed": false,
       "usga_course_id": 258,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.1289,
+      "lng": -81.8845
     },
     {
       "id": "high-meadows-cc",
@@ -1826,7 +1976,9 @@
       "closed": false,
       "usga_course_id": 311,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.4023,
+      "lng": -80.9734
     },
     {
       "id": "linville-land-harbor",
@@ -1850,7 +2002,9 @@
       "closed": false,
       "usga_course_id": 243,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 36.0845,
+      "lng": -81.8678
     },
     {
       "id": "wolf-laurel-cc",
@@ -1874,7 +2028,9 @@
       "closed": false,
       "usga_course_id": 149,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.8237,
+      "lng": -82.7124
     },
     {
       "id": "cherokee-hills-gc",
@@ -1898,7 +2054,9 @@
       "closed": false,
       "usga_course_id": null,
       "nine_hole_course": false,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 35.0934,
+      "lng": -84.0234
     },
     {
       "id": "rock-barn-jackson",
@@ -1922,7 +2080,9 @@
       "closed": false,
       "usga_course_id": 32,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.6823,
+      "lng": -81.2134
     },
     {
       "id": "rock-barn-jones",
@@ -1946,7 +2106,9 @@
       "closed": false,
       "usga_course_id": 9415,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.6823,
+      "lng": -81.2134
     },
     {
       "id": "catawba-country-club",
@@ -1970,7 +2132,9 @@
       "closed": false,
       "usga_course_id": 456,
       "nine_hole_course": false,
-      "usga_rating_note": null
+      "usga_rating_note": null,
+      "lat": 35.6712,
+      "lng": -81.2356
     },
     {
       "id": "red-bird-golf-sapphire",
@@ -1994,7 +2158,9 @@
       "address": "67 Cherokee Trail, Sapphire, NC 28774",
       "usga_course_id": null,
       "nine_hole_course": true,
-      "usga_rating_note": "This course does not currently hold an official USGA rating."
+      "usga_rating_note": "This course does not currently hold an official USGA rating.",
+      "lat": 35.0823,
+      "lng": -83.0634
     },
     {
       "id": "deer-brook-golf-club",
