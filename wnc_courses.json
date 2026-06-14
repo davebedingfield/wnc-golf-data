@@ -704,7 +704,9 @@
       "nine_hole_course": false,
       "usga_rating_note": null,
       "lat": 35.4603182,
-      "lng": -82.1890305
+      "lng": -82.1890305,
+      "map_lat": 35.4616182,
+      "map_lng": -82.1905305
     },
     {
       "id": "rumbling-bald-mountain",
@@ -730,7 +732,9 @@
       "nine_hole_course": false,
       "usga_rating_note": null,
       "lat": 35.4603182,
-      "lng": -82.1890305
+      "lng": -82.1890305,
+      "map_lat": 35.4590182,
+      "map_lng": -82.1875305
     },
     {
       "id": "brights-creek",
@@ -1249,7 +1253,9 @@
       "nine_hole_course": false,
       "usga_rating_note": null,
       "lat": 36.0966891,
-      "lng": -81.8558159
+      "lng": -81.8558159,
+      "map_lat": 36.0979891,
+      "map_lng": -81.8573159
     },
     {
       "id": "grandfather-mountain-springs",
@@ -1275,7 +1281,9 @@
       "nine_hole_course": true,
       "usga_rating_note": null,
       "lat": 36.0966891,
-      "lng": -81.8558159
+      "lng": -81.8558159,
+      "map_lat": 36.0953891,
+      "map_lng": -81.8543159
     },
     {
       "id": "hound-ears",
