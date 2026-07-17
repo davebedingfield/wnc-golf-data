@@ -1113,7 +1113,7 @@
       "terrain": "rolling-foothills",
       "helene": false,
       "featured": true,
-      "summary": "Linville Golf Club has shaped mountain golf since 1892, making it the oldest club in North Carolina, and its current routing dates to Donald Ross’s 1924 design at the base of Grandfather Mountain. Grandmother Creek threads through roughly ten holes, giving the course a raw, undisturbed character that sets it apart from Ross’s flatter Piedmont layouts. The club is now fully private, with membership the only route onto the course.",
+      "summary": "Linville Golf Club has shaped mountain golf since 1892, making it the oldest club in Western North Carolina, and its current routing dates to Donald Ross’s 1924 design at the base of Grandfather Mountain. Grandmother Creek threads through roughly ten holes, giving the course a raw, undisturbed character that sets it apart from Ross’s flatter Piedmont layouts. The club is now fully private, with membership the only route onto the course.",
       "insider_tip": "The hole every member talks about is the par-4 third, which crosses Grandmother Creek three times before climbing to a crowned, elevated green that rejects anything but a precisely struck approach. <em>GOLF Magazine</em> has ranked it among its Top 100 holes in the world. Treat the approach shot with more respect than the drive — it’s the shot that decides the hole.",
       "website": "https://www.linvillegolfclub.com",
       "phone": null,
@@ -2186,8 +2186,8 @@
       "terrain": "mountain-valley",
       "helene": false,
       "featured": false,
-      "summary": "Tom Fazio and Beau Welling built this nine-hole par-3 course in 1999 for a membership that numbers only in the dozens, directly across the highway from Wade Hampton. There’s no website, which tells you most of what you need to know about how private it is. What conditioning and practice facilities exist here rival clubs many times its size.",
-      "insider_tip": "This is target golf in its purest form — at 1,450 yards total, accuracy with wedges and a hot putter matter far more than distance off the tee. Every iron in the bag will see action before the round is over.",
+      "summary": "Tom Fazio and Beau Welling built this nine-hole par-3 course in 1999 for a membership that numbers only in the dozens, directly across the highway from Wade Hampton. There’s no website, which tells you most of what you need to know about how private it is. Conditioning here is excellent and rivals clubs many times its size. This executive course is just as exclusive as the other private clubs in the Highlands/Cashiers area. You’ll need to know someone to score an invite here.",
+      "insider_tip": "This is target golf in its purest form — at 1,450 yards total, accuracy with wedges and a hot putter matter far more than distance off the tee. Bring a Sunday bag with only a few clubs. Your short irons and wedges will see all the action.",
       "website": null,
       "phone": null,
       "address": "2752 Highway 107 S, Cashiers, NC 28717",
@@ -2229,7 +2229,7 @@
     {
       "slug": "asheville-basin",
       "name": "Asheville Basin",
-      "vibe": "Rolling valley layouts anchored by the region's urban core. Historic designs, accessible public tracks, and resort courses within easy reach of downtown Asheville."
+      "vibe": "Rolling valley layouts anchored by the region’s urban core. Historic designs, accessible public tracks, and resort courses within easy reach of downtown Asheville."
     },
     {
       "slug": "high-country",
