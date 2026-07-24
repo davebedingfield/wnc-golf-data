@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-24",
-  "version": "v166",
+  "version": "v167",
   "embed_version": "v5.0",
   "total": 86,
   "courses": [
@@ -666,10 +666,10 @@
       "rating": 73.8,
       "par": 71,
       "terrain": "rolling-foothills",
-      "helene": false,
+      "helene": true,
       "featured": false,
-      "summary": "A George Cobb design from 1972, built by the same architect who created Augusta’s Par-3 Course and Quail Hollow. <em>Golf Digest</em> has named it a Best Places to Play honoree. The layout mixes long par 3s, short par 4s, and massive par 5s — tour pros say it forces every club in the bag. The 1837 manor house is visible from the fairways, adjacent to Tryon International Equestrian Center.",
-      "insider_tip": "Hole 15 — Cobb’s personal favorite — is a 331-yard dogleg right with water down the entire right side. Play a hybrid or 3-wood left and don’t look at the flag. Any push right is wet or blocked out.",
+      "summary": "A George Cobb design from 1972, built by the same architect who created Augusta’s Par-3 Course and Quail Hollow. <em>Golf Digest</em> has named it a Best Places to Play honoree. Hurricane Helene damaged the course in 2024; one hole remains closed and the club is currently playing a 17-hole routing. The 1837 manor house is visible from the fairways, adjacent to Tryon International Equestrian Center.",
+      "insider_tip": "Hole 15 — Cobb’s personal favorite — is a 331-yard dogleg right with water down the entire right side. Play a hybrid or 3-wood left and don’t look at the flag. Any push right is wet or blocked out. Call ahead to confirm the current routing before you visit.",
       "website": "https://www.cleghorngolf.com",
       "address": "183 Golf Circle, Rutherfordton, NC 28139",
       "phone": "tel:8282869117",
