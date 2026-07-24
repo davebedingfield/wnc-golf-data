@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-17",
-  "version": "v165",
+  "updated": "2026-07-24",
+  "version": "v166",
   "embed_version": "v5.0",
-  "total": 85,
+  "total": 86,
   "courses": [
     {
       "id": "asheville-municipal",
@@ -2223,6 +2223,32 @@
       "usga_rating_note": null,
       "lat": 35.11955,
       "lng": -82.93666
+    },
+    {
+      "id": "roaring-gap-club",
+      "name": "Roaring Gap Club",
+      "city": "Roaring Gap",
+      "county": "Alleghany",
+      "subregion": "high-country",
+      "access": "private",
+      "yards": 6307,
+      "slope": 131,
+      "rating": 69.8,
+      "par": 72,
+      "terrain": "severe-mountain",
+      "helene": false,
+      "featured": false,
+      "summary": "A Donald Ross design opened in 1926 as Pinehurst’s summer counterpart, built at the urging of Pinehurst president Leonard Tufts and a group of Winston-Salem business leaders. The mountaintop routing sits more than 3,000 feet up along the Blue Ridge escarpment, with a decade-long Kris Spence restoration recovering the original green contours and turf character. Just over 6,300 yards, the course leans on elevation change and green complexity rather than length to defend par.",
+      "insider_tip": "The par-3 sixth is Ross’s isolated “volcano” green, walled off by sharp falloffs on three sides — take an extra club and aim for the center, since a miss here rarely leads to par. The par-4 17th green sits on the mountain’s edge with a 50-mile view toward Pilot Mountain; check your alignment against the horizon before committing to the shot.",
+      "website": "https://www.roaringgapclub.com",
+      "phone": "tel:3363632211",
+      "address": "2663 Roaring Gap Drive, Roaring Gap, NC 28668",
+      "closed": false,
+      "usga_course_id": null,
+      "nine_hole_course": false,
+      "usga_rating_note": null,
+      "lat": 36.4048944,
+      "lng": -80.9691907
     }
   ],
   "subregions": [
