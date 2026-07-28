@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-24",
-  "version": "v167",
+  "updated": "2026-07-28",
+  "version": "v168",
   "embed_version": "v5.0",
   "total": 86,
   "courses": [
@@ -697,16 +697,14 @@
       "summary": "Dan Maples’ expansive 1986 championship design was praised by <em>Golf Digest</em> as one of the most beautiful mountain courses in the region. It is a rare mountain layout where 75% of shots play level or downhill, making it unusually scoreable without sacrificing drama. The Bald Mountain granite face looms above the closing holes.",
       "insider_tip": "Aggressive play is consistently rewarded here. The layout is literally designed for it. Pair it with Bald Mountain for the best 36-hole foothills day in WNC.",
       "website": "https://rumblingbald.com/golf/apple-valley-golf-course",
-      "address": "112 Mountains Boulevard, Lake Lure, NC 28746",
-      "phone": "tel:8286943072",
+      "address": "309 Winesap Rd, Lake Lure, NC 28746",
+      "phone": "tel:8286943043",
       "closed": false,
       "usga_course_id": 49,
       "nine_hole_course": false,
       "usga_rating_note": null,
-      "lat": 35.4603182,
-      "lng": -82.1890305,
-      "map_lat": 35.4643182,
-      "map_lng": -82.1940305
+      "lat": 35.453764,
+      "lng": -82.166789
     },
     {
       "id": "rumbling-bald-mountain",
@@ -726,15 +724,13 @@
       "insider_tip": "The <em>Dirty Dancing</em> connection is real; several scenes were filmed on and around this course. Play it before Apple Valley to appreciate how the newer Maples design opened the property up.",
       "website": "https://rumblingbald.com/golf/bald-mountain-golf-course",
       "address": "112 Mountains Boulevard, Lake Lure, NC 28746",
-      "phone": "tel:8286943072",
+      "phone": "tel:8286943042",
       "closed": false,
       "usga_course_id": 50,
       "nine_hole_course": false,
       "usga_rating_note": null,
       "lat": 35.4603182,
-      "lng": -82.1890305,
-      "map_lat": 35.4563182,
-      "map_lng": -82.1840305
+      "lng": -82.1890305
     },
     {
       "id": "brights-creek",
