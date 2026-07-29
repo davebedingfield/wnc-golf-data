@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-28",
-  "version": "v168",
+  "version": "v176",
   "embed_version": "v5.0",
   "total": 86,
   "courses": [
@@ -1249,9 +1249,7 @@
       "nine_hole_course": false,
       "usga_rating_note": null,
       "lat": 36.0966891,
-      "lng": -81.8558159,
-      "map_lat": 36.1006891,
-      "map_lng": -81.8608159
+      "lng": -81.8558159
     },
     {
       "id": "grandfather-mountain-springs",
@@ -1277,9 +1275,7 @@
       "nine_hole_course": true,
       "usga_rating_note": null,
       "lat": 36.0966891,
-      "lng": -81.8558159,
-      "map_lat": 36.0926891,
-      "map_lng": -81.8508159
+      "lng": -81.8558159
     },
     {
       "id": "hound-ears",
@@ -1321,8 +1317,8 @@
       "terrain": "severe-mountain",
       "helene": false,
       "featured": false,
-      "summary": "George Cobb’s 1983 design (with John LaFoy) atop Linville Ridge at 4,500 feet is among the highest private courses in the Southeast. Panoramic views reach across multiple counties, and the thin air adds real distance to every iron. The massive vertical drops and substantial treks between greens and tee boxes make cart use mandatory — and the gravity-driven green speeds in late summer are unlike anything else in the High Country.",
-      "insider_tip": "Carts are mandatory — the vertical drops between holes make walking impractical. On the greens, read every putt relative to the mountain’s general fall toward Linville Valley. Downhill putts are lightning fast; uphill putts are the only time you’ll need to hit it firm.",
+      "summary": "George Cobb designed the original course to follow the natural contours of the ridge, and Bobby Weed reworked it in 2007, roughening the once-smooth bunker edges into a jagged, rugged style that fits the mountain terrain. The renovation later won a <em>Golf Inc.</em> Renovation of the Year award. At 4,949 feet, Hole 13 makes this the highest-elevation golf course east of the Mississippi River, and the thin mountain air adds real distance to every iron. Grandfather Mountain is visible from eleven of the eighteen holes.",
+      "insider_tip": "Hole 16 drops 110 feet from tee to green, roughly an eleven-story building’s worth of descent. On the greens, read every putt relative to the mountain’s general fall toward Linville Valley. Save a look back at Grandfather Mountain for the tee on Hole 2 — it’s one of the best views on the property.",
       "website": "https://www.linvilleridge.com/golf-pages/golf",
       "address": "2245 NC Highway 105, Linville, NC 28646",
       "phone": "(828) 742-4150",
