@@ -1,0 +1,1190 @@
+<!--
+  WNC GOLF INSIDER — DIRECTORY WITH MAP (STATIC, SEO-INDEXABLE)
+  Version: __WNC_VERSION_DATE__
+  Based on: live v5.53 embed
+  Change: all __WNC_COURSE_COUNT__ courses pre-rendered as static HTML at build time (no fetch()).
+  Course data is embedded inline as JSON — filtering/sorting/Jump menu behave
+  identically to v5.53, just reading from the embedded array instead of a network fetch.
+  Visual output on initial load is byte-identical to the current live default state
+  (flat, alphabetical, no subregion header) — this IS what v5.53 shows with no filters applied.
+  Built from wnc_courses.json — __WNC_COURSE_COUNT__ courses.
+  Versioning: this file is tracked on GitHub in davebedingfield/wnc-golf-data,
+  filename pattern wnc_directory_with_map_YYYY-MM-DD.html, bumped on every content
+  change (same-day edits overwrite that day's file; GitHub history covers the rest).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Map view resources (Leaflet + marker clustering). Loaded unconditionally
+     since the map container starts hidden but should be ready the instant
+     someone switches to Map view, without a network round-trip delay. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --cream: #faf7ea;
+    --green: #0e7490;
+    --black: #030712;
+    --white: #ffffff;
+    --ink: #000000;
+    --muted: #6b6b6b;
+    --border: #9ca3af;
+    --pub: #155724;
+    --semi: #6b4200;
+    --resort: #0a2f5e;
+    --priv: #541060;
+    --helene: #7a1515;
+  }
+
+  html, body { height: auto; overflow: visible; }
+
+  body { font-family: "PT Serif", Georgia, serif; background: var(--white); color: #000000; font-size: 18px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .filter-wrap { background: var(--white); padding: 0; max-width: 1200px; margin: 0 auto; }
+  .filter-bar { display: flex; gap: 12px; align-items: center; width: 100%; }
+  .filter-select {
+    font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 400;
+    padding: 10px 36px 10px 14px; border: 1px solid var(--black); border-radius: 5px;
+    background: var(--white); color: #000000; cursor: pointer; flex: 1 1 0; min-width: 0; width: 0;
+    overflow: hidden; text-overflow: ellipsis; appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23030712' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center; transition: border-color .15s;
+  }
+  .filter-select:focus { outline: none; border-color: #000000; }
+  .filter-select.active { border-color: #000000; background-color: #E0EFF0; }
+  .filter-status { display: flex; align-items: center; padding: 14px 0 32px; font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; }
+  .filter-status.filtered { padding-bottom: 32px; }
+  .filter-reset { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: var(--green); text-decoration: underline; text-underline-offset: 3px; background: none; border: none; cursor: pointer; padding: 0; }
+
+  @media (max-width: 700px) {
+    .filter-bar { flex-direction: column; }
+    .filter-select { width: 100%; flex: none; min-width: unset; }
+    .filter-wrap { padding: 0; }
+  }
+
+  .subregion-header { max-width: 1200px; margin: 0 auto; padding: 32px 0 24px; }
+  .subregion-header.filtered { padding-top: 8px; }
+  .subregion-eyebrow { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); line-height: 24px; margin-bottom: 8px; }
+  .subregion-title { font-family: "PT Serif", Georgia, serif; font-size: clamp(28px, 5vw, 56px); font-weight: 700; color: #000000; line-height: 1.1; margin-bottom: 10px; }
+  .subregion-counties { font-size: 18px; line-height: 1.5; color: #000000; padding-bottom: 8px; }
+  .subregion-vibe { font-size: 18px; line-height: 1.6; color: #000000; font-style: italic; padding-bottom: 20px; }
+
+  .card-grid { max-width: 1200px; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 40px; row-gap: 80px; }
+
+  .card { background: var(--white); }
+
+  .card-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .badge { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 6px 12px; border-radius: 2px; font-weight: 700; line-height: 1; display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; }
+  .badge.public { background: #d6edda; color: var(--pub); }
+  .badge.semi { background: #fde8c8; color: var(--semi); }
+  .badge.resort { background: #c8dcf5; color: var(--resort); }
+  .badge.private { background: #eedaf0; color: var(--priv); }
+  .badge.helene { background: #fad8d8; color: var(--helene); }
+
+  .card-name { font-family: "PT Serif", Georgia, serif; font-size: 32px; font-weight: 700; color: #000000; line-height: 1.2; margin-bottom: 8px; text-wrap: balance; }
+
+  .card-location { margin-top: 10px; margin-bottom: 20px; }
+  .card-location-address { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; line-height: 1.65; }
+  .card-location-contact { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; line-height: 1.65; }
+  .card-location-contact a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+  .card-location-contact a:hover { opacity: .7; }
+
+  .card-specs { display: flex; margin-bottom: 18px; border: 1px solid #000000; border-radius: 2px; overflow: hidden; }
+  .spec-item { flex: 1; padding: 10px 12px; border-right: 1px solid #000000; background: transparent; }
+  .spec-item:last-child { border-right: none; }
+  .spec-label { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; font-weight: 400; display: block; line-height: 1.5; }
+  .spec-value { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #000000; display: block; line-height: 1.5; }
+
+  .card-summary { font-size: 18px; line-height: 1.6; color: #000000; margin-bottom: 0; }
+  .card-summary em { font-style: italic; }
+
+  .insider-tip { display: block; margin-top: 28px; font-size: 18px; line-height: 1.6; color: #000000; font-style: italic; }
+  .insider-tip::before { content: "Insider tip"; display: block; font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 4px; }
+
+  .card-footnote { margin-top: 16px; font-family: "PT Serif", Georgia, serif; font-size: 17px; color: #597C8F; line-height: 1.6; font-style: italic; }
+
+  .prose-link { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+  .prose-link:hover { opacity: .7; }
+
+  .empty-state { padding: 16px 0 48px; text-align: left; }
+  .empty-state-headline { font-family: "PT Serif", Georgia, serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; color: #000000; margin-bottom: 12px; }
+  .empty-state-body { font-family: "PT Serif", Georgia, serif; font-size: 18px; color: #000000; line-height: 1.6; }
+  .empty-state-reset { display: inline-block; margin-top: 24px; font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--green); text-decoration: underline; text-underline-offset: 3px; background: none; border: none; cursor: pointer; padding: 0; }
+
+  .site-footer { background: var(--cream); border-top: 1px solid var(--border); text-align: center; padding: 48px 0; font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.7; color: #000000; }
+  .site-footer strong { color: #000000; }
+
+  .card[data-hidden="true"] { display: none; }
+
+  @media (max-width: 700px) {
+    .card-grid { grid-template-columns: 1fr; padding: 0; column-gap: 0; row-gap: 64px; }
+    .subregion-header { padding: 32px 0 20px; }
+    .subregion-header.filtered { padding-top: 8px; }
+    .subregion-title { font-size: 36px; }
+    .card-name { font-size: 28px; }
+  }
+
+  /* ---- Map view ---- */
+
+  .view-toggle { display: flex; flex: none; border: 1px solid var(--black); border-radius: 5px; overflow: hidden; }
+  .view-toggle-btn {
+    font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 400;
+    padding: 10px 16px; border: none; background: var(--white); color: #000000; cursor: pointer;
+  }
+  .view-toggle-btn + .view-toggle-btn { border-left: 1px solid var(--black); }
+  .view-toggle-btn.active { background: #E0EFF0; }
+
+  .filter-course-row { display: contents; }
+
+  @media (max-width: 700px) {
+    .filter-course-row {
+      display: flex; width: 100%; gap: 12px; align-items: center;
+    }
+    .filter-course-row .filter-select { width: auto; flex: 1 1 0; min-width: 0; }
+  }
+
+  /* Hidden for now per request \u2014 remove this rule (and nothing else) to
+     bring the map style picker back. Everything else about it stays wired
+     up and functional. */
+  .wnc-map-style-wrap { display: none; }
+
+  #wnc-map-container { display: none; max-width: 1200px; margin: 0 auto; }
+  #wnc-map-container.active { display: block; }
+
+  #wnc-map-canvas-wrap {
+    margin-top: 8px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--cream);
+  }
+  #wnc-leaflet-map { width: 100%; height: 640px; background: var(--cream); }
+  @media (max-width: 700px) {
+    #wnc-leaflet-map { height: 580px; }
+  }
+
+  .wnc-map-empty {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    text-align: center;
+    padding: 12px 0 0;
+  }
+
+  .wnc-marker-pin {
+    width: 26px; height: 26px; border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+  .wnc-cluster-wrapper { background: transparent; border: none; }
+  .wnc-marker-cluster-icon {
+    display: flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--green);
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    color: #ffffff;
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .leaflet-container { font-family: "Inter", Helvetica, Arial, sans-serif; }
+
+  /* Matches .filter-select's border treatment so map controls read as part
+     of the same design system rather than Leaflet's stock grey styling.
+     Scoped to #wnc-leaflet-map (not just .leaflet-bar) because Leaflet
+     auto-adds a `leaflet-touch` class on touch devices, which brings its
+     own more specific border/sizing rules (.leaflet-touch .leaflet-bar)
+     that would otherwise silently outrank a plain .leaflet-bar rule. */
+  #wnc-leaflet-map .leaflet-bar {
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  #wnc-leaflet-map .leaflet-bar a {
+    border-bottom: 1px solid var(--black);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #wnc-leaflet-map .leaflet-bar a:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #wnc-leaflet-map .leaflet-bar a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+  }
+  .leaflet-control-attribution {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    background: rgba(250,247,234,.85);
+  }
+
+  /* Popup content reuses .card-badges / .badge / .card-name / .card-location
+     etc. directly from the styles above \u2014 same classes, same CSS, so it's
+     guaranteed to match the list view exactly rather than needing a parallel
+     set of popup-only styles kept in sync by hand. Only Leaflet's own
+     framework chrome (padding, the tip, the close button) needs its own
+     rules here. */
+  .leaflet-popup-content-wrapper {
+    border-radius: 4px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.18);
+  }
+  .leaflet-popup-content {
+    padding: 28px 26px 32px;
+    margin: 0;
+    width: 300px !important;
+    font-family: "PT Serif", Georgia, serif;
+    box-sizing: border-box;
+  }
+  .leaflet-popup-content .card-badges { margin-bottom: 12px; }
+  .leaflet-popup-content .card-name { font-size: 24px; margin-bottom: 10px; }
+  .leaflet-popup-content .card-location { margin-top: 0; margin-bottom: 0; }
+  .leaflet-popup-content .card-location-address,
+  .leaflet-popup-content .card-location-contact { font-size: 15px; }
+  .leaflet-popup-tip {
+    background: #ffffff;
+    box-shadow: 0 6px 24px rgba(0,0,0,.18);
+  }
+  .leaflet-popup-close-button { display: none; }
+
+  .wnc-region-mask { fill-rule: evenodd; pointer-events: none; }
+</style>
+
+<script>
+(function() {
+  function fixScroll() {
+    try {
+      var iframe = window.frameElement;
+      if (!iframe) return;
+      iframe.setAttribute('scrolling', 'no');
+    } catch(e) {}
+  }
+  fixScroll();
+  window.addEventListener('load', fixScroll);
+  setTimeout(fixScroll, 1000);
+  setTimeout(fixScroll, 3000);
+
+  window.wncSetHeight = function() {
+    var root = document.getElementById('wnc-dir-root');
+    if (!root) return;
+    var h = root.getBoundingClientRect().height;
+    try {
+      var iframe = window.frameElement;
+      if (iframe) {
+        iframe.style.minHeight = '0';
+        iframe.style.height = h + 'px';
+      }
+    } catch(e) {}
+    try { window.parent.postMessage({ wnc_embed_height: h }, '*'); } catch(e) {}
+  };
+  window.addEventListener('load', function() { setTimeout(window.wncSetHeight, 100); setTimeout(window.wncSetHeight, 500); });
+  if (window.ResizeObserver) {
+    window.addEventListener('DOMContentLoaded', function() {
+      var root = document.getElementById('wnc-dir-root');
+      if (root) new ResizeObserver(function() { window.wncSetHeight(); }).observe(root);
+    });
+  }
+})();
+</script>
+
+<div id="wnc-dir-root">
+  <div class="filter-wrap">
+    <div class="filter-bar">
+      <select class="filter-select" id="region-select">
+        <option value="all">All Subregions</option>
+        <option value="asheville-basin">Asheville Basin</option>
+        <option value="high-country">High Country</option>
+        <option value="hendersonville-plateau">Hendersonville Plateau</option>
+        <option value="smoky-corridor">Smoky Mountain Corridor</option>
+        <option value="highlands-plateau">Highlands Plateau</option>
+        <option value="foothills">Foothills</option>
+      </select>
+      <select class="filter-select" id="access-select">
+        <option value="all">All Access Types</option>
+        <option value="public">Public</option>
+        <option value="semi-private">Semi-Private</option>
+        <option value="resort">Resort</option>
+        <option value="private">Private</option>
+      </select>
+      <div class="filter-course-row">
+        <select class="filter-select" id="jump-select">
+          <option value="">All Golf Courses</option>
+        </select>
+        <div class="view-toggle" id="view-toggle">
+          <button type="button" class="view-toggle-btn active" data-view="list">List</button>
+          <button type="button" class="view-toggle-btn" data-view="map">Map</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-status" id="filter-status">Showing __WNC_COURSE_COUNT__ golf courses</div>
+  </div>
+  <div id="wnc-dir-content">
+<div class="card-grid">
+__WNC_CARDS__
+</div>
+  </div>
+  <div id="wnc-map-container">
+    <div id="wnc-map-header"></div>
+    <div class="wnc-map-style-wrap">
+      <select class="filter-select" id="wnc-map-style-select">
+        <option value="base-v4">Map style: Base (clean)</option>
+        <option value="dataviz-v4" selected>Map style: Dataviz</option>
+        <option value="topo-v4">Map style: Topo (terrain)</option>
+        <option value="outdoor-v4">Map style: Outdoor</option>
+        <option value="streets-v4">Map style: Streets</option>
+        <option value="hybrid-v4">Map style: Satellite hybrid</option>
+        <option value="satellite-v4">Map style: Satellite plain</option>
+        <option value="openstreetmap">Map style: OpenStreetMap</option>
+        <option value="landscape-v4">Map style: Landscape</option>
+        <option value="backdrop-v4">Map style: Backdrop</option>
+        <option value="winter-v4">Map style: Winter</option>
+        <option value="ocean-v4">Map style: Ocean</option>
+        <option value="aquarelle-v4">Map style: Aquarelle</option>
+      </select>
+    </div>
+    <div id="wnc-map-canvas-wrap">
+      <div id="wnc-leaflet-map"></div>
+    </div>
+    <div class="wnc-map-empty" id="wnc-map-empty" style="display:none;">
+      No courses match those filters. <button class="filter-reset" id="wnc-map-empty-reset" style="border:none;background:none;color:var(--green);text-decoration:underline;cursor:pointer;font:inherit;">Reset filters</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var ALL_COURSES = __WNC_ALL_COURSES_JSON__;
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function linkify(s) {
+    s = String(s || '');
+    var emSlots = [];
+    s = s.replace(/<em>([\s\S]*?)<\/em>/g, function(_, inner) {
+      var idx = emSlots.length;
+      emSlots.push(inner);
+      return '\x00em' + idx + '\x00';
+    });
+    s = s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    s = s.replace(
+      /(?:https?:\/\/)?(?:www\.)?([a-zA-Z0-9-]+(?:\.[a-zA-Z]{2,})+(?:\/[^\s,;.!?]*[^\s,;.!?)])?)/g,
+      function(match) {
+        var href = /^https?:\/\//i.test(match) ? match : 'https://' + match;
+        return '<a class="prose-link" href="' + href + '" target="_blank" rel="noopener">' + match + '</a>';
+      }
+    );
+    s = s.replace(/\x00em(\d+)\x00/g, function(_, i) {
+      return '<em>' + esc(emSlots[parseInt(i, 10)]) + '</em>';
+    });
+    return s;
+  }
+
+  var BADGE_CLASSES  = { public: 'public', 'semi-private': 'semi', resort: 'resort', private: 'private' };
+  var ACCESS_LABELS  = { public: 'Public', 'semi-private': 'Semi-Private', resort: 'Resort', private: 'Private' };
+
+  // ================= MAP VIEW =================
+  // Reuses ALL_COURSES, BADGE_CLASSES, ACCESS_LABELS, esc(), and (once
+  // defined further down, but hoisted so it's safe to call from here)
+  // buildLocation() \u2014 no separate/duplicate course data or card markup is
+  // embedded for the map. Popups are built from the exact same
+  // .card-badges / .badge / .card-name / .card-location classes as the
+  // list view, so the two views can never visually drift apart.
+
+  var MAPTILER_KEY = "7i450GMtWkJcLl3vZaGU";
+  function maptilerTileUrl(styleId) {
+    return "https://api.maptiler.com/maps/" + styleId + "/256/{z}/{x}/{y}.png?key=" + MAPTILER_KEY;
+  }
+
+  var MARKER_COLOR = "#0e7490";
+  // Tight around WNC. Normally this is exactly what we want for panning,
+  // but it's temporarily lifted (see the popupopen/popupclose handlers in
+  // initMap) whenever a popup is open, since a popup near the true edge of
+  // WNC can legitimately need to pan the view further than this boundary
+  // allows to make room for itself.
+  var WNC_BOUNDS = L.latLngBounds([33.9, -85.1], [37.6, -79.7]);
+
+  var WNC_BOUNDARY_RING = [[34.987111, -83.673621], [34.988408, -84.321869], [35.225572, -84.29024], [35.269078, -84.223718], [35.255772, -84.202879], [35.247382, -84.097508], [35.268182, -84.055712], [35.301383, -84.02141], [35.348363, -84.038081], [35.353896, -84.024756], [35.422548, -84.00225], [35.464143, -83.961053], [35.460635, -83.952882], [35.472438, -83.933876], [35.518745, -83.880074], [35.563604, -83.756917], [35.570289, -83.676268], [35.562981, -83.498335], [35.568204, -83.485527], [35.583316, -83.479082], [35.611803, -83.445802], [35.65775, -83.297154], [35.695807, -83.254231], [35.719916, -83.251247], [35.759965, -83.164909], [35.774804, -83.100329], [35.773128, -82.995803], [35.77801, -82.98397], [35.845467, -82.918356], [35.881278, -82.89798], [35.924113, -82.913338], [35.945101, -82.898505], [35.952698, -82.874159], [35.949089, -82.852554], [35.932972, -82.830112], [35.974792, -82.778625], [36.004304, -82.754465], [36.046104, -82.683565], [36.065805, -82.637165], [36.039833, -82.602877], [36.000306, -82.615062], [35.973155, -82.611262], [35.954671, -82.557529], [35.977475, -82.507068], [36.007309, -82.462958], [36.083409, -82.409458], [36.115929, -82.348422], [36.139189, -82.237737], [36.156911, -82.222052], [36.159012, -82.211251], [36.149516, -82.147948], [36.104417, -82.127146], [36.10572, -82.080143], [36.130222, -82.02664], [36.302013, -81.908137], [36.337259, -81.855005], [36.360428, -81.793688], [36.348324, -81.789712], [36.338672, -81.764927], [36.340364, -81.725938], [36.453365, -81.715082], [36.49158, -81.695907], [36.536209, -81.707963], [36.539714, -81.699962], [36.588117, -81.677535], [36.561754, -80.901836], [36.452846, -80.974619], [36.4016, -80.967066], [36.326516, -80.868871], [36.055731, -80.88218], [36.036949, -81.190911], [35.99655, -81.328385], [35.79646, -81.334255], [35.794072, -81.34634], [35.780385, -81.355709], [35.768895, -81.353862], [35.767865, -81.364055], [35.564472, -81.53776], [35.579789, -81.692329], [35.357194, -81.70285], [35.180132, -81.768073], [35.198605, -82.288453], [35.210542, -82.384029], [35.141963, -82.580127], [35.121822, -82.686496], [35.068177, -82.764464], [35.066817, -82.781973], [35.076885, -82.777407], [35.084585, -82.78113], [35.000771, -83.108535], [34.987111, -83.673621]];
+  var WNC_VIEW_BOUNDS = L.latLngBounds(WNC_BOUNDARY_RING);
+
+  // A narrow mobile viewport needs more breathing room than a wide desktop
+  // one to comfortably fit the same WNC shape \u2014 without this, the default
+  // mobile view renders noticeably tighter/more zoomed-in than on desktop.
+  function wncIsMobileViewport() {
+    return window.innerWidth <= 700;
+  }
+  function wncInitialViewPad() {
+    return wncIsMobileViewport() ? 0.12 : -0.03;
+  }
+  function wncFilteredFitPadding() {
+    return wncIsMobileViewport() ? 24 : 40;
+  }
+
+  // Extra vertical space reserved above the marker when a single course
+  // (with its popup auto-shown) is being centered. Popup height doesn't
+  // scale down with viewport width the way the map does, so a phone needs
+  // proportionally much more of this than desktop does \u2014 without it, the
+  // card gets clipped at the top of the map exactly like a plain centered
+  // fit produces.
+  function wncPopupTopPadding() {
+    return wncIsMobileViewport() ? 260 : 160;
+  }
+
+  // Shared by applyMapFilters and the recenter button so both fit the same
+  // way. When jumpCourseId is set, the fit is deliberately asymmetric \u2014
+  // extra padding above, same as the sides elsewhere \u2014 so the marker lands
+  // in the lower portion of the map rather than dead center, leaving room
+  // for its popup to open without clipping.
+  function wncFitToVisible(jumpCourseId) {
+    if (!wncMap || !wncMarkerGroup) return;
+    var bounds = wncMarkerGroup.getBounds();
+    if (!bounds.isValid()) return;
+    var padPx = wncFilteredFitPadding();
+    if (jumpCourseId) {
+      wncMap.fitBounds(bounds, {
+        paddingTopLeft: [padPx, wncPopupTopPadding()],
+        paddingBottomRight: [padPx, padPx],
+        maxZoom: 13
+      });
+    } else {
+      wncMap.fitBounds(bounds, { padding: [padPx, padPx], maxZoom: 13 });
+    }
+  }
+
+  var NC_BOUNDARY_RING = [[35.000771, -83.108535], [34.988408, -84.321869], [35.225572, -84.29024], [35.269078, -84.223718], [35.255772, -84.202879], [35.247382, -84.097508], [35.268182, -84.055712], [35.301383, -84.02141], [35.348363, -84.038081], [35.353896, -84.024756], [35.422548, -84.00225], [35.464143, -83.961053], [35.472438, -83.933876], [35.518745, -83.880074], [35.563604, -83.756917], [35.570289, -83.676268], [35.562981, -83.498335], [35.611803, -83.445802], [35.65775, -83.297154], [35.695807, -83.254231], [35.719916, -83.251247], [35.759965, -83.164909], [35.774804, -83.100329], [35.77801, -82.98397], [35.845467, -82.918356], [35.881278, -82.89798], [35.924113, -82.913338], [35.945101, -82.898505], [35.949089, -82.852554], [35.932972, -82.830112], [36.004304, -82.754465], [36.065805, -82.637165], [36.039833, -82.602877], [36.000306, -82.615062], [35.973155, -82.611262], [35.954671, -82.557529], [36.007309, -82.462958], [36.083409, -82.409458], [36.115929, -82.348422], [36.139189, -82.237737], [36.159012, -82.211251], [36.149516, -82.147948], [36.104417, -82.127146], [36.10572, -82.080143], [36.130222, -82.02664], [36.302013, -81.908137], [36.337259, -81.855005], [36.360428, -81.793688], [36.348324, -81.789712], [36.338672, -81.764927], [36.340364, -81.725938], [36.453365, -81.715082], [36.49158, -81.695907], [36.536209, -81.707963], [36.588117, -81.677535], [36.54319, -80.169535], [36.550754, -75.867044], [36.357579, -75.818735], [36.22944, -75.77251], [36.113674, -75.71831], [35.787377, -75.533012], [35.779691, -75.543259], [35.889415, -75.619151], [35.925288, -75.620114], [35.965758, -75.648899], [35.993925, -75.678909], [36.003139, -75.723662], [36.037362, -75.722609], [36.046839, -75.74051], [36.153922, -75.75572], [36.215949, -75.783676], [36.244014, -75.811588], [36.285344, -75.814483], [36.305614, -75.845284], [36.346418, -75.831595], [36.379456, -75.85147], [36.415785, -75.85147], [36.441583, -75.888325], [36.485809, -75.907279], [36.482124, -75.924127], [36.506235, -76.003708], [36.500778, -76.023627], [36.482496, -76.031949], [36.447462, -76.012337], [36.435464, -75.98005], [36.41724, -75.962285], [36.425788, -75.923601], [36.38901, -75.916409], [36.361863, -75.923331], [36.284674, -75.882154], [36.280607, -75.86052], [36.235522, -75.864154], [36.200129, -75.838367], [36.17711, -75.839924], [36.112728, -75.800378], [36.07171, -75.793974], [36.10199, -75.847785], [36.127262, -75.867792], [36.157448, -75.875033], [36.189131, -76.031784], [36.173518, -76.063498], [36.149285, -76.05927], [36.140183, -76.071672], [36.123424, -76.178946], [36.095409, -76.216599], [36.104886, -76.28715], [36.084879, -76.323478], [36.078034, -76.410878], [36.024331, -76.459316], [36.00564, -76.514335], [36.006167, -76.575936], [36.037757, -76.615423], [36.035124, -76.653332], [36.009852, -76.684922], [35.991951, -76.679657], [35.964573, -76.70019], [35.944566, -76.691766], [35.933509, -76.667547], [35.944039, -76.528551], [35.984317, -76.398242], [35.942197, -76.362966], [35.94325, -76.340327], [35.972734, -76.272408], [35.993267, -76.176585], [35.993004, -76.062071], [35.960361, -76.014685], [35.934036, -76.01995], [35.905078, -76.004682], [35.897181, -75.97783], [35.93193, -75.927286], [35.959835, -75.947293], [35.977209, -75.899382], [35.976156, -75.84989], [35.959308, -75.80935], [35.935615, -75.782498], [35.822703, -75.727216], [35.770994, -75.739357], [35.69849, -75.71294], [35.672073, -75.741605], [35.625985, -75.729802], [35.592262, -75.778138], [35.579335, -75.775328], [35.570904, -75.837154], [35.586641, -75.859636], [35.573152, -75.895045], [35.538305, -75.916403], [35.530998, -75.950126], [35.511326, -75.964178], [35.493903, -75.963053], [35.475355, -75.995652], [35.410719, -76.020945], [35.410157, -76.059726], [35.383741, -76.059726], [35.370813, -76.069281], [35.349455, -76.132793], [35.326411, -76.149655], [35.350017, -76.235087], [35.343273, -76.265437], [35.356762, -76.327263], [35.345521, -76.349745], [35.356762, -76.382344], [35.350017, -76.408199], [35.383741, -76.448666], [35.371375, -76.485762], [35.391609, -76.521733], [35.387113, -76.606041], [35.368003, -76.628523], [35.345521, -76.61953], [35.336528, -76.602669], [35.314046, -76.482389], [35.276951, -76.467776], [35.261213, -76.467776], [35.212877, -76.494755], [35.174657, -76.536346], [35.142058, -76.536346], [35.122948, -76.546463], [35.097094, -76.568945], [35.092598, -76.586931], [35.067867, -76.60042], [35.042013, -76.646509], [35.012786, -76.642012], [34.994801, -76.628523], [34.991428, -76.588055], [35.007166, -76.502623], [35.017283, -76.491382], [35.070116, -76.474521], [35.076411, -76.463468], [35.057941, -76.435762], [35.001464, -76.425461], [34.975179, -76.395625], [34.976245, -76.326361], [35.034853, -76.364367], [35.005726, -76.288354], [34.976245, -76.296524], [34.960971, -76.275567], [34.940014, -76.277698], [34.872171, -76.347673], [34.872881, -76.368274], [34.855476, -76.400242], [34.82564, -76.415871], [34.813563, -76.415871], [34.806153, -76.403108], [34.807906, -76.383827], [34.925926, -76.233672], [35.075701, -76.069906], [35.070017, -76.043621], [35.058987, -76.035933], [34.987858, -76.137269], [34.784579, -76.386804], [34.66197, -76.494068], [34.588577, -76.535946], [34.615993, -76.555196], [34.645585, -76.549343], [34.693151, -76.676312], [34.693722, -76.817453], [34.669623, -76.990262], [34.632926, -77.136843], [34.605032, -77.209161], [34.535574, -77.322524], [34.417218, -77.556943], [34.272546, -77.740136], [34.162618, -77.829209], [34.067963, -77.878161], [33.912261, -77.946568], [33.853315, -77.960172], [33.844517, -77.970606], [33.861406, -78.009973], [33.888289, -78.018689], [33.914272, -78.17772], [33.901946, -78.383964], [33.851112, -78.541087], [34.545358, -79.358317], [34.771012, -79.634216], [34.804897, -79.688088], [34.819697, -80.777712], [34.825281, -80.79675], [34.935782, -80.782042], [35.107409, -80.93495], [35.044703, -81.041489], [35.07319, -81.058029], [35.096276, -81.052078], [35.109102, -81.032547], [35.14839, -81.043407], [35.198605, -82.288453], [35.210542, -82.384029], [35.141963, -82.580127], [35.121822, -82.686496], [35.068177, -82.764464], [35.066817, -82.781973], [35.084585, -82.78113], [35.000771, -83.108535]];
+
+  var WNC_INTERIOR_EDGE = [[36.558812892789476, -80.90380153610482], [36.452846, -80.974619], [36.4016, -80.967066], [36.326516, -80.868871], [36.236383, -80.873259], [36.055731, -80.88218], [36.045762, -81.028884], [36.036949, -81.190911], [35.99655, -81.328385], [35.79646, -81.334255], [35.794072, -81.34634], [35.780385, -81.355709], [35.768895, -81.353862], [35.767865, -81.364055], [35.568811, -81.534359], [35.567324, -81.535632], [35.567064, -81.535733], [35.566555, -81.536076], [35.564472, -81.53776], [35.579789, -81.692329], [35.357194, -81.70285], [35.183093266513055, -81.7669821804804]];
+
+  var wncMap = null;
+  var lastDisplayCourses = null;
+  var lastJumpCourseId = null;
+  var wncMarkerGroup = null;
+  var wncMarkersById = {};
+  var wncMapInitialized = false;
+
+  function wncMakeIcon() {
+    return L.divIcon({
+      className: "",
+      html: '<div class="wnc-marker-pin" style="background:' + MARKER_COLOR + '"></div>',
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
+      popupAnchor: [0, -15]
+    });
+  }
+
+  function wncPopupHtml(c) {
+    var badgeCls = BADGE_CLASSES[c.access] || 'public';
+    var accessLabel = ACCESS_LABELS[c.access] || esc(c.access || '');
+    var badges = '<span class="badge ' + badgeCls + '">' + accessLabel + '</span>';
+    if (c.helene) badges += ' <span class="badge helene">Helene Impact</span>';
+    if (c.closed) badges += ' <span class="badge helene">Temporarily Closed</span>';
+
+    return [
+      '<div class="card-badges">' + badges + '</div>',
+      '<div class="card-name">' + esc(c.name) + '</div>',
+      '<div class="card-location">' + buildLocation(c) + '</div>'
+    ].join('');
+  }
+
+  function initMap() {
+    if (wncMapInitialized) return;
+    wncMapInitialized = true;
+
+    wncMap = L.map('wnc-leaflet-map', {
+      minZoom: 8,
+      maxZoom: 15,
+      maxBounds: WNC_BOUNDS,
+      // Fully rigid. Safe to keep strict now that the boundary is lifted
+      // entirely while a popup is open (see below), rather than trying to
+      // find one elasticity value that works both with and without an open
+      // popup.
+      maxBoundsViscosity: 1.0,
+      scrollWheelZoom: true,
+      zoomControl: false,
+      // Leaflet's default SVG renderer only draws vector layers (our
+      // shading polygons) a small margin beyond the visible viewport, for
+      // performance. A fast pinch-zoom-out gesture on mobile can outrun
+      // that default margin, briefly exposing unshaded map at the edge
+      // before Leaflet catches up. A much larger padding factor here means
+      // the shading is always drawn far past what's visible, so gesture
+      // speed can't outrun it.
+      renderer: L.svg({ padding: 5 })
+    });
+
+    // The panning boundary only needs to matter when nothing's actively
+    // trying to show the person something \u2014 the moment a popup opens
+    // (whether from an organic marker click near the edge, or one of our
+    // own programmatic opens), lift it entirely so autoPan/fitBounds can
+    // move freely, then restore it once the popup closes. This keeps the
+    // boundary genuinely tight for normal browsing without it ever
+    // fighting a legitimate "make this popup visible" pan.
+    wncMap.on('popupopen', function() {
+      wncMap.setMaxBounds(null);
+    });
+    wncMap.on('popupclose', function() {
+      wncMap.setMaxBounds(WNC_BOUNDS);
+    });
+
+    var styleSelect = document.getElementById('wnc-map-style-select');
+    var initialStyle = styleSelect ? styleSelect.value : 'dataviz-v4';
+    var tileLayer = L.tileLayer(maptilerTileUrl(initialStyle), {
+      attribution: '&copy; <a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+      maxZoom: 20,
+      tileSize: 256
+    }).addTo(wncMap);
+    if (styleSelect) {
+      styleSelect.addEventListener('change', function() {
+        tileLayer.setUrl(maptilerTileUrl(styleSelect.value));
+      });
+    }
+
+    wncMap.fitBounds(WNC_VIEW_BOUNDS.pad(wncInitialViewPad()));
+
+    // Covers the full range Leaflet can render (Web Mercator breaks down
+    // past ~85\u00b0 latitude) rather than a fixed rectangle sized to the default
+    // view \u2014 a fixed rectangle left unshaded gaps visible once someone
+    // pinch-zoomed out further than that rectangle's edges.
+    var MASK_OUTER_RING = [[85, -180], [85, 180], [-85, 180], [-85, -180]];
+    L.polygon([MASK_OUTER_RING, NC_BOUNDARY_RING], {
+      className: 'wnc-region-mask', stroke: false, fill: true,
+      fillColor: '#3a352f', fillOpacity: 0.20, interactive: false
+    }).addTo(wncMap);
+    L.polygon([NC_BOUNDARY_RING, WNC_BOUNDARY_RING], {
+      className: 'wnc-region-mask', stroke: false, fill: true,
+      fillColor: '#3a352f', fillOpacity: 0.09, interactive: false
+    }).addTo(wncMap);
+    L.polygon([NC_BOUNDARY_RING], {
+      stroke: true, color: '#6b6b6b', weight: 1, opacity: 0.55,
+      dashArray: '3, 4', fill: false, interactive: false
+    }).addTo(wncMap);
+    L.polyline(WNC_INTERIOR_EDGE, {
+      color: '#6b6b6b', weight: 1, opacity: 0.55, dashArray: '3, 4', interactive: false
+    }).addTo(wncMap);
+
+    wncMarkerGroup = L.markerClusterGroup({
+      // No disableClusteringAtZoom here (was 14) \u2014 that cut clustering off
+      // before reaching the map's actual maxZoom (15), so spiderfyOnMaxZoom
+      // (which only fires on a real cluster at the true max zoom) never had
+      // anything to act on for courses at genuinely identical coordinates,
+      // like Grandfather's two courses sharing one clubhouse address. They'd
+      // just sit exactly overlapping with no way to pick either one. The
+      // small maxClusterRadius below already keeps clustering from feeling
+      // aggressive for markers that are merely close, not identical \u2014 it
+      // naturally stops mattering once zoomed in far enough that 30px
+      // covers a tiny real-world distance, without needing a hard cutoff.
+      maxClusterRadius: 30,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      iconCreateFunction: function(cluster) {
+        return L.divIcon({
+          html: '<div class="wnc-marker-cluster-icon">' + cluster.getChildCount() + '</div>',
+          className: 'wnc-cluster-wrapper',
+          iconSize: L.point(34, 34)
+        });
+      }
+    });
+    wncMap.addLayer(wncMarkerGroup);
+
+    (ALL_COURSES || []).forEach(function(c) {
+      var lat = c.map_lat || c.lat, lng = c.map_lng || c.lng;
+      if (typeof lat !== 'number' || typeof lng !== 'number') return;
+      var marker = L.marker([lat, lng], { icon: wncMakeIcon() });
+      marker.bindPopup(wncPopupHtml(c), {
+        autoPan: true,
+        autoPanPaddingTopLeft: [20, 90],
+        autoPanPaddingBottomRight: [20, 20]
+      });
+      wncMarkersById[c.id] = marker;
+      wncMarkerGroup.addLayer(marker);
+    });
+
+    // Recenter control \u2014 sits below the zoom buttons. Reuses the exact
+    // same fit-to-current-filters logic as everything else (filter changes,
+    // switching into Map view), so "recenter" always means "show whatever
+    // the active filters say should be visible," not just a reset to the
+    // full WNC view. If no filters are active, that's the same thing.
+    //
+    // Zoom in/out are rebuilt here too (rather than using Leaflet's stock
+    // zoom control) so all three buttons share one bordered group, one
+    // size, and matching thin-stroke SVG icons \u2014 rather than mixing our
+    // custom icon style with Leaflet's default bold +/\u2212 glyphs.
+    function wncMakeControlButton(container, title, svgInner, onClick) {
+      var link = L.DomUtil.create('a', '', container);
+      link.href = '#';
+      link.title = title;
+      link.setAttribute('aria-label', title);
+      link.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">' + svgInner + '</svg>';
+      L.DomEvent.on(link, 'click', L.DomEvent.stop);
+      L.DomEvent.on(link, 'click', onClick);
+      return link;
+    }
+
+    var WncZoomControl = L.Control.extend({
+      options: { position: 'topleft' },
+      onAdd: function(map) {
+        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        wncMakeControlButton(container, 'Zoom in',
+          '<line x1="8" y1="2" x2="8" y2="14" stroke="#333" stroke-width="1.5"/><line x1="2" y1="8" x2="14" y2="8" stroke="#333" stroke-width="1.5"/>',
+          function() { map.zoomIn(); });
+        wncMakeControlButton(container, 'Zoom out',
+          '<line x1="2" y1="8" x2="14" y2="8" stroke="#333" stroke-width="1.5"/>',
+          function() { map.zoomOut(); });
+        L.DomEvent.disableClickPropagation(container);
+        return container;
+      }
+    });
+
+    var WncRecenterControl = L.Control.extend({
+      options: { position: 'topleft' },
+      onAdd: function() {
+        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        wncMakeControlButton(container, 'Recenter map on current results',
+          '<circle cx="8" cy="8" r="5" stroke="#333" stroke-width="1.5"/>'
+          + '<line x1="8" y1="0" x2="8" y2="3" stroke="#333" stroke-width="1.5"/>'
+          + '<line x1="8" y1="13" x2="8" y2="16" stroke="#333" stroke-width="1.5"/>'
+          + '<line x1="0" y1="8" x2="3" y2="8" stroke="#333" stroke-width="1.5"/>'
+          + '<line x1="13" y1="8" x2="16" y2="8" stroke="#333" stroke-width="1.5"/>',
+          function() { wncRecenterMap(); });
+        L.DomEvent.disableClickPropagation(container);
+        return container;
+      }
+    });
+
+    wncMap.addControl(new WncZoomControl());
+    wncMap.addControl(new WncRecenterControl());
+  }
+
+  // Called from applyFilters() below with the same displayCourses list used
+  // to render the card list, so the map only ever shows what the list is
+  // also showing \u2014 one filter state driving both views.
+  function applyMapFilters(displayCourses, jumpCourseId) {
+    lastDisplayCourses = displayCourses;
+    lastJumpCourseId = jumpCourseId || null;
+    if (!wncMarkerGroup) return;
+    var visibleIds = {};
+    displayCourses.forEach(function(c) { visibleIds[c.id] = true; });
+
+    wncMarkerGroup.clearLayers();
+    var anyVisible = false;
+    Object.keys(wncMarkersById).forEach(function(id) {
+      if (visibleIds[id]) {
+        wncMarkerGroup.addLayer(wncMarkersById[id]);
+        anyVisible = true;
+      }
+    });
+
+    var emptyEl = document.getElementById('wnc-map-empty');
+    if (emptyEl) emptyEl.style.display = anyVisible ? 'none' : 'block';
+
+    // Re-center on whatever's actually visible so a filtered-out course
+    // never sits off-screen. maxZoom keeps a single result (e.g. jumping
+    // to one specific course) from zooming in uncomfortably tight. When
+    // jumpCourseId is set, wncFitToVisible also reserves extra room above
+    // the marker for its auto-opened popup.
+    if (anyVisible) {
+      wncFitToVisible(jumpCourseId);
+    }
+
+    // A specific course was chosen via the "Jump to" dropdown \u2014 show its
+    // hover card automatically rather than making the person click the pin
+    // themselves. Popups are geo-anchored, so opening this before the
+    // fitBounds animation above finishes is fine; Leaflet keeps it attached
+    // to the marker's real position as the view moves.
+    if (wncMap && jumpCourseId && wncMarkersById[jumpCourseId]) {
+      wncOpenPopupCentered(wncMarkersById[jumpCourseId]);
+    }
+  }
+
+  // Used by the recenter button. Deliberately separate from applyMapFilters
+  // above: that function clears and rebuilds the entire marker cluster
+  // group every time it runs, which is necessary when the actual filter
+  // selection changes but is unnecessary (and was producing inconsistent
+  // results across repeated clicks) when nothing has changed and the
+  // person just wants the view re-fit to what's already showing. This
+  // only reads the marker group's current bounds and re-fits to them \u2014
+  // no clearing, no rebuilding \u2014 so it behaves identically no matter how
+  // many times in a row it's clicked.
+  function wncRecenterMap() {
+    if (!wncMap || !wncMarkerGroup) return;
+    wncFitToVisible(lastJumpCourseId);
+    if (lastJumpCourseId && wncMarkersById[lastJumpCourseId]) {
+      if (!wncMarkersById[lastJumpCourseId].isPopupOpen()) {
+        wncOpenPopupCentered(wncMarkersById[lastJumpCourseId]);
+      }
+    } else {
+      wncMap.closePopup();
+    }
+  }
+
+  // Opens a popup without letting the popup's own autoPan adjustment fight
+  // the fitBounds() call we just made \u2014 both try to move the map, and
+  // running both back to back was why the dot sometimes ended up not quite
+  // centered. autoPan stays on for organic marker clicks (a person tapping
+  // a pin directly, with no prior fitBounds), since that's what keeps a
+  // popup near the map's edge from opening off-screen.
+  function wncOpenPopupCentered(marker) {
+    var popup = marker.getPopup();
+    var prevAutoPan = popup ? popup.options.autoPan : true;
+    if (popup) popup.options.autoPan = false;
+    marker.openPopup();
+    if (popup) popup.options.autoPan = prevAutoPan;
+  }
+
+  function initViewToggle() {
+    var toggle = document.getElementById('view-toggle');
+    if (!toggle) return;
+    var mapContainer = document.getElementById('wnc-map-container');
+    var listContainer = document.getElementById('wnc-dir-content');
+    var buttons = toggle.querySelectorAll('.view-toggle-btn');
+
+    toggle.addEventListener('click', function(e) {
+      var btn = e.target.closest('.view-toggle-btn');
+      if (!btn) return;
+      var view = btn.getAttribute('data-view');
+
+      buttons.forEach(function(b) { b.classList.toggle('active', b === btn); });
+
+      if (view === 'map') {
+        listContainer.style.display = 'none';
+        mapContainer.classList.add('active');
+        initMap();
+        setTimeout(function() {
+          if (wncMap) {
+            wncMap.invalidateSize();
+            applyMapFilters(lastDisplayCourses || ALL_COURSES, lastJumpCourseId);
+          }
+        }, 50);
+      } else {
+        mapContainer.classList.remove('active');
+        listContainer.style.display = '';
+      }
+
+      setTimeout(function() { if (window.wncSetHeight) window.wncSetHeight(); }, 60);
+    });
+
+    var emptyResetBtn = document.getElementById('wnc-map-empty-reset');
+    if (emptyResetBtn) {
+      emptyResetBtn.addEventListener('click', function() {
+        var resetBtn = document.getElementById('filter-reset-btn');
+        if (resetBtn) resetBtn.click();
+      });
+    }
+  }
+  // ================= END MAP VIEW =================
+
+  var SUBREGIONS = [
+    { slug: 'asheville-basin',        num: 1, title: 'Asheville Basin',              counties: 'Buncombe \u00b7 Madison \u00b7 Haywood',                                  vibe: 'The cultural and geographic heart of WNC golf \u2014 Donald Ross municipal gems, resort marquee tracks, and elite private clubs within minutes of downtown.' },
+    { slug: 'high-country',           num: 2, title: 'High Country',                 counties: 'Watauga \u00b7 Ashe \u00b7 Avery \u00b7 Mitchell \u00b7 Yancey \u00b7 Caldwell \u00b7 Wilkes \u00b7 Alleghany', vibe: 'The roof of WNC golf \u2014 courses at 3,000\u20135,000 feet where the air is thin, the views reach into Tennessee, and ball flights run long.' },
+    { slug: 'hendersonville-plateau', num: 3, title: 'Hendersonville Plateau',       counties: 'Henderson \u00b7 Polk \u00b7 Rutherford \u00b7 McDowell \u00b7 Burke',               vibe: 'The transition zone \u2014 thermal-belt mountain golf with championship resort tracks, historic munis, and the most diverse mix of access types in the region.' },
+    { slug: 'smoky-corridor',         num: 4, title: 'Smoky Mountain Corridor', counties: 'Haywood \u00b7 Swain \u00b7 Jackson \u00b7 Macon \u00b7 Cherokee \u00b7 Clay \u00b7 Graham',   vibe: 'Fog-draped ridgelines, lakefront layouts, and the quietest courses in WNC. Golf here is unhurried by design.' },
+    { slug: 'highlands-plateau',           num: 5, title: 'Highlands Plateau',                 counties: 'Transylvania \u00b7 Jackson \u00b7 Macon',                                  vibe: 'The Highlands-Cashiers-Sapphire triangle \u2014 the most concentrated cluster of elite private golf in the eastern United States.' },
+    { slug: 'foothills',              num: 6, title: 'Foothills',                    counties: 'Rutherford \u00b7 McDowell \u00b7 Burke \u00b7 Caldwell \u00b7 Wilkes \u00b7 Alleghany',    vibe: 'Where the mountains meet the piedmont \u2014 championship public layouts, hidden community courses, and the best value green fees in WNC.' }
+  ];
+
+  var ACCESS_TYPES = {
+    'public':       { title: 'Public',       vibe: 'Tee times open to everyone \u2014 from local municipals to daily-fee mountain layouts with views that stop you mid-swing.' },
+    'semi-private': { title: 'Semi-Private',  vibe: 'Member-first clubs that open select tee times to the public. Often the best value in the region \u2014 local knowledge gets you on.' },
+    'resort':       { title: 'Resort',        vibe: 'Courses tied to WNC\u2019s premier lodges and destination properties. Green fees include the full mountain experience.' },
+    'private':      { title: 'Private',       vibe: 'Invitation and membership only, with very few exceptions. These are the benchmarks everything else is measured against.' }
+  };
+
+  var COMBO_HEADERS = {
+    'asheville-basin:public':           'The Ross munis and daily-fee tracks that make Asheville one of the most accessible golf cities in the South.',
+    'asheville-basin:semi-private':     'A short list \u2014 the Asheville Basin skews public and private, with few clubs in between.',
+    'asheville-basin:resort':           'Resort-access tracks within striking distance of downtown. Grove Park sets the standard.',
+    'asheville-basin:private':          'The most storied private clubs in WNC, clustered within minutes of downtown Asheville.',
+    'high-country:public':              'High-altitude daily-fee golf with some of the longest ball flights in the eastern US.',
+    'high-country:semi-private':        'Limited options at elevation that offer exceptional mountain value.',
+    'high-country:resort':              'Resort golf at 3,000\u20135,000 feet, where the fairways tilt and the views stretch into Tennessee.',
+    'high-country:private':             'The private clubs that first defined mountain golf in North Carolina.',
+    'hendersonville-plateau:public':    'The most accessible stretch of mountain golf in WNC with good value, varied terrain, and no attitude.',
+    'hendersonville-plateau:semi-private': 'Semi-private clubs that offer a genuine local golf experience, no membership required.',
+    'hendersonville-plateau:resort':    'Championship resort tracks in the thermal belt.',
+    'hendersonville-plateau:private':   'Quiet, serious private golf in the shadow of the Blue Ridge mountains.',
+    'smoky-corridor:public':            'Lakefront layouts and fog-draped valley courses \u2014 unhurried golf at the edge of the national park.',
+    'smoky-corridor:semi-private':      'Accessible mountain golf deep in the Smokies, where the courses are as quiet as the ridgelines above them.',
+    'smoky-corridor:resort':            'Casino-adjacent resort golf and lodge-access tracks at the western edge of WNC.',
+    'smoky-corridor:private':           'Private clubs here are few and exclusive \u2014 deeply rooted in the communities around them.',
+    'highlands-plateau:public':              'Rare in this zip code. The Highlands Plateau runs private by nature \u2014 public access here is the exception.',
+    'highlands-plateau:semi-private':        'A handful of semi-private options in the Highlands\u2013Cashiers triangle, where private is the default.',
+    'highlands-plateau:resort':              'Resort-access tracks of the Highlands Plateau \u2014 golf as part of a broader luxury experience.',
+    'highlands-plateau:private':             'The most concentrated cluster of elite private golf in the eastern US. You will need to know someone.',
+    'foothills:public':                 'Championship-quality public golf at piedmont prices \u2014 the best bang-for-green-fee in all of WNC.',
+    'foothills:semi-private':           'Foothills semi-private clubs are community anchors \u2014 open, welcoming, and easy on the wallet.',
+    'foothills:resort':                 'Resort golf where the mountains flatten out \u2014 wider fairways, lower elevation, different kind of challenge.',
+    'foothills:private':                'The Foothills\u2019 private clubs serve tight-knit communities where golf has been a local institution for decades.'
+  };
+
+  function buildSpecs(c) {
+    if (c.yards || c.slope || c.rating || c.par) {
+      var items = '';
+      if (c.par)    items += '<div class="spec-item"><span class="spec-label">Par</span><span class="spec-value">' + c.par + '</span></div>';
+      if (c.yards)  items += '<div class="spec-item"><span class="spec-label">Yards</span><span class="spec-value">' + String(c.yards).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '</span></div>';
+      if (c.rating) items += '<div class="spec-item"><span class="spec-label">Rating</span><span class="spec-value">' + c.rating + '</span></div>';
+      if (c.slope)  items += '<div class="spec-item"><span class="spec-label">Slope</span><span class="spec-value">' + c.slope + '</span></div>';
+      return items;
+    }
+    return '<div class="spec-item spec-item--full"><span class="spec-label">Rating</span><span class="spec-value">Not rated</span></div>';
+  }
+
+  function buildLocation(c) {
+    var addr = c.address || [c.city, c.county ? c.county + ' County' : '', 'NC'].filter(Boolean).join(', ');
+    var addrHtml = '';
+    if (addr) {
+      var lastComma = addr.lastIndexOf(', ');
+      var secondLastComma = lastComma > 0 ? addr.lastIndexOf(', ', lastComma - 1) : -1;
+      var splitAt = secondLastComma > -1 ? secondLastComma : lastComma;
+      var line1 = splitAt > -1 ? addr.slice(0, splitAt) : addr;
+      var line2 = splitAt > -1 ? addr.slice(splitAt + 2) : '';
+      addrHtml = '<div class="card-location-address">'
+        + esc(line1)
+        + (line2 ? '<br>' + esc(line2) : '')
+        + '</div>';
+    }
+
+    var contactHtml = '';
+    if (c.website && !c.website.startsWith('tel:')) {
+      var domain = c.website.replace(/https?:\/\//, '').replace(/\/.*/, '').replace(/^www\./, '');
+      contactHtml += '<div class="card-location-contact"><a href="' + esc(c.website) + '" target="_blank">' + esc(domain) + '</a></div>';
+    }
+    if (c.phone) {
+      var num = c.phone.replace('tel:', '').replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+      contactHtml += '<div class="card-location-contact"><a href="' + esc(c.phone) + '">' + esc(num) + '</a></div>';
+    }
+
+    return addrHtml + contactHtml;
+  }
+
+  function buildFootnote(c) {
+    if (c.usga_rating_note) {
+      return '<div class="card-footnote">' + esc(c.usga_rating_note) + '</div>';
+    }
+    return '';
+  }
+
+  function buildCard(c) {
+    var badgeCls    = BADGE_CLASSES[c.access] || 'public';
+    var accessLabel = ACCESS_LABELS[c.access]  || esc(c.access || '');
+    var badges = '<span class="badge ' + badgeCls + '">' + accessLabel + '</span>';
+    if (c.helene) badges += ' <span class="badge helene">Helene Impact</span>';
+    if (c.closed) badges += ' <span class="badge helene">Temporarily Closed</span>';
+
+    return [
+      '<div class="card" data-access="' + badgeCls + '" data-region="' + esc(c.subregion || '') + '">',
+      '  <div class="card-body">',
+      '    <div class="card-badges">' + badges + '</div>',
+      '    <div class="card-name">' + esc(c.name) + '</div>',
+      '    <div class="card-location">' + buildLocation(c) + '</div>',
+      '    <div class="card-specs">' + buildSpecs(c) + '</div>',
+      '    <div class="card-summary">' + linkify(c.summary || '') + (c.insider_tip ? '<span class="insider-tip">' + linkify(c.insider_tip) + '</span>' : '') + '</div>',
+      '    ' + buildFootnote(c),
+      '  </div>',
+      '</div>'
+    ].join('\n');
+  }
+
+  function sortedName(c) {
+    return c.name.toLowerCase().replace(/^(the |a |an )/, '');
+  }
+
+  function sortCourses(list) {
+    return list.slice().sort(function(a, b) {
+      return sortedName(a) < sortedName(b) ? -1 : sortedName(a) > sortedName(b) ? 1 : 0;
+    });
+  }
+
+  function buildHeaderHtml(rf, af) {
+    if (rf !== 'all' && af !== 'all') {
+      var comboKey = rf + ':' + af;
+      var comboVibe = COMBO_HEADERS[comboKey] || '';
+      var comboRegion = SUBREGIONS.filter(function(r) { return r.slug === rf; })[0];
+      var comboRegionTitle = comboRegion ? comboRegion.title : '';
+      var comboAccessLabel = ACCESS_LABELS[af] || '';
+      var comboTitle = comboRegionTitle && comboAccessLabel ? comboRegionTitle + ' \u00b7 ' + comboAccessLabel : '';
+      return '<div class="subregion-header filtered">'
+        + (comboTitle ? '<h2 class="subregion-title">' + esc(comboTitle) + '</h2>' : '')
+        + (comboVibe ? '<div class="subregion-vibe">' + esc(comboVibe) + '</div>' : '')
+        + '</div>';
+    } else if (rf !== 'all') {
+      var region = SUBREGIONS.filter(function(r) { return r.slug === rf; })[0];
+      if (!region) return '';
+      return '<div class="subregion-header filtered">'
+        + '<h2 class="subregion-title">' + esc(region.title) + '</h2>'
+        + '<div class="subregion-vibe">' + esc(region.vibe) + '</div>'
+        + '</div>';
+    } else if (af !== 'all') {
+      var accessType = ACCESS_TYPES[af];
+      if (!accessType) return '';
+      return '<div class="subregion-header filtered">'
+        + '<h2 class="subregion-title">' + esc(accessType.title) + '</h2>'
+        + '<div class="subregion-vibe">' + esc(accessType.vibe) + '</div>'
+        + '</div>';
+    }
+    return '';
+  }
+
+  function renderContent(courses, rf, af, isJump) {
+    var contentEl = document.getElementById('wnc-dir-content');
+    var html;
+
+    if (!courses.length) {
+      html = '<div class="empty-state">'
+           + '<div class="empty-state-headline">No courses found.</div>'
+           + '<div class="empty-state-body">No courses match your current filters.<br>Try adjusting your selection to explore more of the mountains.</div>'
+           + '</div>';
+    } else if (isJump) {
+      html = '<div class="card-grid">' + sortCourses(courses).map(buildCard).join('\n') + '</div>';
+    } else {
+      html = buildHeaderHtml(rf, af) + '<div class="card-grid">' + sortCourses(courses).map(buildCard).join('\n') + '</div>';
+    }
+    contentEl.innerHTML = html;
+  }
+
+  function populateJumpMenu(courses) {
+    var jumpSel = document.getElementById('jump-select');
+    if (!jumpSel) return;
+    var current = jumpSel.value;
+    while (jumpSel.options.length > 1) jumpSel.remove(1);
+    sortCourses(courses).forEach(function(c) {
+      var opt = document.createElement('option');
+      opt.value = c.id;
+      opt.textContent = c.name;
+      jumpSel.appendChild(opt);
+    });
+    if (current && courses.some(function(c) { return c.id === current; })) {
+      jumpSel.value = current;
+    } else {
+      jumpSel.value = '';
+    }
+  }
+
+  function initFilters() {
+    var rSel     = document.getElementById('region-select');
+    var aSel     = document.getElementById('access-select');
+    var jumpSel  = document.getElementById('jump-select');
+    var statusEl = document.getElementById('filter-status');
+
+    var jumpCourseId = null;
+
+    function applyFilters() {
+      var rf = rSel.value;
+      var af = aSel.value;
+
+      rSel.className    = 'filter-select' + (rf !== 'all' ? ' active' : '');
+      aSel.className    = 'filter-select' + (af !== 'all' ? ' active' : '');
+      if (jumpSel) jumpSel.className = 'filter-select' + (jumpCourseId ? ' active' : '');
+
+      var baseFiltered = (ALL_COURSES || []).filter(function(c) {
+        var matchRegion = rf === 'all' || c.subregion === rf;
+        var matchAccess = af === 'all' || c.access === af;
+        return matchRegion && matchAccess;
+      });
+
+      populateJumpMenu(baseFiltered);
+
+      var displayCourses = jumpCourseId
+        ? baseFiltered.filter(function(c) { return c.id === jumpCourseId; })
+        : baseFiltered;
+
+      var displayRf = rf;
+      if (jumpCourseId && displayCourses.length) {
+        displayRf = displayCourses[0].subregion;
+      }
+
+      renderContent(displayCourses, displayRf, af, !!jumpCourseId);
+      applyMapFilters(displayCourses, jumpCourseId);
+
+      var mapHeaderEl = document.getElementById('wnc-map-header');
+      if (mapHeaderEl) mapHeaderEl.innerHTML = jumpCourseId ? '' : buildHeaderHtml(rf, af);
+
+      var visible   = displayCourses.length;
+      var anyFilter = rf !== 'all' || af !== 'all' || !!jumpCourseId;
+      var subregionFiltered = rf !== 'all' || !!jumpCourseId;
+      statusEl.className = subregionFiltered ? 'filter-status filtered' : 'filter-status';
+
+      var resetBtn = anyFilter
+        ? ' <span style="color:var(--muted);margin:0 10px">&middot;</span> <button class="filter-reset" id="filter-reset-btn">Reset</button>'
+        : '';
+
+      var label = 'Showing ' + visible + ' golf course' + (visible !== 1 ? 's' : '');
+      statusEl.innerHTML = '<span>' + label + '</span>' + resetBtn;
+
+      if (anyFilter) {
+        document.getElementById('filter-reset-btn').addEventListener('click', function() {
+          rSel.value  = 'all';
+          aSel.value  = 'all';
+          jumpCourseId = null;
+          if (jumpSel) jumpSel.value = '';
+          updateParentUrl(null, null, null);
+          applyFilters();
+        });
+      }
+
+      setTimeout(function() { if (window.wncSetHeight) window.wncSetHeight(); }, 50);
+    }
+
+    // Keep the parent page's URL in sync with the current filter state.
+    // A specific course (Jump to) is encoded as a hash: #wade-hampton
+    // Region/access filters (without a specific course) are encoded as query
+    // params: ?region=highlands-plateau&access=private
+    // Uses replaceState so it doesn't spam the browser's back-button history.
+    function updateParentUrl(rf, af, courseId) {
+      try {
+        var base = window.parent.location.pathname;
+        var params = [];
+        if (courseId) {
+          params.push('course=' + encodeURIComponent(courseId));
+        } else {
+          if (rf && rf !== 'all') params.push('region=' + encodeURIComponent(rf));
+          if (af && af !== 'all') params.push('access=' + encodeURIComponent(af));
+        }
+        var newUrl = base + (params.length ? '?' + params.join('&') : '');
+        window.parent.history.replaceState(null, '', newUrl);
+        lastKnownHref = window.parent.location.href;
+      } catch (e) {
+        // Cross-origin or other restriction — filtering still works locally,
+        // the URL just won't reflect the selection.
+      }
+    }
+
+    rSel.addEventListener('change', function() {
+      jumpCourseId = null;
+      if (jumpSel) jumpSel.value = '';
+      updateParentUrl(rSel.value, aSel.value, null);
+      applyFilters();
+    });
+
+    aSel.addEventListener('change', function() {
+      jumpCourseId = null;
+      if (jumpSel) jumpSel.value = '';
+      updateParentUrl(rSel.value, aSel.value, null);
+      applyFilters();
+    });
+
+    if (jumpSel) {
+      jumpSel.addEventListener('change', function() {
+        var selectedId = jumpSel.value;
+        if (!selectedId) {
+          jumpCourseId = null;
+          updateParentUrl(rSel.value, aSel.value, null);
+          applyFilters();
+          return;
+        }
+        var course = (ALL_COURSES || []).find(function(c) { return c.id === selectedId; });
+        if (course) {
+          rSel.value = course.subregion || 'all';
+          aSel.value = course.access    || 'all';
+          jumpCourseId = selectedId;
+          updateParentUrl(null, null, selectedId);
+          applyFilters();
+        }
+      });
+    }
+
+    // Deep-link support: the srcdoc iframe has no `sandbox` attribute, so it is
+    // treated as same-origin with the parent page — window.parent.location is
+    // readable directly, no postMessage handshake required.
+    //   /course-directory?course=wade-hampton                  -> jumps to one course
+    //   /course-directory?region=highlands-plateau                  -> filters by region
+    //   /course-directory?access=private                       -> filters by access
+    //   /course-directory?region=highlands-plateau&access=private   -> both
+    //
+    // A query string (not a hash) is used deliberately: Beehiiv's site nav is
+    // a client-side (Remix) router, and like most JS routers it treats a hash
+    // difference as browser-native scroll-anchor territory and ignores it —
+    // clicking a nav link back to the bare page while a #course-name was in
+    // the URL was a no-op that never touched the address bar at all. Search
+    // params don't have that problem; routers generally do react to them.
+    var VALID_REGIONS = SUBREGIONS.map(function(r) { return r.slug; });
+    var VALID_ACCESS  = Object.keys(ACCESS_LABELS);
+
+    function stateFromQuery() {
+      try {
+        var params = new URLSearchParams(window.parent.location.search || '');
+        var courseId = params.get('course');
+        var region   = params.get('region');
+        var access   = params.get('access');
+        var course   = courseId ? (ALL_COURSES || []).find(function(c) { return c.id === courseId; }) : null;
+        return {
+          course: course || null,
+          region: (region && VALID_REGIONS.indexOf(region) > -1) ? region : null,
+          access: (access && VALID_ACCESS.indexOf(access)  > -1) ? access : null
+        };
+      } catch (e) {
+        return { course: null, region: null, access: null };
+      }
+    }
+
+    function applyDeepLink(course) {
+      if (!course) return false;
+      rSel.value = course.subregion || 'all';
+      aSel.value = course.access    || 'all';
+      jumpCourseId = course.id;
+      if (jumpSel) jumpSel.value = course.id;
+      return true;
+    }
+
+    // Initial load: a specific course takes priority over region/access
+    // params (a course implies both anyway). If there's no course, fall
+    // back to whatever region/access came in via query params.
+    var initialState = stateFromQuery();
+    if (initialState.course) {
+      applyDeepLink(initialState.course);
+    } else {
+      if (initialState.region) rSel.value = initialState.region;
+      if (initialState.access) aSel.value = initialState.access;
+    }
+
+    // Sync FROM the parent URL whenever it changes externally (nav clicks,
+    // back/forward, a visitor editing the address bar, etc.) — but NOT when
+    // *we* just wrote it ourselves via updateParentUrl, which already keeps
+    // lastKnownHref in sync to avoid redundant re-renders. Polling (rather
+    // than relying on an event) is what actually catches Remix's pushState-
+    // based route transitions, which don't fire hashchange or popstate.
+    var lastKnownHref = '';
+    try { lastKnownHref = window.parent.location.href; } catch (e) {}
+
+    function syncFromParentUrl() {
+      var currentHref = '';
+      try { currentHref = window.parent.location.href; } catch (e) { return; }
+      if (currentHref === lastKnownHref) return;
+      lastKnownHref = currentHref;
+
+      var state = stateFromQuery();
+      if (state.course) {
+        applyDeepLink(state.course);
+      } else {
+        jumpCourseId = null;
+        if (jumpSel) jumpSel.value = '';
+        rSel.value = state.region || 'all';
+        aSel.value = state.access || 'all';
+      }
+      applyFilters();
+    }
+
+    try {
+      setInterval(syncFromParentUrl, 400);
+    } catch (e) {}
+
+    applyFilters();
+  }
+
+  initFilters();
+  initViewToggle();
+})();
+</script>

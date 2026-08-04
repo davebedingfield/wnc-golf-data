@@ -1,0 +1,149 @@
+<!--
+  WNC GOLF INSIDER — FEATURED COURSES EMBED (STATIC, SEO-INDEXABLE)
+  Based on: live wnc_featured_embed_v2_31.html
+  Change: all 4 featured course cards pre-rendered as static HTML at build
+  time (no fetch()). Course data is baked in from wnc_courses.json at build
+  time — no network dependency, no loading state, nothing for a crawler to
+  miss.
+  Paste into Beehiiv: Home page -> Featured section -> Embed block -> Code tab
+  Featured IDs: omni-grove-park, broadmoor-golf-links, laurel-ridge-cc, sequoyah-national
+  To update: edit FEATURED_IDS in build_static_featured.py to swap courses,
+  or re-run after wnc_courses.json changes to refresh card content. Paste
+  the output in.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream:  #faf4eb;
+  --green:  #0e7490;
+  --black:  #030712;
+  --white:  #faf4eb;
+  --ink:    #1a1a1a;
+  --muted:  #6b6b6b;
+  --border: #9ca3af;
+  --pub:    #155724;
+  --semi:   #6b4200;
+  --resort: #0a2f5e;
+  --priv:   #541060;
+  --helene: #7a1515;
+}
+
+body { font-family: "PT Serif", Georgia, serif; background: var(--white); color: #000000; font-size: 18px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+/* Card grid — 2x2 */
+.featured-grid { max-width: 1200px; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 40px; row-gap: 80px; }
+
+/* Card */
+.card { background: var(--white); }
+
+/* Course image */
+.card-image { width: 100%; height: 340px; object-fit: cover; border-radius: 2px; display: block; margin-bottom: 20px; }
+
+/* Badges */
+.card-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.badge { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 6px 12px; border-radius: 2px; font-weight: 700; line-height: 1; display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; }
+.badge.public  { background: #d6edda; color: var(--pub); }
+.badge.semi    { background: #fde8c8; color: var(--semi); }
+.badge.resort  { background: #c8dcf5; color: var(--resort); }
+.badge.private { background: #eedaf0; color: var(--priv); }
+.badge.helene  { background: #fad8d8; color: var(--helene); }
+
+/* Course name */
+.card-name { font-family: "PT Serif", Georgia, serif; font-size: 32px; font-weight: 700; color: #000000; line-height: 1.2; margin-bottom: 8px; text-wrap: balance; }
+
+/* Address + links */
+.card-location { margin-top: 10px; margin-bottom: 20px; }
+.card-location-address { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; line-height: 1.65; }
+.card-location-contact { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; line-height: 1.65; }
+.card-location-contact a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.card-location-contact a:hover { opacity: .7; }
+
+/* Specs */
+.card-specs { display: flex; margin-bottom: 18px; border: 1px solid #000000; border-radius: 2px; overflow: hidden; }
+.spec-item { flex: 1; padding: 10px 12px; border-right: 1px solid #000000; background: transparent; }
+.spec-item:last-child { border-right: none; }
+.spec-label { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; color: #000000; font-weight: 400; display: block; line-height: 1.5; }
+.spec-value { font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #000000; display: block; line-height: 1.5; }
+
+/* Summary */
+.card-summary { font-size: 18px; line-height: 1.6; color: #000000; margin-bottom: 0; }
+.card-summary em { font-style: italic; }
+
+/* Insider tip */
+.insider-tip { display: block; margin-top: 28px; font-size: 18px; line-height: 1.6; color: #000000; font-style: italic; }
+.insider-tip::before { content: "Insider tip"; display: block; font-family: "Inter", Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 4px; }
+
+/* Footnote */
+.card-footnote { margin-top: 16px; font-family: "PT Serif", Georgia, serif; font-size: 17px; color: #597C8F; line-height: 1.6; font-style: italic; }
+
+/* Inline prose links */
+.prose-link { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.prose-link:hover { opacity: .7; }
+
+@media (max-width: 700px) {
+  .featured-grid { grid-template-columns: 1fr; padding: 0; column-gap: 0; row-gap: 64px; }
+  .card-name { font-size: 28px; }
+  .card-image { height: 240px; }
+}
+</style>
+
+<script>
+(function() {
+  function fixScroll() {
+    try {
+      var iframe = window.frameElement;
+      if (!iframe) return;
+      iframe.setAttribute('scrolling', 'no');
+    } catch(e) {}
+  }
+  fixScroll();
+  window.addEventListener('load', fixScroll);
+  setTimeout(fixScroll, 1000);
+  setTimeout(fixScroll, 3000);
+})();
+</script>
+
+<div id="wnc-featured-root">
+  <div class="featured-grid" id="feat-grid">
+<div class="card">
+  <div class="card-badges"><span class="badge resort">Resort</span></div>
+  <div class="card-name">Omni Grove Park Inn</div>
+  <div class="card-location"><div class="card-location-address">290 Macon Avenue<br>Asheville, NC 28804</div><div class="card-location-contact"><a href="https://www.groveparkinn.com" target="_blank">groveparkinn.com</a></div><div class="card-location-contact"><a href="tel:8283983858">(828) 398-3858</a></div></div>
+  <img class="card-image" src="https://raw.githubusercontent.com/davebedingfield/wnc-golf-data/main/images/grove_park_wc_featured.jpg" alt="Omni Grove Park Inn" loading="lazy">
+  <div class="card-specs"><div class="spec-item"><span class="spec-label">Par</span><span class="spec-value">70</span></div><div class="spec-item"><span class="spec-label">Yards</span><span class="spec-value">6,201</span></div><div class="spec-item"><span class="spec-label">Rating</span><span class="spec-value">70.2</span></div><div class="spec-item"><span class="spec-label">Slope</span><span class="spec-value">128</span></div></div>
+  <div class="card-summary">One of WNC’s most storied resort courses, where golf was first played in 1899. The course was redesigned by Donald Ross in 1926. Bobby Jones, Snead, Hogan, Nicklaus, and multiple U.S. Presidents have all played here, making it the most historically significant resort course in the region. No driving range on property, so use the resort’s outdoor hitting bays and practice putting green to dial in before your round.<span class="insider-tip">Don’t let the scorecard fool you on the short par-4 6th hole; members consistently rank it among the hardest on the course. On the greens, read almost everything as breaking away from the hotel. Holes 1 and 18 are the exceptions.</span></div>
+  
+</div>
+<div class="card">
+  <div class="card-badges"><span class="badge public">Public</span> <span class="badge helene">Helene Impact</span></div>
+  <div class="card-name">Broadmoor Golf Links</div>
+  <div class="card-location"><div class="card-location-address">101 French Broad Lane<br>Fletcher, NC 28732</div><div class="card-location-contact"><a href="https://www.broadmoorgolflinks.com" target="_blank">broadmoorgolflinks.com</a></div><div class="card-location-contact"><a href="tel:8286871500">(828) 687-1500</a></div></div>
+  <img class="card-image" src="https://raw.githubusercontent.com/davebedingfield/wnc-golf-data/main/images/broadmoor_wc_featured.jpg" alt="Broadmoor Golf Links" loading="lazy">
+  <div class="card-specs"><div class="spec-item"><span class="spec-label">Par</span><span class="spec-value">71</span></div><div class="spec-item"><span class="spec-label">Yards</span><span class="spec-value">6,707</span></div><div class="spec-item"><span class="spec-label">Rating</span><span class="spec-value">71.0</span></div><div class="spec-item"><span class="spec-label">Slope</span><span class="spec-value">129</span></div></div>
+  <div class="card-summary">The original Karl Litten layout was completely rebuilt following catastrophic Hurricane Helene flooding in 2024, and several holes were rerouted. The fairways track alongside natural creeks and ponds, framed by the Blue Ridge scenery. The renovated routing features wider landing corridors and strategic bunkering around the new bentgrass green complexes.<span class="insider-tip">The new routing makes old yardage books completely obsolete. The updated practice facility is a major upgrade — a massive modern hitting structure anchors a fully expanded short game area. Get there early and use it; the bentgrass greens reward players who dial in their distances before the round.</span></div>
+  
+</div>
+<div class="card">
+  <div class="card-badges"><span class="badge semi">Semi-Private</span></div>
+  <div class="card-name">Laurel Ridge Country Club</div>
+  <div class="card-location"><div class="card-location-address">49 Cupp Lane<br>Waynesville, NC 28786</div><div class="card-location-contact"><a href="https://www.laurelridgeexperience.com/golf-course" target="_blank">laurelridgeexperience.com</a></div><div class="card-location-contact"><a href="tel:8284520545">(828) 452-0545</a></div></div>
+  <img class="card-image" src="https://raw.githubusercontent.com/davebedingfield/wnc-golf-data/main/images/laurel_ridge_wc_featured.jpg" alt="Laurel Ridge Country Club" loading="lazy">
+  <div class="card-specs"><div class="spec-item"><span class="spec-label">Par</span><span class="spec-value">72</span></div><div class="spec-item"><span class="spec-label">Yards</span><span class="spec-value">6,904</span></div><div class="spec-item"><span class="spec-label">Rating</span><span class="spec-value">72.1</span></div><div class="spec-item"><span class="spec-label">Slope</span><span class="spec-value">141</span></div></div>
+  <div class="card-summary">Bob Cupp’s 1986 design, built with bentgrass tee-to-green at 4,000 feet, is widely considered one of the most challenging mountain courses in WNC — a distinction backed by the <em>Asheville Citizen-Times</em>. While formerly entirely private, the club now welcomes limited public tee times — book well in advance.<span class="insider-tip">Afternoon slots are the sweet spot for value. The 12th is a jaw-dropping par 4: A massive vertical drop from the elevated tee box down to the fairway, 416 yards from the tips. Precise iron placements are how locals navigate the blind shots and score well.</span></div>
+  
+</div>
+<div class="card">
+  <div class="card-badges"><span class="badge resort">Resort</span></div>
+  <div class="card-name">Sequoyah National Golf Club</div>
+  <div class="card-location"><div class="card-location-address">79 Cahons Road<br>Whittier, NC 28789</div><div class="card-location-contact"><a href="https://www.sequoyahnational.com" target="_blank">sequoyahnational.com</a></div><div class="card-location-contact"><a href="tel:8284973000">(828) 497-3000</a></div></div>
+  <img class="card-image" src="https://raw.githubusercontent.com/davebedingfield/wnc-golf-data/main/images/sequoyah_national_wc_featured.jpg" alt="Sequoyah National Golf Club" loading="lazy">
+  <div class="card-specs"><div class="spec-item"><span class="spec-label">Par</span><span class="spec-value">72</span></div><div class="spec-item"><span class="spec-label">Yards</span><span class="spec-value">6,602</span></div><div class="spec-item"><span class="spec-label">Rating</span><span class="spec-value">72.0</span></div><div class="spec-item"><span class="spec-label">Slope</span><span class="spec-value">142</span></div></div>
+  <div class="card-summary">Robert Trent Jones II’s 2009 design on Eastern Band Cherokee land is the most awarded public-access mountain course in WNC. It appears on <em>Golfweek</em>’s top casino courses list, and tee shots drop hundreds of feet throughout the layout — a thrilling roller coaster ride from the first tee to the 18th green. Smoky Mountain National Park provides the backdrop on every hole.<span class="insider-tip">Pair the round with a stay at Harrah’s Cherokee Casino Resort, just 10 minutes away, for the ultimate WNC golf-and-gaming getaway.</span></div>
+  
+</div>
+  </div>
+</div>
